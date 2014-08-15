@@ -34,10 +34,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\fgong\Google Drive\C\ZXing\source"
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\fgong\Google Drive\C\ZXing\build"
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/try.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/try.dir/flags.make
 
 CMakeFiles/try.dir/ImageProduce_test.c.obj: CMakeFiles/try.dir/flags.make
 CMakeFiles/try.dir/ImageProduce_test.c.obj: CMakeFiles/try.dir/includes_C.rsp
-CMakeFiles/try.dir/ImageProduce_test.c.obj: C:/Users/fgong/Google\ Drive/C/ZXing/source/ImageProduce_test.c
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\fgong\Google Drive\C\ZXing\build\CMakeFiles" $(CMAKE_PROGRESS_1)
+CMakeFiles/try.dir/ImageProduce_test.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduce_test.c
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/ImageProduce_test.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\ImageProduce_test.c.obj   -c "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce_test.c"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\ImageProduce_test.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce_test.c
 
 CMakeFiles/try.dir/ImageProduce_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/ImageProduce_test.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce_test.c" > CMakeFiles\try.dir\ImageProduce_test.c.i
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce_test.c > CMakeFiles\try.dir\ImageProduce_test.c.i
 
 CMakeFiles/try.dir/ImageProduce_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/ImageProduce_test.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce_test.c" -o CMakeFiles\try.dir\ImageProduce_test.c.s
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce_test.c -o CMakeFiles\try.dir\ImageProduce_test.c.s
 
 CMakeFiles/try.dir/ImageProduce_test.c.obj.requires:
 .PHONY : CMakeFiles/try.dir/ImageProduce_test.c.obj.requires
@@ -74,18 +74,18 @@ CMakeFiles/try.dir/ImageProduce_test.c.obj.provides.build: CMakeFiles/try.dir/Im
 
 CMakeFiles/try.dir/ImageProduce.c.obj: CMakeFiles/try.dir/flags.make
 CMakeFiles/try.dir/ImageProduce.c.obj: CMakeFiles/try.dir/includes_C.rsp
-CMakeFiles/try.dir/ImageProduce.c.obj: C:/Users/fgong/Google\ Drive/C/ZXing/source/ImageProduce.c
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\fgong\Google Drive\C\ZXing\build\CMakeFiles" $(CMAKE_PROGRESS_2)
+CMakeFiles/try.dir/ImageProduce.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduce.c
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/ImageProduce.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\ImageProduce.c.obj   -c "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce.c"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\ImageProduce.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce.c
 
 CMakeFiles/try.dir/ImageProduce.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/ImageProduce.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce.c" > CMakeFiles\try.dir\ImageProduce.c.i
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce.c > CMakeFiles\try.dir\ImageProduce.c.i
 
 CMakeFiles/try.dir/ImageProduce.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/ImageProduce.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\fgong\Google Drive\C\ZXing\source\ImageProduce.c" -o CMakeFiles\try.dir\ImageProduce.c.s
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduce.c -o CMakeFiles\try.dir\ImageProduce.c.s
 
 CMakeFiles/try.dir/ImageProduce.c.obj.requires:
 .PHONY : CMakeFiles/try.dir/ImageProduce.c.obj.requires
@@ -109,39 +109,39 @@ try.exe: CMakeFiles/try.dir/ImageProduce.c.obj
 try.exe: CMakeFiles/try.dir/build.make
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ts249.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_superres249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_stitching249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_contrib249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
-try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ts249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_superres249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_stitching249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_contrib249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
 try.exe: CMakeFiles/try.dir/objects1.rsp
 try.exe: CMakeFiles/try.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable try.exe"
@@ -160,6 +160,6 @@ CMakeFiles/try.dir/clean:
 .PHONY : CMakeFiles/try.dir/clean
 
 CMakeFiles/try.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\fgong\Google Drive\C\ZXing\source" "C:\Users\fgong\Google Drive\C\ZXing\source" "C:\Users\fgong\Google Drive\C\ZXing\build" "C:\Users\fgong\Google Drive\C\ZXing\build" "C:\Users\fgong\Google Drive\C\ZXing\build\CMakeFiles\try.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build\CMakeFiles\try.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/try.dir/depend
 

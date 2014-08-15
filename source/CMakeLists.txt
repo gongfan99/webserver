@@ -30,6 +30,8 @@ set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "${LIB2_ADDRESS}" )
 
 set(LIBS ${LIBS} LIB1 LIB2)
 
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW)
+
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )
