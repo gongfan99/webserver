@@ -1,0 +1,36 @@
+#ifndef __IMAGEPRODUCECAMERA_H__
+#define __IMAGEPRODUCECAMERA_H__
+
+#include <cv.h>
+#include <highgui.h>
+#include "ImageProduce.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define atomic_t int
+
+typedef struct ImageProduceCamera_ ImageProduceCamera;
+//virtual function table
+typedef struct {
+	void (*process)(ImageProduceCamera* this_ptr);
+	void (*destroy)(ImageProduceCamera* this_ptr);
+}ImageProduceCamera_ops;
+
+typedef struct ImageProduceCamera_ {
+	ImageProduce _;
+	ImageProduceCamera_ops* ops;
+	atomic_t ref_count;
+	CvCapture* capture;
+}ImageProduceCamera;
+
+ImageProduceCamera* ImageProduceCamera_create();
+void ImageProduceCamera_process(ImageProduceCamera* this_ptr);
+void ImageProduceCamera_destroy(ImageProduceCamera* this_ptr);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // __IMAGEPRODUCECAMERA_H__

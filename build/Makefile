@@ -114,53 +114,53 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-ImageProduce.obj: ImageProduce.c.obj
-.PHONY : ImageProduce.obj
+AdapterForImageProduce_test.obj: AdapterForImageProduce_test.cpp.obj
+.PHONY : AdapterForImageProduce_test.obj
 
 # target to build an object file
-ImageProduce.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce.c.obj
-.PHONY : ImageProduce.c.obj
+AdapterForImageProduce_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj
+.PHONY : AdapterForImageProduce_test.cpp.obj
 
-ImageProduce.i: ImageProduce.c.i
-.PHONY : ImageProduce.i
+AdapterForImageProduce_test.i: AdapterForImageProduce_test.cpp.i
+.PHONY : AdapterForImageProduce_test.i
 
 # target to preprocess a source file
-ImageProduce.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce.c.i
-.PHONY : ImageProduce.c.i
+AdapterForImageProduce_test.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.i
+.PHONY : AdapterForImageProduce_test.cpp.i
 
-ImageProduce.s: ImageProduce.c.s
-.PHONY : ImageProduce.s
+AdapterForImageProduce_test.s: AdapterForImageProduce_test.cpp.s
+.PHONY : AdapterForImageProduce_test.s
 
 # target to generate assembly for a file
-ImageProduce.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce.c.s
-.PHONY : ImageProduce.c.s
+AdapterForImageProduce_test.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.s
+.PHONY : AdapterForImageProduce_test.cpp.s
 
-ImageProduce_test.obj: ImageProduce_test.c.obj
-.PHONY : ImageProduce_test.obj
+ImageProduceCamera.obj: ImageProduceCamera.c.obj
+.PHONY : ImageProduceCamera.obj
 
 # target to build an object file
-ImageProduce_test.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce_test.c.obj
-.PHONY : ImageProduce_test.c.obj
+ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.obj
+.PHONY : ImageProduceCamera.c.obj
 
-ImageProduce_test.i: ImageProduce_test.c.i
-.PHONY : ImageProduce_test.i
+ImageProduceCamera.i: ImageProduceCamera.c.i
+.PHONY : ImageProduceCamera.i
 
 # target to preprocess a source file
-ImageProduce_test.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce_test.c.i
-.PHONY : ImageProduce_test.c.i
+ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.i
+.PHONY : ImageProduceCamera.c.i
 
-ImageProduce_test.s: ImageProduce_test.c.s
-.PHONY : ImageProduce_test.s
+ImageProduceCamera.s: ImageProduceCamera.c.s
+.PHONY : ImageProduceCamera.s
 
 # target to generate assembly for a file
-ImageProduce_test.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduce_test.c.s
-.PHONY : ImageProduce_test.c.s
+ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.s
+.PHONY : ImageProduceCamera.c.s
 
 # Help Target
 help:
@@ -171,12 +171,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... ImageProduce.obj
-	@echo ... ImageProduce.i
-	@echo ... ImageProduce.s
-	@echo ... ImageProduce_test.obj
-	@echo ... ImageProduce_test.i
-	@echo ... ImageProduce_test.s
+	@echo ... AdapterForImageProduce_test.obj
+	@echo ... AdapterForImageProduce_test.i
+	@echo ... AdapterForImageProduce_test.s
+	@echo ... ImageProduceCamera.obj
+	@echo ... ImageProduceCamera.i
+	@echo ... ImageProduceCamera.s
 .PHONY : help
 
 

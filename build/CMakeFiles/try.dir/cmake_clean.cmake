@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/try.dir/ImageProduce_test.c.obj"
-  "CMakeFiles/try.dir/ImageProduce.c.obj"
+  "CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj"
+  "CMakeFiles/try.dir/ImageProduceCamera.c.obj"
   "try.pdb"
   "try.exe"
   "try.exe.manifest"
@@ -8,6 +8,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
+foreach(lang C CXX)
   include(CMakeFiles/try.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

@@ -1,0 +1,2 @@
+http://wiki.ssrrsummerschool.org/doku.php?id=robocup2012:qrcode-cppexample
+http://stackoverflow.com/questions/16841768/can-you-improve-this-solution-to-interfacing-opencv-2-4-to-zxing-1d-barcode-rea

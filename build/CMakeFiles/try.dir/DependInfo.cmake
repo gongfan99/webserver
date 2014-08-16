@@ -1,13 +1,17 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduce.c" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/ImageProduce.c.obj"
-  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduce_test.c" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/ImageProduce_test.c.obj"
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/ImageProduceCamera.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/AdapterForImageProduce_test.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
