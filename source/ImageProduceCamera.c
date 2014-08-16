@@ -10,6 +10,11 @@ ImageProduceCamera* ImageProduceCamera_create(){
 	//this_ptr->capture = cvCaptureFromCAM(CV_CAP_ANY); //Capture using any camera connected to your system
 	this_ptr->capture = cvCaptureFromFile("C:/Users/Public/Videos/Sample Videos/Wildlife.wmv");
 
+	CvSize size;
+	size.width = (int)cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FRAME_WIDTH);
+	size.height = (int)cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FRAME_HEIGHT);
+	((ImageProduce*)this_ptr)->data = cvCreateImage(size,IPL_DEPTH_8U,1); //reserve place for greyscale image
+	
 	*(this_ptr->ops) = (ImageProduceCamera_ops){
 		.process = &ImageProduceCamera_process,
 		.destroy = &ImageProduceCamera_destroy
@@ -18,11 +23,14 @@ ImageProduceCamera* ImageProduceCamera_create(){
 }
 
 void ImageProduceCamera_process(ImageProduceCamera* this_ptr){
-	((ImageProduce*)this_ptr)->data = cvQueryFrame(this_ptr->capture); //Create image frames from capture
+	IplImage* frame;
+	frame = cvQueryFrame(this_ptr->capture); //Create image frames from capture
+	cvCvtColor(frame, ((ImageProduce*)this_ptr)->data, CV_BGR2GRAY); //convert RGB to grey
 }
 
 void ImageProduceCamera_destroy(ImageProduceCamera* this_ptr){
 	cvReleaseCapture(&(this_ptr->capture)); //Release capture.
+	cvReleaseImage(&(((ImageProduce*)this_ptr)->data));
 	free(this_ptr->ops);
 	free(this_ptr);
 }
