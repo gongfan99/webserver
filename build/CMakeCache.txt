@@ -189,6 +189,9 @@ LIB1_ADDRESS:FILEPATH=C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
 //Path to a library.
 LIB2_ADDRESS:FILEPATH=C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
 
+//Path to a library.
+LIB3_ADDRESS:FILEPATH=C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp_build/libzxing.a
+
 //Path where debug 3rdpaty OpenCV dependencies are located
 OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
 

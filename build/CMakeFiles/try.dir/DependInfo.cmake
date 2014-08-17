@@ -1,15 +1,10 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/ImageProduceCamera.c.obj"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/AdapterForImageProduce_test.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj"
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR_test.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/build/CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,6 +15,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp/core/src"
   "C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW"
   "C:/Users/sam/Documents/User/Embeded/opencv/sources/include"
   "C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv"

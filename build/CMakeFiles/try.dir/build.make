@@ -48,67 +48,42 @@ include CMakeFiles/try.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/try.dir/flags.make
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj: CMakeFiles/try.dir/flags.make
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/AdapterForImageProduce_test.cpp
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR_test.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build\CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\AdapterForImageProduce_test.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\AdapterForImageProduce_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\ImageDecoderQR_test.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR_test.cpp
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\AdapterForImageProduce_test.cpp > CMakeFiles\try.dir\AdapterForImageProduce_test.cpp.i
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR_test.cpp > CMakeFiles\try.dir\ImageDecoderQR_test.cpp.i
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\AdapterForImageProduce_test.cpp -o CMakeFiles\try.dir\AdapterForImageProduce_test.cpp.s
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR_test.cpp -o CMakeFiles\try.dir\ImageDecoderQR_test.cpp.s
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.requires:
-.PHONY : CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.requires
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.provides: CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.provides.build
-.PHONY : CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.provides
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides
 
-CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.provides.build: CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj
-
-CMakeFiles/try.dir/ImageProduceCamera.c.obj: CMakeFiles/try.dir/flags.make
-CMakeFiles/try.dir/ImageProduceCamera.c.obj: CMakeFiles/try.dir/includes_C.rsp
-CMakeFiles/try.dir/ImageProduceCamera.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\build\CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/ImageProduceCamera.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\ImageProduceCamera.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c
-
-CMakeFiles/try.dir/ImageProduceCamera.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/ImageProduceCamera.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\ImageProduceCamera.c.i
-
-CMakeFiles/try.dir/ImageProduceCamera.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/ImageProduceCamera.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\ImageProduceCamera.c.s
-
-CMakeFiles/try.dir/ImageProduceCamera.c.obj.requires:
-.PHONY : CMakeFiles/try.dir/ImageProduceCamera.c.obj.requires
-
-CMakeFiles/try.dir/ImageProduceCamera.c.obj.provides: CMakeFiles/try.dir/ImageProduceCamera.c.obj.requires
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.obj.provides.build
-.PHONY : CMakeFiles/try.dir/ImageProduceCamera.c.obj.provides
-
-CMakeFiles/try.dir/ImageProduceCamera.c.obj.provides.build: CMakeFiles/try.dir/ImageProduceCamera.c.obj
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides.build: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
 
 # Object files for target try
 try_OBJECTS = \
-"CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj" \
-"CMakeFiles/try.dir/ImageProduceCamera.c.obj"
+"CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
 
 # External object files for target try
 try_EXTERNAL_OBJECTS =
 
-try.exe: CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj
-try.exe: CMakeFiles/try.dir/ImageProduceCamera.c.obj
+try.exe: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
 try.exe: CMakeFiles/try.dir/build.make
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
+try.exe: C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp_build/libzxing.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ts249.a
@@ -151,8 +126,7 @@ try.exe: CMakeFiles/try.dir/link.txt
 CMakeFiles/try.dir/build: try.exe
 .PHONY : CMakeFiles/try.dir/build
 
-CMakeFiles/try.dir/requires: CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj.requires
-CMakeFiles/try.dir/requires: CMakeFiles/try.dir/ImageProduceCamera.c.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
 .PHONY : CMakeFiles/try.dir/requires
 
 CMakeFiles/try.dir/clean:

@@ -5,6 +5,8 @@
 #include <highgui.h>
 #include "ImageProduce.h"
 
+namespace ozo {
+
 class AdapterForImageProduce {
 public:
 	ImageProduce* ImaPtr; //the external input interface
@@ -17,9 +19,12 @@ class AdapterForImageProduceDirect : public AdapterForImageProduce{
 public:
 	AdapterForImageProduceDirect(ImageProduce* p) : AdapterForImageProduce(p) {}; //cast needed in the new statement
 	~AdapterForImageProduceDirect() {};
+	
 	void process() {
 		data = ((ImageProduce*)ImaPtr)->data;
 	}
 };
+
+} //namespace ozo
 
 #endif // __ADAPTERFORIMAGEPRODUCE_HPP__

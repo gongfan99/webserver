@@ -2,6 +2,8 @@
 #include "ImageProduceCamera.h"
 #include "AdapterForImageProduce.hpp"
 
+using namespace ozo;
+
 int main()
 {
 	char key;

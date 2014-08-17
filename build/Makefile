@@ -114,53 +114,29 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-AdapterForImageProduce_test.obj: AdapterForImageProduce_test.cpp.obj
-.PHONY : AdapterForImageProduce_test.obj
+ImageDecoderQR_test.obj: ImageDecoderQR_test.cpp.obj
+.PHONY : ImageDecoderQR_test.obj
 
 # target to build an object file
-AdapterForImageProduce_test.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.obj
-.PHONY : AdapterForImageProduce_test.cpp.obj
+ImageDecoderQR_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
+.PHONY : ImageDecoderQR_test.cpp.obj
 
-AdapterForImageProduce_test.i: AdapterForImageProduce_test.cpp.i
-.PHONY : AdapterForImageProduce_test.i
-
-# target to preprocess a source file
-AdapterForImageProduce_test.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.i
-.PHONY : AdapterForImageProduce_test.cpp.i
-
-AdapterForImageProduce_test.s: AdapterForImageProduce_test.cpp.s
-.PHONY : AdapterForImageProduce_test.s
-
-# target to generate assembly for a file
-AdapterForImageProduce_test.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterForImageProduce_test.cpp.s
-.PHONY : AdapterForImageProduce_test.cpp.s
-
-ImageProduceCamera.obj: ImageProduceCamera.c.obj
-.PHONY : ImageProduceCamera.obj
-
-# target to build an object file
-ImageProduceCamera.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.obj
-.PHONY : ImageProduceCamera.c.obj
-
-ImageProduceCamera.i: ImageProduceCamera.c.i
-.PHONY : ImageProduceCamera.i
+ImageDecoderQR_test.i: ImageDecoderQR_test.cpp.i
+.PHONY : ImageDecoderQR_test.i
 
 # target to preprocess a source file
-ImageProduceCamera.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.i
-.PHONY : ImageProduceCamera.c.i
+ImageDecoderQR_test.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i
+.PHONY : ImageDecoderQR_test.cpp.i
 
-ImageProduceCamera.s: ImageProduceCamera.c.s
-.PHONY : ImageProduceCamera.s
+ImageDecoderQR_test.s: ImageDecoderQR_test.cpp.s
+.PHONY : ImageDecoderQR_test.s
 
 # target to generate assembly for a file
-ImageProduceCamera.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.s
-.PHONY : ImageProduceCamera.c.s
+ImageDecoderQR_test.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s
+.PHONY : ImageDecoderQR_test.cpp.s
 
 # Help Target
 help:
@@ -171,12 +147,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... AdapterForImageProduce_test.obj
-	@echo ... AdapterForImageProduce_test.i
-	@echo ... AdapterForImageProduce_test.s
-	@echo ... ImageProduceCamera.obj
-	@echo ... ImageProduceCamera.i
-	@echo ... ImageProduceCamera.s
+	@echo ... ImageDecoderQR_test.obj
+	@echo ... ImageDecoderQR_test.i
+	@echo ... ImageDecoderQR_test.s
 .PHONY : help
 
 
