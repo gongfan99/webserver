@@ -1,6 +1,6 @@
 #include <iostream>
 #include "ImageProduceCamera.h"
-#include "AdapterForImageProduce.hpp"
+#include "Adapter.hpp"
 
 using namespace ozo;
 
@@ -12,7 +12,7 @@ int main()
 	//std::cout << "I am here" << std::endl;
 	
 	ImageProduceCamera* ImageProduceCamera1 = ImageProduceCamera_create();
-	AdapterForImageProduceDirect* Adapter1 = new AdapterForImageProduceDirect((ImageProduce*)ImageProduceCamera1);
+	AdapterDirect* Adapter1 = new AdapterDirect((ImageProduce*)ImageProduceCamera1);
 
     while(1){ //Create infinte loop for live streaming
 		ImageProduceCamera1->ops->process(ImageProduceCamera1);

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
+  "CMakeFiles/try.dir/ImageProduceCamera.c.obj"
   "try.pdb"
   "try.exe"
   "try.exe.manifest"
@@ -7,6 +8,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/try.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

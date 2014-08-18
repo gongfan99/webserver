@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "ImageProduceCamera.h"
 
 #ifdef __cplusplus
@@ -13,6 +14,8 @@ ImageProduceCamera* ImageProduceCamera_create(){
 	CvSize size;
 	size.width = (int)cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FRAME_WIDTH);
 	size.height = (int)cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FRAME_HEIGHT);
+	printf("%f \n", cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FORMAT));
+	printf("%d %d \n", size.width, size.height);
 	((ImageProduce*)this_ptr)->data = cvCreateImage(size,IPL_DEPTH_8U,1); //reserve place for greyscale image
 	
 	*(this_ptr->ops) = (ImageProduceCamera_ops){
@@ -25,12 +28,18 @@ ImageProduceCamera* ImageProduceCamera_create(){
 void ImageProduceCamera_process(ImageProduceCamera* this_ptr){
 	IplImage* frame;
 	frame = cvQueryFrame(this_ptr->capture); //Create image frames from capture
+	int i = frame->depth;
+	int j = frame->nChannels;
+	printf("frame format: %d %d\n", i, j);
+	//printf("I am here.");
 	cvCvtColor(frame, ((ImageProduce*)this_ptr)->data, CV_BGR2GRAY); //convert RGB to grey
+	((ImageProduce*)this_ptr)->data = frame;
+	//printf("I am here.");
 }
 
 void ImageProduceCamera_destroy(ImageProduceCamera* this_ptr){
 	cvReleaseCapture(&(this_ptr->capture)); //Release capture.
-	cvReleaseImage(&(((ImageProduce*)this_ptr)->data));
+	//cvReleaseImage(&(((ImageProduce*)this_ptr)->data));
 	free(this_ptr->ops);
 	free(this_ptr);
 }

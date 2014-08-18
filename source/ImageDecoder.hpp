@@ -9,10 +9,10 @@ namespace ozo {
 
 class ImageDecoder {
 public:
-	AdapterForImageProduce* adapter; //external input interface
+	Adapter* adapter; //external input interface
 	std::vector<char> *data; //external output interface
 	
-	ImageDecoder(AdapterForImageProduce* p) : adapter(p) {
+	ImageDecoder(Adapter* p) : adapter(p) {
 		data = new std::vector<char>();
 	}; 
 	

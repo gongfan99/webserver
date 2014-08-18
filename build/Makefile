@@ -138,6 +138,30 @@ ImageDecoderQR_test.cpp.s:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s
 .PHONY : ImageDecoderQR_test.cpp.s
 
+ImageProduceCamera.obj: ImageProduceCamera.c.obj
+.PHONY : ImageProduceCamera.obj
+
+# target to build an object file
+ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.obj
+.PHONY : ImageProduceCamera.c.obj
+
+ImageProduceCamera.i: ImageProduceCamera.c.i
+.PHONY : ImageProduceCamera.i
+
+# target to preprocess a source file
+ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.i
+.PHONY : ImageProduceCamera.c.i
+
+ImageProduceCamera.s: ImageProduceCamera.c.s
+.PHONY : ImageProduceCamera.s
+
+# target to generate assembly for a file
+ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageProduceCamera.c.s
+.PHONY : ImageProduceCamera.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -150,6 +174,9 @@ help:
 	@echo ... ImageDecoderQR_test.obj
 	@echo ... ImageDecoderQR_test.i
 	@echo ... ImageDecoderQR_test.s
+	@echo ... ImageProduceCamera.obj
+	@echo ... ImageProduceCamera.i
+	@echo ... ImageProduceCamera.s
 .PHONY : help
 
 

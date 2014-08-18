@@ -22,7 +22,7 @@ namespace ozo {
 
 class ImageDecoderQR : public ImageDecoder {
 public:
-	ImageDecoderQR(AdapterForImageProduce* p) : ImageDecoder(p) {
+	ImageDecoderQR(Adapter* p) : ImageDecoder(p) {
 		(*data).reserve(10);
 	};
 	
@@ -36,24 +36,24 @@ public:
 		{
 			using namespace zxing;
 			cv::Mat image = cv::cvarrToMat(adapter->data);
-			ArrayRef<uchar> greyData(image.data, 23*23);
+			ArrayRef<char> greyData((char*)image.data, image.rows*image.cols);
 			Ref<LuminanceSource> source(new GreyscaleLuminanceSource(greyData, image.step, image.rows, 0, 0, image.cols, image.rows));
 			//Ref<OpenCVBitmapSource> source(new OpenCVBitmapSource(image));
 			Ref<Binarizer> binarizer(new GlobalHistogramBinarizer(source));
 			Ref<BinaryBitmap> bitmap(new BinaryBitmap(binarizer));
-			Ref<Result> result(reader->decode(bitmap, DecodeHints(DecodeHints::TRYHARDER_HINT)));//+DecodeHints::DEFAULT_HINT)));
-			std::copy(result->getText()->begin(), result->getText()->end(), back_inserter(*data));
-			cout << result->getText()->getText() << endl;
+			qrcode::QRCodeReader reader;
+			Ref<Result> result(reader.decode(bitmap, DecodeHints(DecodeHints::TRYHARDER_HINT)));//+DecodeHints::DEFAULT_HINT)));
+			std::string result_test = result->getText()->getText();
+			std::copy(result_test.begin(), result_test.end(), back_inserter(*data));
+			//std::cout << result->getText()->getText() << std::endl;
 				//Export the read barcode here
 		}
 		catch (zxing::Exception& e)
 		{
 				//Export your failure to read the code here
-			cerr << "Error: " << e.what() << endl;
+			std::cerr << "Error: " << e.what() << std::endl;
 		}
 	}
-};
-
 };
 
 } //namespace ozo

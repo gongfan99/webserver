@@ -14,7 +14,7 @@ int main()
     while(1){ //Create infinte loop for live streaming
 		ImageProduceCamera1->ops->process(ImageProduceCamera1);
 		cvShowImage("Camera_Output", ((ImageProduce*)ImageProduceCamera1)->data);   //Show image frames on created window
-        key = cvWaitKey(10);     //Capture Keyboard stroke
+        key = cvWaitKey(100);     //Capture Keyboard stroke
         if (key == 27){
             break;      //If you hit ESC key loop will break.
         }

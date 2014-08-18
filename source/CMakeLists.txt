@@ -18,7 +18,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 # add the executable
 #add_executable(try AdapterForImageProduce_test.cpp ImageProduceCamera.c)
-add_executable(try ImageDecoderQR_test.cpp)
+add_executable(try ImageDecoderQR_test.cpp ImageProduceCamera.c)
 
 add_library(LIB1 STATIC IMPORTED)
 add_library(LIB2 STATIC IMPORTED)

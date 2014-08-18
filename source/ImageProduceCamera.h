@@ -19,7 +19,7 @@ typedef struct {
 }ImageProduceCamera_ops;
 
 typedef struct ImageProduceCamera_ {
-	ImageProduce _;
+	ImageProduce _; //base class
 	ImageProduceCamera_ops* ops;
 	atomic_t ref_count;
 	CvCapture* capture;
