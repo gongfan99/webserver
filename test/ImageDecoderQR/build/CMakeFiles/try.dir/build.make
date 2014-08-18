@@ -34,10 +34,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source
+CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build
+CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/try.dir/depend.make
@@ -48,101 +48,101 @@ include CMakeFiles/try.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/try.dir/flags.make
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj: CMakeFiles/try.dir/flags.make
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/AdapterDirect/source/AdapterDirect_test.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/AdapterDirect_test.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\AdapterDirect_test.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/source/ImageDecoderQR_test.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\ImageDecoderQR_test.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source\ImageDecoderQR_test.cpp
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/AdapterDirect_test.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp > CMakeFiles\try.dir\AdapterDirect_test.cpp.i
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source\ImageDecoderQR_test.cpp > CMakeFiles\try.dir\ImageDecoderQR_test.cpp.i
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/AdapterDirect_test.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp -o CMakeFiles\try.dir\AdapterDirect_test.cpp.s
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source\ImageDecoderQR_test.cpp -o CMakeFiles\try.dir\ImageDecoderQR_test.cpp.s
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires:
-.PHONY : CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.provides: CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.provides.build
-.PHONY : CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.provides
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides
 
-CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.provides.build: CMakeFiles/try.dir/AdapterDirect_test.cpp.obj
+CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides.build: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/flags.make
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/includes_C.rsp
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/includes_C.rsp
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: C:/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.i
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c.i
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.s
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c.s
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires:
-.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build
-.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides
 
-CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 
 # Object files for target try
 try_OBJECTS = \
-"CMakeFiles/try.dir/AdapterDirect_test.cpp.obj" \
-"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+"CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj" \
+"CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj"
 
 # External object files for target try
 try_EXTERNAL_OBJECTS =
 
-try.exe: CMakeFiles/try.dir/AdapterDirect_test.cpp.obj
-try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+try.exe: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
+try.exe: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 try.exe: CMakeFiles/try.dir/build.make
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
-try.exe: C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp_build/libzxing.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ts249.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_superres249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_stitching249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_contrib249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
-try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
+try.exe: C:/Users/fgong/Downloads/ServerApp/webserver/lib/zxing/cpp_build/libzxing.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ts249.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_superres249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_stitching249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_contrib249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_nonfree249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ocl249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_gpu249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_photo249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_objdetect249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_legacy249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_ml249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_calib3d249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_features2d249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_highgui249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_imgproc249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_flann249.dll.a
+try.exe: C:/Users/fgong/Downloads/opencv/build/x64/MinGW/lib/libopencv_core249.dll.a
 try.exe: CMakeFiles/try.dir/objects1.rsp
 try.exe: CMakeFiles/try.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable try.exe"
@@ -152,8 +152,8 @@ try.exe: CMakeFiles/try.dir/link.txt
 CMakeFiles/try.dir/build: try.exe
 .PHONY : CMakeFiles/try.dir/build
 
-CMakeFiles/try.dir/requires: CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires
-CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
 .PHONY : CMakeFiles/try.dir/requires
 
 CMakeFiles/try.dir/clean:
@@ -161,6 +161,6 @@ CMakeFiles/try.dir/clean:
 .PHONY : CMakeFiles/try.dir/clean
 
 CMakeFiles/try.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles\try.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\try.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/try.dir/depend
 

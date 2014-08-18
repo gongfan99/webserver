@@ -43,27 +43,26 @@ int main()
 	cvSetData( image, buffer, width );
 	//std::cout << "I am here" << std::endl;
 	
-	//create an AdapterDirect object
+	//create an AdapterDirect object with buffer or image file
 	AdapterDirect* Adapter2 = new AdapterDirect((ImageProduce*)NULL);
-	Adapter2->data = image; //use this instead of Adapter2->process()
-	Adapter2->data = cvLoadImage("C:/Users/sam/Downloads/qrcode.png", CV_LOAD_IMAGE_GRAYSCALE);
+	//Adapter2->data = image; //use this instead of Adapter2->process()
+	Adapter2->data = cvLoadImage("../source/qrcode.png", CV_LOAD_IMAGE_GRAYSCALE);
 	cvShowImage("Camera_Output", Adapter2->data);   //Show image frames on created window	
 	
 	ImageDecoderQR* decoder2 = new ImageDecoderQR(Adapter2);
 	decoder2->process();
 	
-	std::vector<char> path = *(decoder2->data);
+	std::vector<char> qrresult = *(decoder2->data);
 	std::cout << "The QR code is: ";
-	for( std::vector<char>::const_iterator i = path.begin(); i != path.end(); ++i)
+	for( std::vector<char>::const_iterator i = qrresult.begin(); i != qrresult.end(); ++i)
 		std::cout << *i;
 	
-	//ImageProduceCamera1->ops->destroy(ImageProduceCamera1);
 	delete Adapter2;
 	delete decoder2;
 	cvReleaseImage(&image);
 
 	
-	//test 2; using camera images
+/* 	//test 2; using camera images
 	ImageProduceCamera* ImageProduceCamera1 = ImageProduceCamera_create();
 	AdapterDirect* Adapter1 = new AdapterDirect((ImageProduce*)ImageProduceCamera1);
 	ImageDecoderQR* decoder1 = new ImageDecoderQR(Adapter1);
@@ -73,9 +72,9 @@ int main()
 		Adapter1->process();
 		decoder1->process();
 		//print out QR code
-		path = *(decoder1->data);
+		qrresult = *(decoder1->data);
 		std::cout << "The QR code is: ";
-		for( std::vector<char>::const_iterator i = path.begin(); i != path.end(); ++i)
+		for( std::vector<char>::const_iterator i = qrresult.begin(); i != qrresult.end(); ++i)
 			std::cout << *i;
 		cvShowImage("Camera_Output", Adapter1->data);   //Show image frames on created window
         key = cvWaitKey(1000);     //Capture Keyboard stroke
@@ -86,7 +85,7 @@ int main()
 	
 	ImageProduceCamera1->ops->destroy(ImageProduceCamera1);
 	delete Adapter1;
-	delete decoder1;
+	delete decoder1; */
 	
     cvDestroyWindow("Camera_Output"); //Destroy Window
     return 0;

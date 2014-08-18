@@ -1,0 +1,2 @@
+C:/Users/fgong/Downloads/ServerApp/zxing/cpp_build/CMakeFiles/libzxing.dir
+C:/Users/fgong/Downloads/ServerApp/zxing/cpp_build/CMakeFiles/zxing.dir

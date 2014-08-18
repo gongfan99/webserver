@@ -27,7 +27,7 @@ add_library(LIB3 STATIC IMPORTED)
 
 find_library(LIB1_ADDRESS libgcc.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
 find_library(LIB2_ADDRESS libstdc++.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
-find_library(LIB3_ADDRESS libzxing.a "C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp_build")
+find_library(LIB3_ADDRESS libzxing.a "../../../lib/zxing/cpp_build")
 
 set_target_properties( LIB1 PROPERTIES IMPORTED_LOCATION "${LIB1_ADDRESS}" )
 set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "${LIB2_ADDRESS}" )
@@ -36,7 +36,7 @@ set_target_properties( LIB3 PROPERTIES IMPORTED_LOCATION "${LIB3_ADDRESS}" )
 set(LIBS ${LIBS} LIB1 LIB2 LIB3)
 
 include_directories( "../../../source" )
-include_directories( "C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp/core/src" )
+include_directories( "../../../lib/zxing/cpp/core/src" )
 
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW)
 

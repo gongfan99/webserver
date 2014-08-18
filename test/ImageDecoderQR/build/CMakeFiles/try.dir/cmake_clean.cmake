@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/try.dir/AdapterDirect_test.cpp.obj"
-  "CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+  "CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj"
+  "CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj"
   "try.pdb"
   "try.exe"
   "try.exe.manifest"

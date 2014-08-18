@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source
+CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build
+CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,53 +114,53 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-AdapterDirect_test.obj: AdapterDirect_test.cpp.obj
-.PHONY : AdapterDirect_test.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
 
 # target to build an object file
-AdapterDirect_test.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterDirect_test.cpp.obj
-.PHONY : AdapterDirect_test.cpp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 
-AdapterDirect_test.i: AdapterDirect_test.cpp.i
-.PHONY : AdapterDirect_test.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
 
 # target to preprocess a source file
-AdapterDirect_test.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterDirect_test.cpp.i
-.PHONY : AdapterDirect_test.cpp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
 
-AdapterDirect_test.s: AdapterDirect_test.cpp.s
-.PHONY : AdapterDirect_test.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
 
 # target to generate assembly for a file
-AdapterDirect_test.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/AdapterDirect_test.cpp.s
-.PHONY : AdapterDirect_test.cpp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+ImageDecoderQR_test.obj: ImageDecoderQR_test.cpp.obj
+.PHONY : ImageDecoderQR_test.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+ImageDecoderQR_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
+.PHONY : ImageDecoderQR_test.cpp.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+ImageDecoderQR_test.i: ImageDecoderQR_test.cpp.i
+.PHONY : ImageDecoderQR_test.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+ImageDecoderQR_test.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i
+.PHONY : ImageDecoderQR_test.cpp.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+ImageDecoderQR_test.s: ImageDecoderQR_test.cpp.s
+.PHONY : ImageDecoderQR_test.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+ImageDecoderQR_test.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s
+.PHONY : ImageDecoderQR_test.cpp.s
 
 # Help Target
 help:
@@ -171,12 +171,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... AdapterDirect_test.obj
-	@echo ... AdapterDirect_test.i
-	@echo ... AdapterDirect_test.s
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
+	@echo ... ImageDecoderQR_test.obj
+	@echo ... ImageDecoderQR_test.i
+	@echo ... ImageDecoderQR_test.s
 .PHONY : help
 
 
