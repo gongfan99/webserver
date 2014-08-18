@@ -8,8 +8,8 @@ extern "C" {
 ImageProduceCamera* ImageProduceCamera_create(){
 	ImageProduceCamera* this_ptr = (ImageProduceCamera*)malloc(sizeof(ImageProduceCamera));
 	this_ptr->ops = (ImageProduceCamera_ops*)malloc(sizeof(ImageProduceCamera_ops));
-	this_ptr->capture = cvCaptureFromCAM(0); //CV_CAP_ANY : Capture using any camera connected to your system
-	//this_ptr->capture = cvCaptureFromFile("C:/Users/Public/Videos/Sample Videos/Wildlife.wmv");
+	//this_ptr->capture = cvCaptureFromCAM(0); //CV_CAP_ANY : Capture using any camera connected to your system
+	this_ptr->capture = cvCaptureFromFile("C:/Users/fgong/Downloads/ServerApp/webserver/source/qrcode.avi");
 
 	CvSize size;
 	size.width = (int)cvGetCaptureProperty(this_ptr->capture, CV_CAP_PROP_FRAME_WIDTH);

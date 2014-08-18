@@ -19,7 +19,12 @@ set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ../../../source/)
 
 # add the executable
 #add_executable(try AdapterForImageProduce_test.cpp ImageProduceCamera.c)
-add_executable(try ImageDecoderQR_test.cpp ../../../source/ImageProduceCamera.c)
+set(CFILES ${CFILES} ImageDecoderQR_test.cpp)
+set(CFILES ${CFILES} ../../../source/utils.cpp)
+set(CFILES ${CFILES} ../../../source/ImageProduceCamera.c)
+set(CFILES ${CFILES} ../../../source/ImageDecoderQR.cpp)
+add_executable(try ${CFILES})
+#add_executable(try ImageDecoderQR_test.cpp ../../../source/ImageProduceCamera.c ../../../source/ImageDecoderQR.cpp)
 
 add_library(LIB1 STATIC IMPORTED)
 add_library(LIB2 STATIC IMPORTED)

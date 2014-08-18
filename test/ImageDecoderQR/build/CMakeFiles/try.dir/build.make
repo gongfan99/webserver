@@ -72,10 +72,34 @@ CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides: CMakeFiles/try.dir/Imag
 
 CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.provides.build: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
 
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp > CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp.i
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\utils.cpp.s
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.requires
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.provides: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.provides
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.provides.build: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+
 CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/flags.make
 CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/includes_C.rsp
 CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj: C:/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj"
 	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageProduceCamera.c
 
@@ -96,16 +120,44 @@ CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProd
 
 CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp > CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp.i
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp -o CMakeFiles\try.dir\C_\Users\fgong\Downloads\ServerApp\webserver\source\ImageDecoderQR.cpp.s
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides
+
+CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides.build: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+
 # Object files for target try
 try_OBJECTS = \
 "CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj" \
-"CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+"CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj" \
+"CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj" \
+"CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj"
 
 # External object files for target try
 try_EXTERNAL_OBJECTS =
 
 try.exe: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
+try.exe: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
 try.exe: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+try.exe: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
 try.exe: CMakeFiles/try.dir/build.make
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
 try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
@@ -153,7 +205,9 @@ CMakeFiles/try.dir/build: try.exe
 .PHONY : CMakeFiles/try.dir/build
 
 CMakeFiles/try.dir/requires: CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj.requires
 CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
 .PHONY : CMakeFiles/try.dir/requires
 
 CMakeFiles/try.dir/clean:

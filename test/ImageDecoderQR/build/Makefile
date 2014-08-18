@@ -114,6 +114,30 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
+
+# target to build an object file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
+
+# target to preprocess a source file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
+
+# target to generate assembly for a file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+
 C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 .PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
 
@@ -137,6 +161,30 @@ C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s: C_/Use
 C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
 .PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
+
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
+
+# target to build an object file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
+
+# target to preprocess a source file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
+
+# target to generate assembly for a file
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
 
 ImageDecoderQR_test.obj: ImageDecoderQR_test.cpp.obj
 .PHONY : ImageDecoderQR_test.obj
@@ -171,9 +219,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
 	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
 	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
 	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
 	@echo ... ImageDecoderQR_test.obj
 	@echo ... ImageDecoderQR_test.i
 	@echo ... ImageDecoderQR_test.s

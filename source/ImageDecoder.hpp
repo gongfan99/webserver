@@ -4,6 +4,7 @@
 #include <cv.h>
 #include <highgui.h>
 #include <vector>
+#include "Adapter.hpp"
 
 namespace ozo {
 
