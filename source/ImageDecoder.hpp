@@ -24,4 +24,4 @@ public:
 
 } //namespace ozo
 
-#endif // __IMAGEDECODER_H__
+#endif // __IMAGEDECODER_HPP__

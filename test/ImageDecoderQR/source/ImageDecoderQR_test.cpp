@@ -81,11 +81,11 @@ int main()
 			std::cout << *i;
 		std::cout << std::endl;
 		sleep(1000);
-		cv::Mat imageAdapter = cv::cvarrToMat(Adapter1->data);
-		cv::imwrite(to_string<int>(j)+".jpg", imageAdapter);
+/* 		cv::Mat imageAdapter = cv::cvarrToMat(Adapter1->data);
+		cv::imwrite(to_string<int>(j)+".jpg", imageAdapter); */
 		if (showWindow) {
 			cvShowImage("Camera_Output", Adapter1->data);   //Show image frames on created window
-			key = cvWaitKey(1000);     //Capture Keyboard stroke
+			key = cvWaitKey(10);     //Capture Keyboard stroke
 			if (key == 27){
 				break;      //If you hit ESC key loop will break.
 			}
