@@ -1,0 +1,24 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec4204470425/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec4204470425.dir\build.make CMakeFiles/cmTryCompileExec4204470425.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe[1]: Leaving directory `C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe[1]: *** No rule to make target `x86)/CMake/share/cmake-3.0/Modules/CMakeCCompilerABI.c)', needed by `CMakeFiles/cmTryCompileExec4204470425.dir/CMakeCCompilerABI.c.obj'.  Stop.
+mingw32-make.exe: *** [cmTryCompileExec4204470425/fast] Error 2
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2505077923/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2505077923.dir\build.make CMakeFiles/cmTryCompileExec2505077923.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe[1]: Leaving directory `C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe[1]: *** No rule to make target `x86)/CMake/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp)', needed by `CMakeFiles/cmTryCompileExec2505077923.dir/CMakeCXXCompilerABI.cpp.obj'.  Stop.
+mingw32-make.exe: *** [cmTryCompileExec2505077923/fast] Error 2
+
+
+
