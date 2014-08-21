@@ -10,7 +10,7 @@ OculusDK2::OculusDK2() {
         MessageBoxA(NULL,"Rift detected, display not enabled.","", MB_OK);
 
 	ovrFovPort eyeFov[2] = { hmd->DefaultEyeFov[0], hmd->DefaultEyeFov[1] };
-	
+
 	int eyeNum;
 	for ( eyeNum = 0; eyeNum < 2; eyeNum++ ) {
 		EyeRenderDesc[eyeNum] = ovrHmd_GetRenderDesc(hmd, (ovrEyeType)eyeNum, eyeFov[eyeNum]);
