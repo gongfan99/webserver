@@ -71,6 +71,35 @@ limitations under the License.
 #  define OVR_OS_ANDROID
 #endif
 
+#if defined(__MINGW32__)
+#  define OVR_COMP_MINGW
+#  define __in_bcount(x)
+#  define __in_bcount_opt(x)
+#  define __in_ecount(x)
+#  define __in_xcount(x)
+#  define __inout_bcount_full(x)
+#  define __inout_bcount_opt(x)
+#  define __out_bcount(x)
+#  define __out_bcount_full(x)
+#  define __out_bcount_opt(x)
+#  define __out_bcount_part_opt(x,y)
+#  define __out_ecount(x)
+#  define __out_xcount(x)
+#  define __deref_opt_inout_bcount_part_opt(x,y)
+#  define __deref_out_bcount(x)
+#  define __deref_out_bcount_opt(x)
+#  define __out
+#  define __in
+#  define __inout
+#  define __deref_out
+#  define __in_opt
+#  define __inout_opt
+#  define __out_opt
+#  define __deref
+#  define __deref_inout_opt
+#  define __reserved
+#endif
+
 
 //-----------------------------------------------------------------------------------
 // ***** CPU Architecture

@@ -16,8 +16,11 @@ otherwise accompanies this software in either electronic or hard copy form.
 
 #include <windows.h>
 #include <DbgHelp.h>
+#include "../Kernel/OVR_Types.h"
+#if !defined(OVR_COMP_MINGW)
 #include <AtlBase.h>
 #include <AtlConv.h>
+#endif
 
 #include "OVR_Win32_Dxgi_Display.h"
 
@@ -223,7 +226,7 @@ static HMODULE createShim( LPCSTR lpLibFileName, OVRTargetAPI targetAPI )
 
 	if( !result )
 	{
-		OutputDebugString( L"createShim:  unable to load usermode filter\n" );
+		OutputDebugStringW( L"createShim:  unable to load usermode filter\n" );
 		result = (*oldProcA)( lpLibFileName );
 	}
 	return result;
@@ -249,15 +252,29 @@ static HMODULE
 	__in LPCWSTR lpLibFileName
 	)
 {
+#if !defined(OVR_COMP_MINGW)
 	USES_CONVERSION;
+#endif
 
 	OVRTargetAPI targetAPI = DirectX;
 
+#if defined(OVR_COMP_MINGW)
+	size_t sz = wcslen(lpLibFileName);
+	char *lpLibFileNameA = (char *)alloca(sz + 1);
+	wcstombs(lpLibFileNameA, lpLibFileName, sz);
+	lpLibFileNameA[sz] = 0;
+	bool needShim = checkForOverride( lpLibFileNameA, targetAPI );
+#else
 	bool needShim = checkForOverride( W2A( lpLibFileName ), targetAPI );
+#endif
 	if( !needShim )	
 		return (*oldProcW)( lpLibFileName );
 
+#if defined(OVR_COMP_MINGW)
+	return createShim( lpLibFileNameA, targetAPI );
+#else
 	return createShim( W2A( lpLibFileName ), targetAPI );
+#endif
 }
 
 static HMODULE
@@ -287,16 +304,30 @@ static HMODULE
 	__in       DWORD dwFlags
 	)
 {
+#if !defined(OVR_COMP_MINGW)
 	USES_CONVERSION;
+#endif
 
 	OVRTargetAPI targetAPI = DirectX;
 
+#if defined(OVR_COMP_MINGW)
+	size_t sz = wcslen(lpLibFileName);
+	char *lpLibFileNameA = (char *)alloca(sz + 1);
+	wcstombs(lpLibFileNameA, lpLibFileName, sz);
+	lpLibFileNameA[sz] = 0;
+	bool needShim = checkForOverride( lpLibFileNameA, targetAPI );
+#else
 	bool needShim = checkForOverride( W2A( lpLibFileName ), targetAPI );
+#endif
 	if( !needShim )
 		return (*oldProcExW)( lpLibFileName, hFile, dwFlags );
 
 	// FIXME: Don't throw away the flags parameter
+#if defined(OVR_COMP_MINGW)
+	return createShim( lpLibFileNameA, targetAPI );
+#else
 	return createShim( W2A( lpLibFileName ), targetAPI );
+#endif
 }
 
 static BOOL WINAPI OVRGetModuleHandleExA(
@@ -324,17 +355,32 @@ static BOOL WINAPI OVRGetModuleHandleExW(
 	__out    HMODULE *phModule
 	)
 {
+#if !defined(OVR_COMP_MINGW)
 	USES_CONVERSION;
+#endif
 
 	OVRTargetAPI targetAPI = DirectX;
 
+#if defined(OVR_COMP_MINGW)
+	size_t sz = wcslen(lpModuleName);
+	char *lpModuleNameA = (char *)alloca(sz + 1);
+	wcstombs(lpModuleNameA, lpModuleName, sz);
+	lpModuleNameA[sz] = 0;
+	bool needShim = checkForOverride( lpModuleNameA, targetAPI );
+#else
 	bool needShim = checkForOverride( W2A( lpModuleName ), targetAPI );
+#endif
+
 	if( !needShim )
 	{
 		return (*oldProcModExW)( dwFlags, lpModuleName, phModule );
 	}
 
+#if defined(OVR_COMP_MINGW)
+	*phModule = createShim( lpModuleNameA, targetAPI );
+#else
 	*phModule = createShim( W2A( lpModuleName ), targetAPI );
+#endif
 
 	return TRUE;
 }
@@ -349,7 +395,7 @@ static void restoreFunction( PROC pfnHookAPIAddr, PBYTE oldData )
 	VirtualProtect((LPVOID)pfnHookAPIAddr, OLD_DATA_BACKUP_SIZE,                       
 		PAGE_EXECUTE_READWRITE, &oldProtect);
 
-	memcpy(pfnHookAPIAddr, oldData, OLD_DATA_BACKUP_SIZE);  
+	memcpy(reinterpret_cast<void *>(pfnHookAPIAddr), oldData, OLD_DATA_BACKUP_SIZE);  
 
 	VirtualProtect((LPVOID)pfnHookAPIAddr, OLD_DATA_BACKUP_SIZE, oldProtect, NULL);  
 }
@@ -365,7 +411,7 @@ static void setFunction( PROC pfnHookAPIAddr, PROC replacementFunction, PBYTE ol
 	VirtualProtect((LPVOID)pfnHookAPIAddr, OLD_DATA_BACKUP_SIZE,                       
 		PAGE_EXECUTE_READWRITE, &oldProtect);
 
-	memcpy(oldData, pfnHookAPIAddr, OLD_DATA_BACKUP_SIZE);
+	memcpy(oldData, reinterpret_cast<void *>(pfnHookAPIAddr), OLD_DATA_BACKUP_SIZE);
 
 	PBYTE functionData = (PBYTE)pfnHookAPIAddr;
 	functionData[0] = 0xff; // JMP [RIP+0]
@@ -388,7 +434,7 @@ static void restoreFunction( PROC pfnHookAPIAddr, PBYTE oldData )
 	VirtualProtect((LPVOID)pfnHookAPIAddr, jmpSize,                       
 		PAGE_EXECUTE_READWRITE, &oldProtect);
 
-	memcpy(pfnHookAPIAddr, oldData, jmpSize);  
+	memcpy(reinterpret_cast<void *>(pfnHookAPIAddr), oldData, jmpSize);  
 
 	VirtualProtect((LPVOID)pfnHookAPIAddr, jmpSize, oldProtect, NULL);  
 }
@@ -404,7 +450,7 @@ static void setFunction( PROC pfnHookAPIAddr, PROC replacementFunction, PBYTE ol
 	VirtualProtect((LPVOID)pfnHookAPIAddr, jmpSize,                       
 		PAGE_EXECUTE_READWRITE, &oldProtect);
 
-	memcpy(oldData, pfnHookAPIAddr, jmpSize);
+	memcpy(oldData, reinterpret_cast<const void *>(pfnHookAPIAddr), jmpSize);
 
 	PBYTE functionData = (PBYTE)pfnHookAPIAddr;
 	memcpy( oldData, functionData, jmpSize );

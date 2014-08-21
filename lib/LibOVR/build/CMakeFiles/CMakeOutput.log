@@ -1,0 +1,61 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/3.0.1/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/3.0.1/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec514135185/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec514135185.dir\build.make CMakeFiles/cmTryCompileExec514135185.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec514135185.dir/testCCompiler.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec514135185.dir\testCCompiler.c.obj   -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTryCompileExec514135185.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec514135185.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec514135185.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec514135185.dir/objects.a @CMakeFiles\cmTryCompileExec514135185.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec514135185.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec514135185.exe -Wl,--out-implib,libcmTryCompileExec514135185.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+mingw32-make.exe[1]: Leaving directory `C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec315579258/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec315579258.dir\build.make CMakeFiles/cmTryCompileExec315579258.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec315579258.dir/testCXXCompiler.cxx.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec315579258.dir\testCXXCompiler.cxx.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec315579258.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec315579258.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec315579258.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec315579258.dir/objects.a @CMakeFiles\cmTryCompileExec315579258.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec315579258.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec315579258.exe -Wl,--out-implib,libcmTryCompileExec315579258.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+mingw32-make.exe[1]: Leaving directory `C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/build/CMakeFiles/CMakeTmp'
+
+

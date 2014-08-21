@@ -400,6 +400,7 @@ void HSWDisplay::GetOrthoProjection(const HMDRenderState& RenderState, Matrix4f 
 //
 
 #if defined (OVR_OS_WIN32)
+#if defined (OVR_HAS_D3D)
     #define OVR_D3D_VERSION 9
     #include "D3D1X/CAPI_D3D9_HSWDisplay.h"
     #undef  OVR_D3D_VERSION
@@ -412,9 +413,11 @@ void HSWDisplay::GetOrthoProjection(const HMDRenderState& RenderState, Matrix4f 
     #include "D3D1X/CAPI_D3D11_HSWDisplay.h"
     #undef  OVR_D3D_VERSION
 #endif
+#endif
 
+#if defined (OVR_HAS_GL)
 #include "GL/CAPI_GL_HSWDisplay.h"
-
+#endif
 
 OVR::CAPI::HSWDisplay* OVR::CAPI::HSWDisplay::Factory(ovrRenderAPIType apiType, ovrHmd hmd, const OVR::CAPI::HMDRenderState& renderState)
 {
@@ -425,12 +428,14 @@ OVR::CAPI::HSWDisplay* OVR::CAPI::HSWDisplay::Factory(ovrRenderAPIType apiType, 
         case ovrRenderAPI_None:
             pHSWDisplay = new OVR::CAPI::HSWDisplay(apiType, hmd, renderState);
             break;
-
+			
+#if defined(OVR_HAS_GL)
         case ovrRenderAPI_OpenGL:
             pHSWDisplay = new OVR::CAPI::GL::HSWDisplay(apiType, hmd, renderState);
             break;
+ #endif
 
-    #if defined(OVR_OS_WIN32)
+    #if defined(OVR_OS_WIN32) && defined(OVR_HAS_D3D)
         case ovrRenderAPI_D3D9:
             pHSWDisplay = new OVR::CAPI::D3D9::HSWDisplay(apiType, hmd, renderState);
             break;
@@ -447,6 +452,10 @@ OVR::CAPI::HSWDisplay* OVR::CAPI::HSWDisplay::Factory(ovrRenderAPIType apiType, 
         case ovrRenderAPI_D3D10:
         case ovrRenderAPI_D3D11: // Fall through
     #endif
+
+#if !defined(OVR_HAS_GL)
+		case ovrRenderAPI_OpenGL:
+#endif
 
         // Handle unsupported cases.
         case ovrRenderAPI_Android_GLES:
