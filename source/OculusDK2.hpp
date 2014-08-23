@@ -9,7 +9,7 @@ class OculusDK2 : public OculusBase {
 public:
 	OculusDK2();
 	~OculusDK2();
-	inline void process();
+	void process();
 };
 
 } //namespace ozo

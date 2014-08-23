@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\source
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\OculusDK2\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\OculusDK2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\OculusDK2\build\CMakeFiles C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\OculusDK2\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\OculusDK2\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,101 +114,53 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
 
 # target to build an object file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i
 
 # target to preprocess a source file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s
 
 # target to generate assembly for a file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
+OculusDK2_test.obj: OculusDK2_test.cpp.obj
+.PHONY : OculusDK2_test.obj
 
 # target to build an object file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+OculusDK2_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/OculusDK2_test.cpp.obj
+.PHONY : OculusDK2_test.cpp.obj
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
-
-# target to preprocess a source file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
-
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
-
-# target to generate assembly for a file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
-
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
-
-# target to build an object file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
-
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
+OculusDK2_test.i: OculusDK2_test.cpp.i
+.PHONY : OculusDK2_test.i
 
 # target to preprocess a source file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+OculusDK2_test.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/OculusDK2_test.cpp.i
+.PHONY : OculusDK2_test.cpp.i
 
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
-
-# target to generate assembly for a file
-C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
-.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
-
-ImageDecoderQR_test.obj: ImageDecoderQR_test.cpp.obj
-.PHONY : ImageDecoderQR_test.obj
-
-# target to build an object file
-ImageDecoderQR_test.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.obj
-.PHONY : ImageDecoderQR_test.cpp.obj
-
-ImageDecoderQR_test.i: ImageDecoderQR_test.cpp.i
-.PHONY : ImageDecoderQR_test.i
-
-# target to preprocess a source file
-ImageDecoderQR_test.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.i
-.PHONY : ImageDecoderQR_test.cpp.i
-
-ImageDecoderQR_test.s: ImageDecoderQR_test.cpp.s
-.PHONY : ImageDecoderQR_test.s
+OculusDK2_test.s: OculusDK2_test.cpp.s
+.PHONY : OculusDK2_test.s
 
 # target to generate assembly for a file
-ImageDecoderQR_test.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/ImageDecoderQR_test.cpp.s
-.PHONY : ImageDecoderQR_test.cpp.s
+OculusDK2_test.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/OculusDK2_test.cpp.s
+.PHONY : OculusDK2_test.cpp.s
 
 # Help Target
 help:
@@ -219,18 +171,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
-	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
-	@echo ... ImageDecoderQR_test.obj
-	@echo ... ImageDecoderQR_test.i
-	@echo ... ImageDecoderQR_test.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s
+	@echo ... OculusDK2_test.obj
+	@echo ... OculusDK2_test.i
+	@echo ... OculusDK2_test.s
 .PHONY : help
 
 

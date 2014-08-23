@@ -16,7 +16,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Compiler/GNU.cmake"
+  "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-GNU-C.cmake"
+  "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-GNU.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/Platform/Windows-windres.cmake"
@@ -26,10 +28,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.0.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.0.1/CMakeSystem.cmake"
-  "C:/Users/fgong/Downloads/ServerApp/webserver/test/ImageDecoderQR/source/CMakeLists.txt"
-  "C:/Users/fgong/Downloads/opencv/build/x64/MinGW/OpenCVConfig-version.cmake"
-  "C:/Users/fgong/Downloads/opencv/build/x64/MinGW/OpenCVConfig.cmake"
-  "C:/Users/fgong/Downloads/opencv/build/x64/MinGW/OpenCVModules.cmake"
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/OculusDK2/source/CMakeLists.txt"
+  "C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/OpenCVConfig-version.cmake"
+  "C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/OpenCVConfig.cmake"
+  "C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:

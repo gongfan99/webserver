@@ -55,10 +55,15 @@ limitations under the License.
 #include <stdlib.h>
 #include <float.h>
 #include <limits.h>
+#include <limits>
 #include <ctype.h>
 #include "OVR_JSON.h"
 #include "Kernel/OVR_SysFile.h"
 #include "Kernel/OVR_Log.h"
+
+#ifndef DBL_EPSILON
+#define DBL_EPSILON std::numeric_limits<double>::epsilon()
+#endif
 
 namespace OVR {
 

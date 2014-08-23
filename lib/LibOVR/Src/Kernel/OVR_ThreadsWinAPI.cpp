@@ -1006,7 +1006,7 @@ void Thread::SetThreadName( const char* name )
     info.dwThreadID = reinterpret_cast<DWORD>(GetThreadId());
     info.dwFlags = 0;
 
-    __try
+/*     __try
     {
 #ifdef _WIN64
         RaiseException( 0x406D1388, 0, sizeof(info)/sizeof(DWORD), (const ULONG_PTR *)&info );
@@ -1017,7 +1017,7 @@ void Thread::SetThreadName( const char* name )
     __except( GetExceptionCode()==0x406D1388 ? EXCEPTION_CONTINUE_EXECUTION : EXCEPTION_EXECUTE_HANDLER )
     {
         return;
-    }
+    } */
 #endif // OVR_BUILD_SHIPPING
 }
 

@@ -14,7 +14,14 @@ OPTION(OVR_BUILD_SHIPPING "Shipping" ON)
 
 ########################################################################
 
-include_directories("../../i686-w64-mingw32/include")
+# The name of the target operating system
+SET(CMAKE_SYSTEM_NAME Windows)
+
+# mingw32 versions of the different tools
+# (change these depending on your system settings)
+SET(CMAKE_C_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc)
+SET(CMAKE_CXX_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++)
+SET(CMAKE_RC_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/windres)
 
 FILE(GLOB_RECURSE SRCS ./*.cpp)
 #FILE(GLOB_RECURSE SRCS ./Kernel/OVR_ThreadsWinAPI.cpp)
@@ -31,17 +38,27 @@ IF (NOT WITH_GL)
   LIST(REMOVE_ITEM SRCS ${SRCS_EXCL_GL})
   LIST(REMOVE_ITEM HDRS ${HDRS_EXCL_GL})
 ENDIF (NOT WITH_GL)
-FILE(GLOB INCL ./Include/*.h ../../MinGW64/include/*.h)
-FILE(GLOB_RECURSE INCL2 ../../i686-w64-mingw32/include/*.h*)
+FILE(GLOB INCL ./Include/*.h)
 
-get_filename_component(INCL3 "${INCL2}" PATH)
-include_directories(${INCL3})
+MACRO(HEADER_DIRECTORIES return_list)
+    FILE(GLOB new_list C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/i686-w64-mingw32/include/*.h*)
+    SET(dir_list "")
+    FOREACH(file_path ${new_list})
+        GET_FILENAME_COMPONENT(dir_path ${file_path} PATH)
+        SET(dir_list ${dir_list} ${dir_path})
+    ENDFOREACH()
+    LIST(REMOVE_DUPLICATES dir_list)
+    SET(${return_list} ${dir_list})
+ENDMACRO()
+
+HEADER_DIRECTORIES(INCL2)
+INCLUDE_DIRECTORIES(${INCL2})
+message(${INCL2})
 
 ADD_LIBRARY(ovr
 	${SRCS}
 	${HDRS}
 	${INCL}
-	${INCL2}
 	)
 
 IF (MINGW)

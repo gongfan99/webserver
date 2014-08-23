@@ -15,42 +15,59 @@ set (Tutorial_VERSION_MINOR 0)
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}")
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ../../../source/)
+# The name of the target operating system
+SET(CMAKE_SYSTEM_NAME Windows)
+
+# mingw32 versions of the different tools
+# (change these depending on your system settings)
+SET(CMAKE_C_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc)
+SET(CMAKE_CXX_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++)
+SET(CMAKE_RC_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/windres)
 
 # add the executable
-#add_executable(try AdapterForImageProduce_test.cpp ImageProduceCamera.c)
-set(CFILES ${CFILES} OculusDK2_test.cpp)
-#set(CFILES ${CFILES} ../../../source/utils.cpp)
-#set(CFILES ${CFILES} ../../../source/ImageProduceCamera.c)
-set(CFILES ${CFILES} ../../../source/OculusDK2.cpp)
+set(CFILES
+OculusDK2_test.cpp
+../../../source/OculusDK2.cpp
+)
 add_executable(try ${CFILES})
-#add_executable(try ImageDecoderQR_test.cpp ../../../source/ImageProduceCamera.c ../../../source/ImageDecoderQR.cpp)
 
+# add include directories
+set(INCLUDE_DIR
+../../../source
+../../../lib/zxing/cpp/core/src
+../../../lib/i686-w64-mingw32/lib/include
+)
+include_directories( ${INCLUDE_DIR} )
+
+# add static libraries
 add_library(LIB1 STATIC IMPORTED)
+set_target_properties( LIB1 PROPERTIES IMPORTED_LOCATION "../../../lib/zxing/cpp_build/libzxing.a")
+set(LIBS ${LIBS} LIB1)
+
 add_library(LIB2 STATIC IMPORTED)
+set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "../../../lib/LibOVR/build/libovr.a")
+set(LIBS ${LIBS} LIB2)
+
 add_library(LIB3 STATIC IMPORTED)
+set_target_properties( LIB3 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libwinmm.a")
+set(LIBS ${LIBS} LIB3)
 
-find_library(LIB1_ADDRESS libgcc.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
-find_library(LIB2_ADDRESS libstdc++.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
-find_library(LIB3_ADDRESS libzxing.a "../../../lib/zxing/cpp_build")
+add_library(LIB4 STATIC IMPORTED)
+set_target_properties( LIB4 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libws2_32.a")
+set(LIBS ${LIBS} LIB4)
 
-set_target_properties( LIB1 PROPERTIES IMPORTED_LOCATION "${LIB1_ADDRESS}" )
-set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "${LIB2_ADDRESS}" )
-set_target_properties( LIB3 PROPERTIES IMPORTED_LOCATION "${LIB3_ADDRESS}" )
+add_library(LIB5 STATIC IMPORTED)
+set_target_properties( LIB5 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libdbghelp.a")
+set(LIBS ${LIBS} LIB5)
 
-set(LIBS ${LIBS} LIB1 LIB2 LIB3)
-
-include_directories( "../../../source" )
-include_directories( "../../../lib/zxing/cpp/core/src" )
-
+# add opencv library
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW)
-
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )
-  set(LIBS ${LIBS} ${OpenCV_LIBS})
+  #set(LIBS ${LIBS} ${OpenCV_LIBS})
   message( OpenCV found! )
-  message( ${OpenCV_INCLUDE_DIRS} )
+  #message( ${OpenCV_INCLUDE_DIRS} )
 endif (OpenCV_FOUND)
 
 target_link_libraries( try ${LIBS} )

@@ -34,10 +34,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ovr.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/ovr.dir/flags.make
 
 CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_DistortionRenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_DistortionRenderer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp
 
 CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.i
 
 CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_DistortionRenderer.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_DistortionRenderer.cpp.s
 
 CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj.requires
@@ -74,18 +74,18 @@ CMakeFiles/ovr.dir/CAPI/CAPI_DistortionRenderer.cpp.obj.provides.build: CMakeFil
 
 CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_FrameTimeManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_FrameTimeManager.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp
 
 CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.i
 
 CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_FrameTimeManager.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_FrameTimeManager.cpp.s
 
 CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj.requires
@@ -98,18 +98,18 @@ CMakeFiles/ovr.dir/CAPI/CAPI_FrameTimeManager.cpp.obj.provides.build: CMakeFiles
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HMDRenderState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HMDRenderState.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.i
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDRenderState.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDRenderState.cpp.s
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj.requires
@@ -122,18 +122,18 @@ CMakeFiles/ovr.dir/CAPI/CAPI_HMDRenderState.cpp.obj.provides.build: CMakeFiles/o
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HMDState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_4)
+CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HMDState.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.i
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HMDState.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HMDState.cpp.s
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj.requires
@@ -146,18 +146,18 @@ CMakeFiles/ovr.dir/CAPI/CAPI_HMDState.cpp.obj.provides.build: CMakeFiles/ovr.dir
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HSWDisplay.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_5)
+CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/CAPI/CAPI_HSWDisplay.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp > CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.i
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\CAPI\CAPI_HSWDisplay.cpp -o CMakeFiles\ovr.dir\CAPI\CAPI_HSWDisplay.cpp.s
 
 CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj.requires
@@ -170,18 +170,18 @@ CMakeFiles/ovr.dir/CAPI/CAPI_HSWDisplay.cpp.obj.provides.build: CMakeFiles/ovr.d
 
 CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Display.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_6)
+CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Display.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp
 
 CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp > CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp > CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.i
 
 CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Display.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Display.cpp.s
 
 CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj.requires
@@ -194,18 +194,18 @@ CMakeFiles/ovr.dir/Displays/OVR_Display.cpp.obj.provides.build: CMakeFiles/ovr.d
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_Display.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_7)
+CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_Display.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.i
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_Display.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_Display.cpp.s
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj.requires
@@ -218,18 +218,18 @@ CMakeFiles/ovr.dir/Displays/OVR_Win32_Display.cpp.obj.provides.build: CMakeFiles
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_FocusReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_8)
+CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_FocusReader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.i
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_FocusReader.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_FocusReader.cpp.s
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj.requires
@@ -242,18 +242,18 @@ CMakeFiles/ovr.dir/Displays/OVR_Win32_FocusReader.cpp.obj.provides.build: CMakeF
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_RenderShim.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_9)
+CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_RenderShim.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.i
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_RenderShim.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_RenderShim.cpp.s
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj.requires
@@ -266,18 +266,18 @@ CMakeFiles/ovr.dir/Displays/OVR_Win32_RenderShim.cpp.obj.provides.build: CMakeFi
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_ShimFunctions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_10)
+CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Displays/OVR_Win32_ShimFunctions.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp > CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.i
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Displays\OVR_Win32_ShimFunctions.cpp -o CMakeFiles\ovr.dir\Displays\OVR_Win32_ShimFunctions.cpp.s
 
 CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj.requires
@@ -290,18 +290,18 @@ CMakeFiles/ovr.dir/Displays/OVR_Win32_ShimFunctions.cpp.obj.provides.build: CMak
 
 CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Alg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_11)
+CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Alg.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Alg.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Alg.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj.requires
@@ -314,18 +314,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Alg.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ker
 
 CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Allocator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_12)
+CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Allocator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Allocator.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Allocator.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj.requires
@@ -338,18 +338,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Allocator.cpp.obj.provides.build: CMakeFiles/ovr.d
 
 CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Atomic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_13)
+CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Atomic.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Atomic.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Atomic.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj.requires
@@ -362,18 +362,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Atomic.cpp.obj.provides.build: CMakeFiles/ovr.dir/
 
 CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_CRC32.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_14)
+CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_CRC32.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp > CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp > CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_CRC32.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_CRC32.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj.requires
@@ -386,18 +386,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_CRC32.cpp.obj.provides.build: CMakeFiles/ovr.dir/K
 
 CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_File.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_15)
+CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_File.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp > CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp > CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_File.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_File.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj.requires
@@ -410,18 +410,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_File.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ke
 
 CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_FileFILE.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_16)
+CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_FileFILE.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp > CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp > CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_FileFILE.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_FileFILE.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj.requires
@@ -434,18 +434,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_FileFILE.cpp.obj.provides.build: CMakeFiles/ovr.di
 
 CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Lockless.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_17)
+CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Lockless.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Lockless.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Lockless.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj.requires
@@ -458,18 +458,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Lockless.cpp.obj.provides.build: CMakeFiles/ovr.di
 
 CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Log.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_18)
+CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Log.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Log.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Log.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj.requires
@@ -482,18 +482,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Log.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ker
 
 CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Math.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_19)
+CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Math.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Math.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Math.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj.requires
@@ -506,18 +506,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Math.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ke
 
 CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_RefCount.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_20)
+CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_RefCount.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp > CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp > CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_RefCount.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_RefCount.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj.requires
@@ -530,18 +530,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_RefCount.cpp.obj.provides.build: CMakeFiles/ovr.di
 
 CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_SharedMemory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_21)
+CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_SharedMemory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp > CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp > CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SharedMemory.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_SharedMemory.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj.requires
@@ -554,18 +554,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_SharedMemory.cpp.obj.provides.build: CMakeFiles/ov
 
 CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Std.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_22)
+CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Std.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Std.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Std.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj.requires
@@ -578,18 +578,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Std.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ker
 
 CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_23)
+CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj.requires
@@ -602,18 +602,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_String.cpp.obj.provides.build: CMakeFiles/ovr.dir/
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String_FormatUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_24)
+CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String_FormatUtil.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_FormatUtil.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String_FormatUtil.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj.requires
@@ -626,18 +626,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_String_FormatUtil.cpp.obj.provides.build: CMakeFil
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String_PathUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_25)
+CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_String_PathUtil.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp > CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_String_PathUtil.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_String_PathUtil.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj.requires
@@ -650,18 +650,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_String_PathUtil.cpp.obj.provides.build: CMakeFiles
 
 CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_SysFile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_26)
+CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_SysFile.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp > CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp > CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_SysFile.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_SysFile.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj.requires
@@ -674,18 +674,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_SysFile.cpp.obj.provides.build: CMakeFiles/ovr.dir
 
 CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_System.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_27)
+CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_System.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp > CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp > CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_System.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_System.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj.requires
@@ -698,18 +698,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_System.cpp.obj.provides.build: CMakeFiles/ovr.dir/
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_ThreadCommandQueue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_28)
+CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_ThreadCommandQueue.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp > CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp > CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadCommandQueue.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadCommandQueue.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj.requires
@@ -722,18 +722,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_ThreadCommandQueue.cpp.obj.provides.build: CMakeFi
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_ThreadsWinAPI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_29)
+CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_ThreadsWinAPI.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp > CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp > CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_ThreadsWinAPI.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_ThreadsWinAPI.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj.requires
@@ -746,18 +746,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_ThreadsWinAPI.cpp.obj.provides.build: CMakeFiles/o
 
 CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Timer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_30)
+CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_Timer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp > CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_Timer.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_Timer.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj.requires
@@ -770,18 +770,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_Timer.cpp.obj.provides.build: CMakeFiles/ovr.dir/K
 
 CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_UTF8Util.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_31)
+CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Kernel/OVR_UTF8Util.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp
 
 CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp > CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp > CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.i
 
 CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Kernel\OVR_UTF8Util.cpp -o CMakeFiles\ovr.dir\Kernel\OVR_UTF8Util.cpp.s
 
 CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj.requires
@@ -794,18 +794,18 @@ CMakeFiles/ovr.dir/Kernel/OVR_UTF8Util.cpp.obj.provides.build: CMakeFiles/ovr.di
 
 CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_BitStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_32)
+CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_BitStream.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp > CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp > CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp -o CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_BitStream.cpp -o CMakeFiles\ovr.dir\Net\OVR_BitStream.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj.requires
@@ -818,18 +818,18 @@ CMakeFiles/ovr.dir/Net/OVR_BitStream.cpp.obj.provides.build: CMakeFiles/ovr.dir/
 
 CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_NetworkPlugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_33)
+CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_NetworkPlugin.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp > CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp > CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp -o CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_NetworkPlugin.cpp -o CMakeFiles\ovr.dir\Net\OVR_NetworkPlugin.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj.requires
@@ -842,18 +842,18 @@ CMakeFiles/ovr.dir/Net/OVR_NetworkPlugin.cpp.obj.provides.build: CMakeFiles/ovr.
 
 CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_PacketizedTCPSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_34)
+CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_PacketizedTCPSocket.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp > CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp > CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp -o CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_PacketizedTCPSocket.cpp -o CMakeFiles\ovr.dir\Net\OVR_PacketizedTCPSocket.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj.requires
@@ -866,18 +866,18 @@ CMakeFiles/ovr.dir/Net/OVR_PacketizedTCPSocket.cpp.obj.provides.build: CMakeFile
 
 CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_RPC1.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_35)
+CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_RPC1.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp > CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp > CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp -o CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_RPC1.cpp -o CMakeFiles\ovr.dir\Net\OVR_RPC1.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj.requires
@@ -890,18 +890,18 @@ CMakeFiles/ovr.dir/Net/OVR_RPC1.cpp.obj.provides.build: CMakeFiles/ovr.dir/Net/O
 
 CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Session.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_36)
+CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Session.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Session.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Session.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_Session.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_Session.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp > CMakeFiles\ovr.dir\Net\OVR_Session.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp > CMakeFiles\ovr.dir\Net\OVR_Session.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_Session.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_Session.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp -o CMakeFiles\ovr.dir\Net\OVR_Session.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Session.cpp -o CMakeFiles\ovr.dir\Net\OVR_Session.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj.requires
@@ -914,18 +914,18 @@ CMakeFiles/ovr.dir/Net/OVR_Session.cpp.obj.provides.build: CMakeFiles/ovr.dir/Ne
 
 CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Socket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_37)
+CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Socket.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp > CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp > CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp -o CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Socket.cpp -o CMakeFiles\ovr.dir\Net\OVR_Socket.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj.requires
@@ -938,18 +938,18 @@ CMakeFiles/ovr.dir/Net/OVR_Socket.cpp.obj.provides.build: CMakeFiles/ovr.dir/Net
 
 CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Win32_Socket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_38)
+CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Net/OVR_Win32_Socket.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp
 
 CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp > CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp > CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.i
 
 CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp -o CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Net\OVR_Win32_Socket.cpp -o CMakeFiles\ovr.dir\Net\OVR_Win32_Socket.cpp.s
 
 CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj.requires
@@ -962,18 +962,18 @@ CMakeFiles/ovr.dir/Net/OVR_Win32_Socket.cpp.obj.provides.build: CMakeFiles/ovr.d
 
 CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/OVR_CAPI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_39)
+CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_CAPI.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_CAPI.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_CAPI.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp
 
 CMakeFiles/ovr.dir/OVR_CAPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/OVR_CAPI.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp > CMakeFiles\ovr.dir\OVR_CAPI.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp > CMakeFiles\ovr.dir\OVR_CAPI.cpp.i
 
 CMakeFiles/ovr.dir/OVR_CAPI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/OVR_CAPI.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp -o CMakeFiles\ovr.dir\OVR_CAPI.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_CAPI.cpp -o CMakeFiles\ovr.dir\OVR_CAPI.cpp.s
 
 CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj.requires
@@ -986,18 +986,18 @@ CMakeFiles/ovr.dir/OVR_CAPI.cpp.obj.provides.build: CMakeFiles/ovr.dir/OVR_CAPI.
 
 CMakeFiles/ovr.dir/OVR_JSON.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/OVR_JSON.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/OVR_JSON.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/OVR_JSON.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_40)
+CMakeFiles/ovr.dir/OVR_JSON.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_JSON.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/OVR_JSON.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_JSON.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_JSON.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp
 
 CMakeFiles/ovr.dir/OVR_JSON.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/OVR_JSON.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp > CMakeFiles\ovr.dir\OVR_JSON.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp > CMakeFiles\ovr.dir\OVR_JSON.cpp.i
 
 CMakeFiles/ovr.dir/OVR_JSON.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/OVR_JSON.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp -o CMakeFiles\ovr.dir\OVR_JSON.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_JSON.cpp -o CMakeFiles\ovr.dir\OVR_JSON.cpp.s
 
 CMakeFiles/ovr.dir/OVR_JSON.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/OVR_JSON.cpp.obj.requires
@@ -1010,18 +1010,18 @@ CMakeFiles/ovr.dir/OVR_JSON.cpp.obj.provides.build: CMakeFiles/ovr.dir/OVR_JSON.
 
 CMakeFiles/ovr.dir/OVR_Profile.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/OVR_Profile.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/OVR_Profile.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/OVR_Profile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_41)
+CMakeFiles/ovr.dir/OVR_Profile.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_Profile.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/OVR_Profile.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_Profile.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_Profile.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp
 
 CMakeFiles/ovr.dir/OVR_Profile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/OVR_Profile.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp > CMakeFiles\ovr.dir\OVR_Profile.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp > CMakeFiles\ovr.dir\OVR_Profile.cpp.i
 
 CMakeFiles/ovr.dir/OVR_Profile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/OVR_Profile.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp -o CMakeFiles\ovr.dir\OVR_Profile.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Profile.cpp -o CMakeFiles\ovr.dir\OVR_Profile.cpp.s
 
 CMakeFiles/ovr.dir/OVR_Profile.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/OVR_Profile.cpp.obj.requires
@@ -1034,18 +1034,18 @@ CMakeFiles/ovr.dir/OVR_Profile.cpp.obj.provides.build: CMakeFiles/ovr.dir/OVR_Pr
 
 CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/OVR_SerialFormat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_42)
+CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_SerialFormat.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp
 
 CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp > CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp > CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.i
 
 CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp -o CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_SerialFormat.cpp -o CMakeFiles\ovr.dir\OVR_SerialFormat.cpp.s
 
 CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj.requires
@@ -1058,18 +1058,18 @@ CMakeFiles/ovr.dir/OVR_SerialFormat.cpp.obj.provides.build: CMakeFiles/ovr.dir/O
 
 CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/OVR_Stereo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_43)
+CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_Stereo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_Stereo.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\OVR_Stereo.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp
 
 CMakeFiles/ovr.dir/OVR_Stereo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/OVR_Stereo.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp > CMakeFiles\ovr.dir\OVR_Stereo.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp > CMakeFiles\ovr.dir\OVR_Stereo.cpp.i
 
 CMakeFiles/ovr.dir/OVR_Stereo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/OVR_Stereo.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp -o CMakeFiles\ovr.dir\OVR_Stereo.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\OVR_Stereo.cpp -o CMakeFiles\ovr.dir\OVR_Stereo.cpp.s
 
 CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj.requires
@@ -1082,18 +1082,18 @@ CMakeFiles/ovr.dir/OVR_Stereo.cpp.obj.provides.build: CMakeFiles/ovr.dir/OVR_Ste
 
 CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Service/Service_NetClient.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_44)
+CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Service/Service_NetClient.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp
 
 CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp > CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp > CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.i
 
 CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp -o CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetClient.cpp -o CMakeFiles\ovr.dir\Service\Service_NetClient.cpp.s
 
 CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj.requires
@@ -1106,18 +1106,18 @@ CMakeFiles/ovr.dir/Service/Service_NetClient.cpp.obj.provides.build: CMakeFiles/
 
 CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Service/Service_NetSessionCommon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_45)
+CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Service/Service_NetSessionCommon.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp
 
 CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp > CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp > CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.i
 
 CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp -o CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Service\Service_NetSessionCommon.cpp -o CMakeFiles\ovr.dir\Service\Service_NetSessionCommon.cpp.s
 
 CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj.requires
@@ -1130,18 +1130,18 @@ CMakeFiles/ovr.dir/Service/Service_NetSessionCommon.cpp.obj.provides.build: CMak
 
 CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Tracking/Tracking_SensorStateReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_46)
+CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Tracking/Tracking_SensorStateReader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp
 
 CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp > CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp > CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.i
 
 CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp -o CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Tracking\Tracking_SensorStateReader.cpp -o CMakeFiles\ovr.dir\Tracking\Tracking_SensorStateReader.cpp.s
 
 CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj.requires
@@ -1154,18 +1154,18 @@ CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj.provides.build: C
 
 CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_ImageWindow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_47)
+CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Util/Util_ImageWindow.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp
 
 CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp > CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp > CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.i
 
 CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp -o CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_ImageWindow.cpp -o CMakeFiles\ovr.dir\Util\Util_ImageWindow.cpp.s
 
 CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj.requires
@@ -1178,18 +1178,18 @@ CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj.provides.build: CMakeFiles/ovr.
 
 CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_Interface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_48)
+CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Util/Util_Interface.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_Interface.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_Interface.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp
 
 CMakeFiles/ovr.dir/Util/Util_Interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_Interface.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp > CMakeFiles\ovr.dir\Util\Util_Interface.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp > CMakeFiles\ovr.dir\Util\Util_Interface.cpp.i
 
 CMakeFiles/ovr.dir/Util/Util_Interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_Interface.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp -o CMakeFiles\ovr.dir\Util\Util_Interface.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Interface.cpp -o CMakeFiles\ovr.dir\Util\Util_Interface.cpp.s
 
 CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj.requires
@@ -1202,18 +1202,18 @@ CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj.provides.build: CMakeFiles/ovr.di
 
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_LatencyTest2Reader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_49)
+CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Util/Util_LatencyTest2Reader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp
 
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp > CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp > CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.i
 
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp -o CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LatencyTest2Reader.cpp -o CMakeFiles\ovr.dir\Util\Util_LatencyTest2Reader.cpp.s
 
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj.requires
@@ -1224,44 +1224,20 @@ CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj.provides: CMakeFiles/ovr
 
 CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj.provides.build: CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj
 
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj: CMakeFiles/ovr.dir/flags.make
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_LongPollThread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_50)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_LongPollThread.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LongPollThread.cpp
-
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LongPollThread.cpp > CMakeFiles\ovr.dir\Util\Util_LongPollThread.cpp.i
-
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_LongPollThread.cpp -o CMakeFiles\ovr.dir\Util\Util_LongPollThread.cpp.s
-
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.requires:
-.PHONY : CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.requires
-
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.provides: CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.provides.build
-.PHONY : CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.provides
-
-CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.provides.build: CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj
-
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj: CMakeFiles/ovr.dir/flags.make
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_Render_Stereo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_51)
+CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/Util/Util_Render_Stereo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp
 
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp > CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp > CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.i
 
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp -o CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Render_Stereo.cpp -o CMakeFiles\ovr.dir\Util\Util_Render_Stereo.cpp.s
 
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.requires:
 .PHONY : CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.requires
@@ -1271,30 +1247,6 @@ CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.provides: CMakeFiles/ovr.dir/
 .PHONY : CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.provides
 
 CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.provides.build: CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj: CMakeFiles/ovr.dir/flags.make
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj: CMakeFiles/ovr.dir/includes_CXX.rsp
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj: C:/Users/fgong/Downloads/ServerApp/webserver/lib/LibOVR/Src/Util/Util_Settings.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles $(CMAKE_PROGRESS_52)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\ovr.dir\Util\Util_Settings.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Settings.cpp
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ovr.dir/Util/Util_Settings.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Settings.cpp > CMakeFiles\ovr.dir\Util\Util_Settings.cpp.i
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ovr.dir/Util/Util_Settings.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src\Util\Util_Settings.cpp -o CMakeFiles\ovr.dir\Util\Util_Settings.cpp.s
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.requires:
-.PHONY : CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.requires
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.provides: CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.provides.build
-.PHONY : CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.provides
-
-CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.provides.build: CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj
 
 # Object files for target ovr
 ovr_OBJECTS = \
@@ -1347,9 +1299,7 @@ ovr_OBJECTS = \
 "CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj" \
 "CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj" \
 "CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj" \
-"CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj" \
-"CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj" \
-"CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj"
+"CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj"
 
 # External object files for target ovr
 ovr_EXTERNAL_OBJECTS =
@@ -1403,9 +1353,7 @@ libovr.a: CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateReader.cpp.obj
 libovr.a: CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj
 libovr.a: CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj
 libovr.a: CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj
-libovr.a: CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj
 libovr.a: CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj
-libovr.a: CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj
 libovr.a: CMakeFiles/ovr.dir/build.make
 libovr.a: CMakeFiles/ovr.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libovr.a"
@@ -1465,9 +1413,7 @@ CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Tracking/Tracking_SensorStateRea
 CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj.requires
 CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj.requires
 CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj.requires
-CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj.requires
 CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj.requires
-CMakeFiles/ovr.dir/requires: CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj.requires
 .PHONY : CMakeFiles/ovr.dir/requires
 
 CMakeFiles/ovr.dir/clean:
@@ -1475,6 +1421,6 @@ CMakeFiles/ovr.dir/clean:
 .PHONY : CMakeFiles/ovr.dir/clean
 
 CMakeFiles/ovr.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\ovr.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\ovr.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ovr.dir/depend
 

@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/MinGW/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "4.8.1")
@@ -6,13 +6,13 @@ set(CMAKE_CXX_PLATFORM_ID "MinGW")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_AR "C:/MinGW/bin/ar.exe")
-set(CMAKE_RANLIB "C:/MinGW/bin/ranlib.exe")
-set(CMAKE_LINKER "C:/MinGW/bin/ld.exe")
+set(CMAKE_AR "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe")
+set(CMAKE_RANLIB "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ranlib.exe")
+set(CMAKE_LINKER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ld.exe")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
-set(CMAKE_CXX_ABI_COMPILED FALSE)
+set(CMAKE_CXX_ABI_COMPILED TRUE)
 set(CMAKE_COMPILER_IS_MINGW 1)
 set(CMAKE_COMPILER_IS_CYGWIN )
 if(CMAKE_COMPILER_IS_CYGWIN)
@@ -32,7 +32,7 @@ set(CMAKE_CXX_LINKER_PREFERENCE 30)
 set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "4")
 set(CMAKE_CXX_COMPILER_ABI "")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
 
@@ -51,8 +51,8 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;iconv;mingw32;moldname;mingwex;msvcrt")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc/i686-w64-mingw32/4.8.1;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/i686-w64-mingw32/lib;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 

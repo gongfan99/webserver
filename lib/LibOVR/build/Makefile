@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\Src
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\Src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\lib\LibOVR\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\LibOVR\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1290,30 +1290,6 @@ Util/Util_LatencyTest2Reader.cpp.s:
 	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.s
 .PHONY : Util/Util_LatencyTest2Reader.cpp.s
 
-Util/Util_LongPollThread.obj: Util/Util_LongPollThread.cpp.obj
-.PHONY : Util/Util_LongPollThread.obj
-
-# target to build an object file
-Util/Util_LongPollThread.cpp.obj:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj
-.PHONY : Util/Util_LongPollThread.cpp.obj
-
-Util/Util_LongPollThread.i: Util/Util_LongPollThread.cpp.i
-.PHONY : Util/Util_LongPollThread.i
-
-# target to preprocess a source file
-Util/Util_LongPollThread.cpp.i:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.i
-.PHONY : Util/Util_LongPollThread.cpp.i
-
-Util/Util_LongPollThread.s: Util/Util_LongPollThread.cpp.s
-.PHONY : Util/Util_LongPollThread.s
-
-# target to generate assembly for a file
-Util/Util_LongPollThread.cpp.s:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.s
-.PHONY : Util/Util_LongPollThread.cpp.s
-
 Util/Util_Render_Stereo.obj: Util/Util_Render_Stereo.cpp.obj
 .PHONY : Util/Util_Render_Stereo.obj
 
@@ -1337,30 +1313,6 @@ Util/Util_Render_Stereo.s: Util/Util_Render_Stereo.cpp.s
 Util/Util_Render_Stereo.cpp.s:
 	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.s
 .PHONY : Util/Util_Render_Stereo.cpp.s
-
-Util/Util_Settings.obj: Util/Util_Settings.cpp.obj
-.PHONY : Util/Util_Settings.obj
-
-# target to build an object file
-Util/Util_Settings.cpp.obj:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj
-.PHONY : Util/Util_Settings.cpp.obj
-
-Util/Util_Settings.i: Util/Util_Settings.cpp.i
-.PHONY : Util/Util_Settings.i
-
-# target to preprocess a source file
-Util/Util_Settings.cpp.i:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_Settings.cpp.i
-.PHONY : Util/Util_Settings.cpp.i
-
-Util/Util_Settings.s: Util/Util_Settings.cpp.s
-.PHONY : Util/Util_Settings.s
-
-# target to generate assembly for a file
-Util/Util_Settings.cpp.s:
-	$(MAKE) -f CMakeFiles\ovr.dir\build.make CMakeFiles/ovr.dir/Util/Util_Settings.cpp.s
-.PHONY : Util/Util_Settings.cpp.s
 
 # Help Target
 help:
@@ -1518,15 +1470,9 @@ help:
 	@echo ... Util/Util_LatencyTest2Reader.obj
 	@echo ... Util/Util_LatencyTest2Reader.i
 	@echo ... Util/Util_LatencyTest2Reader.s
-	@echo ... Util/Util_LongPollThread.obj
-	@echo ... Util/Util_LongPollThread.i
-	@echo ... Util/Util_LongPollThread.s
 	@echo ... Util/Util_Render_Stereo.obj
 	@echo ... Util/Util_Render_Stereo.i
 	@echo ... Util/Util_Render_Stereo.s
-	@echo ... Util/Util_Settings.obj
-	@echo ... Util/Util_Settings.i
-	@echo ... Util/Util_Settings.s
 .PHONY : help
 
 

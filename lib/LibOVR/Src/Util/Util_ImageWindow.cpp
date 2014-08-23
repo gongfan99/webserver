@@ -107,8 +107,8 @@ ImageWindow::ImageWindow( uint32_t width, uint32_t height ) :
 	frontBufferMutex( new Mutex() )
 {
 
-	HINSTANCE hInst = LoadLibrary( L"d2d1.dll" );
-	HINSTANCE hInstWrite = LoadLibrary( L"Dwrite.dll" );
+	HINSTANCE hInst = LoadLibraryW( L"d2d1.dll" );
+	HINSTANCE hInstWrite = LoadLibraryW( L"Dwrite.dll" );
 
 	D2D1CreateFactoryFn createFactory = NULL;
 	DWriteCreateFactoryFn writeFactory = NULL;
@@ -412,8 +412,8 @@ void ImageWindow::OnPaint()
 			tmpString[i] = (WCHAR)textIt->text.GetCharAt( i );
 		}
 					
-		pRT->DrawTextW( tmpString, (UINT32)textIt->text.GetLength(), textFormat,
-			D2D1::RectF(textIt->x, textIt->y, renderTargetSize.width, renderTargetSize.height), aBrush );
+/* 		pRT->DrawTextW( tmpString, (UINT32)textIt->text.GetLength(), textFormat,
+			D2D1::RectF(textIt->x, textIt->y, renderTargetSize.width, renderTargetSize.height), aBrush ); */
 
 		free( tmpString );
 

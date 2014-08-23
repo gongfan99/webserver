@@ -48,9 +48,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ovr.dir/Util/Util_ImageWindow.cpp.obj"
   "CMakeFiles/ovr.dir/Util/Util_Interface.cpp.obj"
   "CMakeFiles/ovr.dir/Util/Util_LatencyTest2Reader.cpp.obj"
-  "CMakeFiles/ovr.dir/Util/Util_LongPollThread.cpp.obj"
   "CMakeFiles/ovr.dir/Util/Util_Render_Stereo.cpp.obj"
-  "CMakeFiles/ovr.dir/Util/Util_Settings.cpp.obj"
   "libovr.pdb"
   "libovr.a"
 )

@@ -1,7 +1,7 @@
 #ifndef __OCULUSBASE_HPP__
 #define __OCULUSBASE_HPP__
 
-#include "OVR_CAPI.h"
+#include "../lib/LibOVR/Src/OVR_CAPI.h"
 
 namespace ozo {
 
