@@ -37,8 +37,4 @@ OculusDK2::~OculusDK2() {
 	ovr_Shutdown();
 }
 
-void OculusDK2::process() {
-	*data = ovrHmd_GetTrackingState(hmd, ovr_GetTimeInSeconds());
-}
-
 } //namespace ozo

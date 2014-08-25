@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_CAPI.h
+stdint.h
+-
+
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusBase.hpp
+../lib/LibOVR/Src/OVR_CAPI.h
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/LibOVR/Src/OVR_CAPI.h
+
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp
+OculusDK2.hpp
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.hpp
+iostream
+-
+
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.hpp
+OculusBase.hpp
+C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusBase.hpp
+
 C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/OculusDK2/source/../../../lib/LibOVR/Src/OVR_CAPI.h
 stdint.h
 -

@@ -9,7 +9,9 @@ class OculusDK2 : public OculusBase {
 public:
 	OculusDK2();
 	~OculusDK2();
-	void process();
+	inline void process(){
+		*data = ovrHmd_GetTrackingState(hmd, ovr_GetTimeInSeconds());
+	};
 };
 
 } //namespace ozo
