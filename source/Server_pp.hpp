@@ -5,6 +5,7 @@
 #include "../lib/websocketpp/server.hpp"
 #include "Server.hpp"
 #include "OculusDK2.hpp"
+#include <boost/format.hpp>
 
 namespace ozo {
 
@@ -16,7 +17,7 @@ private:
 	ovrQuatf quat;
 	ovrVector3f  pos;
 public:
-	Server_pp();
+	Server_pp(OculusBase *o, ImageDecoder *d);
 	~Server_pp();
 	void process();
 	void on_open(websocketpp::connection_hdl hdl);

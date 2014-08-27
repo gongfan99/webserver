@@ -1,7 +1,7 @@
 #ifndef __SERVER_HPP__
 #define __SERVER_HPP__
 
-#include "Oculus.hpp"
+#include "OculusBase.hpp"
 #include "ImageDecoder.hpp"
 
 namespace ozo {
@@ -9,10 +9,10 @@ namespace ozo {
 class Server {
 public:
 	//all are external input interfaces
-	Oculus *oculus;
+	OculusBase *oculus;
 	ImageDecoder *decoder;
 
-	Server() {}; 
+	Server(OculusBase *o, ImageDecoder *d) : oculus(o), decoder(d) {}; 
 	~Server() {};	
 };
 

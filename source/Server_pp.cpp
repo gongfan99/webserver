@@ -8,7 +8,7 @@ using websocketpp::lib::bind;
 
 namespace ozo {
 
-Server_pp::Server_pp() {
+Server_pp::Server_pp(OculusBase *o, ImageDecoder *d) : Server(o, d) {
 	mSocketConnected = true;
 	
 	server.set_open_handler(bind(&Server_pp::on_open,this,::_1));
@@ -23,7 +23,7 @@ Server_pp::Server_pp() {
 
 Server_pp::~Server_pp() {
 	std::string d = "abcdefg";
-	server.close(mHandle, close::status::normal, "Connection closed.");
+	server.close(mHandle, websocketpp::close::status::normal, "Connection closed.");
 }
 
 void Server_pp::process() {
@@ -44,15 +44,16 @@ void Server_pp::process() {
         fmt % pos.y;
         fmt % pos.z;
 
-        server.send(mHandle, fmt.str(), frame::opcode::TEXT);
+        server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 	}
 	server.poll();
 }
 
 void Server_pp::on_open(websocketpp::connection_hdl hdl) {
+	mHandle = hdl;
     // Only accept connections from localhost
     if( server.get_con_from_hdl(mHandle)->get_host() != "localhost"){
-        server.close(hdl, close::status::normal, "Connection closed.");
+        server.close(hdl, websocketpp::close::status::normal, "Connection closed.");
 		return;
     }
     
@@ -62,7 +63,7 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
 	boost::format fmt("{ \"m\" : \"config\", \"name\" : [%s] }");
 	fmt % oculus->hmd->ProductName;
 
-	server.send(mHandle, fmt.str(), frame::opcode::TEXT);
+	server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 	server.poll();
 }
 
