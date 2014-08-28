@@ -8,9 +8,7 @@ using websocketpp::lib::bind;
 
 namespace ozo {
 
-Server_pp::Server_pp(OculusBase *o, ImageDecoder *d) : Server(o, d) {
-	mSocketConnected = true;
-	
+Server_pp::Server_pp(OculusBase *o, ImageDecoder *d) : Server(o, d), mSocketConnected(false) {
 	server.set_open_handler(bind(&Server_pp::on_open,this,::_1));
 	//server.set_fail_handler(bind(&Server_pp::on_fail,this,::_1));
 	server.set_close_handler(bind(&Server_pp::on_close,this,::_1));
@@ -23,7 +21,7 @@ Server_pp::Server_pp(OculusBase *o, ImageDecoder *d) : Server(o, d) {
 
 Server_pp::~Server_pp() {
 	std::string d = "abcdefg";
-	server.close(mHandle, websocketpp::close::status::normal, "Connection closed.");
+	if (mSocketConnected) server.close(mHandle, websocketpp::close::status::normal, "Connection closed.");
 }
 
 void Server_pp::process() {
