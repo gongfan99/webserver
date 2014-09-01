@@ -1686,6 +1686,9 @@ CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/sourc
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj: C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect.hpp
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj: C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/video/include/opencv2/video/tracking.hpp
 
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.hpp
+
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../../boost_1_56_0/boost/aligned_storage.hpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../../boost_1_56_0/boost/array.hpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../../boost_1_56_0/boost/asio.hpp
@@ -3312,6 +3315,7 @@ CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/S
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../source/OculusDK2.hpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../source/Server.hpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../source/Server_pp.hpp
+CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../source/utils.hpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/Server_pp_test.cpp
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv/cv.h
 CMakeFiles/try.dir/Server_pp_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv/highgui.h

@@ -162,6 +162,30 @@ C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
 .PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
 
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
+
+# target to build an object file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
+
+# target to preprocess a source file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
+
+# target to generate assembly for a file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+
 Server_pp_test.obj: Server_pp_test.cpp.obj
 .PHONY : Server_pp_test.obj
 
@@ -201,6 +225,9 @@ help:
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.obj
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.i
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
 	@echo ... Server_pp_test.obj
 	@echo ... Server_pp_test.i
 	@echo ... Server_pp_test.s

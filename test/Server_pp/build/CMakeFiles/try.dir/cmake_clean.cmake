@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/try.dir/Server_pp_test.cpp.obj"
   "CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj"
   "CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj"
+  "CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj"
   "try.pdb"
   "try.exe"
   "try.exe.manifest"

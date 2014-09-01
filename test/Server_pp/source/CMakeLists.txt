@@ -29,6 +29,7 @@ set(CFILES
 Server_pp_test.cpp
 ../../../source/Server_pp.cpp
 ../../../source/OculusDK2.cpp
+../../../source/utils.cpp
 )
 add_executable(try ${CFILES})
 
