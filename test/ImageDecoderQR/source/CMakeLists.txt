@@ -18,33 +18,51 @@ include_directories("${PROJECT_BINARY_DIR}")
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ../../../source/)
 
 # add the executable
-#add_executable(try AdapterForImageProduce_test.cpp ImageProduceCamera.c)
-set(CFILES ${CFILES} ImageDecoderQR_test.cpp)
-set(CFILES ${CFILES} ../../../source/utils.cpp)
-set(CFILES ${CFILES} ../../../source/ImageProduceCamera.c)
-set(CFILES ${CFILES} ../../../source/ImageDecoderQR.cpp)
+set(CFILES
+ImageDecoderQR_test.cpp
+../../../source/ImageProduceCamera.c
+../../../source/ImageDecoderQR.cpp
+../../../source/utils.cpp
+)
 add_executable(try ${CFILES})
-#add_executable(try ImageDecoderQR_test.cpp ../../../source/ImageProduceCamera.c ../../../source/ImageDecoderQR.cpp)
 
+# add include directories
+set(INCLUDE_DIR
+../../../source
+../../../lib
+../../../lib/zxing/cpp/core/src
+../../../lib/i686-w64-mingw32/lib/include
+../../../../boost_1_56_0
+)
+include_directories( ${INCLUDE_DIR} )
+
+# add static libraries
 add_library(LIB1 STATIC IMPORTED)
+set_target_properties( LIB1 PROPERTIES IMPORTED_LOCATION "../../../lib/zxing/cpp_build/libzxing.a")
+set(LIBS ${LIBS} LIB1)
+
 add_library(LIB2 STATIC IMPORTED)
+set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "../../../lib/LibOVR/build/libovr.a")
+set(LIBS ${LIBS} LIB2)
+
 add_library(LIB3 STATIC IMPORTED)
+set_target_properties( LIB3 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libwsock32.a")
+set(LIBS ${LIBS} LIB3)
 
-find_library(LIB1_ADDRESS libgcc.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
-find_library(LIB2_ADDRESS libstdc++.a "C:/MinGW/lib/gcc/mingw32/4.8.1")
-find_library(LIB3_ADDRESS libzxing.a "../../../lib/zxing/cpp_build")
+add_library(LIB4 STATIC IMPORTED)
+set_target_properties( LIB4 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libws2_32.a")
+set(LIBS ${LIBS} LIB4)
 
-set_target_properties( LIB1 PROPERTIES IMPORTED_LOCATION "${LIB1_ADDRESS}" )
-set_target_properties( LIB2 PROPERTIES IMPORTED_LOCATION "${LIB2_ADDRESS}" )
-set_target_properties( LIB3 PROPERTIES IMPORTED_LOCATION "${LIB3_ADDRESS}" )
+add_library(LIB6 STATIC IMPORTED)
+set_target_properties( LIB6 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libwinmm.a")
+set(LIBS ${LIBS} LIB6)
 
-set(LIBS ${LIBS} LIB1 LIB2 LIB3)
+add_library(LIB7 STATIC IMPORTED)
+set_target_properties( LIB7 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libdbghelp.a")
+set(LIBS ${LIBS} LIB7)
 
-include_directories( "../../../source" )
-include_directories( "../../../lib/zxing/cpp/core/src" )
-
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW)
-
+# add opencv library
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64)
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )

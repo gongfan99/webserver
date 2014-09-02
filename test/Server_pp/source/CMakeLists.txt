@@ -29,6 +29,9 @@ set(CFILES
 Server_pp_test.cpp
 ../../../source/Server_pp.cpp
 ../../../source/OculusDK2.cpp
+../../../source/ImageProduceCamera.c
+../../../source/ImageDecoderQR.cpp
+../../../source/utils.cpp
 )
 add_executable(try ${CFILES})
 
@@ -71,12 +74,16 @@ add_library(LIB7 STATIC IMPORTED)
 set_target_properties( LIB7 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-mingw32/lib/libdbghelp.a")
 set(LIBS ${LIBS} LIB7)
 
+add_library(LIB8 STATIC IMPORTED)
+set_target_properties( LIB8 PROPERTIES IMPORTED_LOCATION "../../../../boost_1_56_0/stage/lib/libboost_thread-mgw48-mt-s-1_56.a")
+set(LIBS ${LIBS} LIB8)
+
 # add opencv library
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64)
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )
-  #set(LIBS ${LIBS} ${OpenCV_LIBS})
+  set(LIBS ${LIBS} ${OpenCV_LIBS})
   message( OpenCV found! )
   #message( ${OpenCV_INCLUDE_DIRS} )
 endif (OpenCV_FOUND)

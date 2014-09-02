@@ -1,1 +1,1 @@
--isystem C:/Users/fgong/Downloads/ServerApp/zxing/cpp/./core/lib/win32 -IC:/Users/fgong/Downloads/ServerApp/zxing/cpp/./core/src 
+-isystem C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/./core/lib/win32 -IC:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/./core/src 

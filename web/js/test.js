@@ -3,9 +3,18 @@
 require([
 "js/OculusBridge.js",
 "js/async.js"], function(){
+	var div = document.getElementById("textDiv");
+	div.textContent = "I am here";
+
+	window.onbeforeunload = function () {
+		bridge.disconnect();
+		return "Do you really want to close?";
+	};
+
 	var bridge = new OculusBridge({
 		"onOrientationUpdate" : function(quatValues) {
-			giantSquid.quaternion.set(quatValues.x, quatValues.y, quatValues.z, quatValues.w);
+			//giantSquid.quaternion.set(quatValues.x, quatValues.y, quatValues.z, quatValues.w);
+			div.textContent = quatValues.w.toString()+" "+quatValues.x.toString()+" "+quatValues.y.toString()+" "+quatValues.z.toString();
 		}
 	});
 

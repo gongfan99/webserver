@@ -120,11 +120,86 @@ CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/sourc
 
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj.provides.build: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
 
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: CMakeFiles/try.dir/includes_C.rsp
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.i
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.s
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.provides.build: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp.i
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageDecoderQR.cpp.s
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.provides.build: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj: CMakeFiles/try.dir/flags.make
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj: CMakeFiles/try.dir/includes_CXX.rsp
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp.i
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s"
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\utils.cpp.s
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.requires:
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.requires
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.provides: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.provides.build
+.PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.provides
+
+CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.provides.build: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+
 # Object files for target try
 try_OBJECTS = \
 "CMakeFiles/try.dir/Server_pp_test.cpp.obj" \
 "CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj" \
-"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj"
+"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj" \
+"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj" \
+"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj" \
+"CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj"
 
 # External object files for target try
 try_EXTERNAL_OBJECTS =
@@ -132,6 +207,9 @@ try_EXTERNAL_OBJECTS =
 try.exe: CMakeFiles/try.dir/Server_pp_test.cpp.obj
 try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj
 try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
+try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
 try.exe: CMakeFiles/try.dir/build.make
 try.exe: ../../../lib/zxing/cpp_build/libzxing.a
 try.exe: ../../../lib/LibOVR/build/libovr.a
@@ -140,6 +218,46 @@ try.exe: ../../../lib/i686-w64-mingw32/lib/libws2_32.a
 try.exe: ../../../../boost_1_56_0/stage/lib/libboost_system-mgw48-mt-1_56.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libwinmm.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libdbghelp.a
+try.exe: ../../../../boost_1_56_0/stage/lib/libboost_thread-mgw48-mt-s-1_56.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_core249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_flann249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_imgproc249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_highgui249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_features2d249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_calib3d249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_ml249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_video249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_legacy249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_objdetect249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_photo249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_gpu249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_videostab249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_ts249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_ocl249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_superres249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_nonfree249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_stitching249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_contrib249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_nonfree249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_gpu249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_legacy249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_photo249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_ocl249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_calib3d249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_features2d249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_flann249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_ml249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_video249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_objdetect249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_highgui249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_imgproc249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_core249.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/liblibjpeg.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/liblibpng.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/liblibtiff.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/liblibjasper.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/libIlmImf.a
+try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/3rdparty/lib/libzlib.a
 try.exe: CMakeFiles/try.dir/objects1.rsp
 try.exe: CMakeFiles/try.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable try.exe"
@@ -152,6 +270,9 @@ CMakeFiles/try.dir/build: try.exe
 CMakeFiles/try.dir/requires: CMakeFiles/try.dir/Server_pp_test.cpp.obj.requires
 CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj.requires
 CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj.requires
+CMakeFiles/try.dir/requires: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj.requires
 .PHONY : CMakeFiles/try.dir/requires
 
 CMakeFiles/try.dir/clean:

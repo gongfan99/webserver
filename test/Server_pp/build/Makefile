@@ -114,6 +114,54 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj
+
+# target to build an object file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i
+
+# target to preprocess a source file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s
+
+# target to generate assembly for a file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+
+# target to build an object file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+
+# target to preprocess a source file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+
+# target to generate assembly for a file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+
 C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
 .PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
 
@@ -162,6 +210,30 @@ C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
 .PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
 
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
+
+# target to build an object file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
+
+# target to preprocess a source file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
+
+# target to generate assembly for a file
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+
 Server_pp_test.obj: Server_pp_test.cpp.obj
 .PHONY : Server_pp_test.obj
 
@@ -195,12 +267,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.obj
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.i
 	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
 	@echo ... Server_pp_test.obj
 	@echo ... Server_pp_test.i
 	@echo ... Server_pp_test.s

@@ -6,9 +6,9 @@ var OculusBridge = function(config) {
 	var reconnectTimeout 	= null;
 	var retryOnDisconnect 	= true;
 	var websocketAddress 	= config.hasOwnProperty("address") 			? config["address"] 		: "localhost";
-	var websocketPort 		= config.hasOwnProperty("port") 			? config["port"] 			: 9005;
+	var websocketPort 		= config.hasOwnProperty("port") 			? config["port"] 			: 9002;
 	var retryInterval 		= config.hasOwnProperty("retryInterval") 	? config["retryInterval"] 	: 1;
-	var debugEnabled		= config.hasOwnProperty("debug") 			? config["debug"] 			: false;
+	var debugEnabled		= config.hasOwnProperty("debug") 			? config["debug"] 			: true;
 
 	// Quaternion values
 	var quaternionValues = { 
@@ -129,6 +129,7 @@ var OculusBridge = function(config) {
 
 		socket.onopen = function(){
 			debug("Connected!")
+			socket.send("Here's some text that the server is urgently awaiting!");
 
 			if(callbacks["onConnect"]) {
 				callbacks["onConnect"]();
@@ -160,6 +161,10 @@ var OculusBridge = function(config) {
 					updateAcceleration(data);
 				break;
 
+				case "updatepage":
+					debug(data["p"]);
+				break;
+				
 				default:
 					debug("Unknown message received from server: " + msg.data);
 					disconnect();

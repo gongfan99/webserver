@@ -10,7 +10,7 @@ using namespace ozo;
 int main()
 {
 	char key;
-	bool showWindow = false;
+	bool showWindow = true;
     if (showWindow) cvNamedWindow("Camera_Output", 1);    //Create window
 
 	//test 1; use buffer image or file image
@@ -70,7 +70,7 @@ int main()
 	ImageDecoderQR* decoder1 = new ImageDecoderQR(Adapter1);
 	
 	int j;
-    for (j=0; j<5; j++) { //Create infinte loop for live streaming
+    for (j=0; j<150; j++) { //Create infinte loop for live streaming
 		ImageProduceCamera1->ops->process(ImageProduceCamera1);
 		Adapter1->process();
 		decoder1->process();
@@ -80,7 +80,6 @@ int main()
 		for( std::vector<char>::const_iterator i = qrresult.begin(); i != qrresult.end(); ++i)
 			std::cout << *i;
 		std::cout << std::endl;
-		sleep(1000);
 /* 		cv::Mat imageAdapter = cv::cvarrToMat(Adapter1->data);
 		cv::imwrite(to_string<int>(j)+".jpg", imageAdapter); */
 		if (showWindow) {
@@ -90,6 +89,7 @@ int main()
 				break;      //If you hit ESC key loop will break.
 			}
 		}
+		sleep(2000);
     }
 	
 	ImageProduceCamera1->ops->destroy(ImageProduceCamera1);
