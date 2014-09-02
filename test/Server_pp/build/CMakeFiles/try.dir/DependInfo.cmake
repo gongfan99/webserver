@@ -1,9 +1,15 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/build/CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/build/CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj"
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/build/CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj"
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/build/CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj"
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp" "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/build/CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj"
@@ -23,7 +29,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../lib/zxing/cpp/core/src"
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../lib/i686-w64-mingw32/lib/include"
   "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/../../../../boost_1_56_0"
-  "C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW"
+  "C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64"
   "C:/Users/sam/Documents/User/Embeded/opencv/sources/include"
   "C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv"
   "C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/core/include"

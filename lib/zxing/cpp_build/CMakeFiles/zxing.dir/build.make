@@ -34,10 +34,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\zxing\cpp
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zxing.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/zxing.dir/flags.make
 
 CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj: CMakeFiles/zxing.dir/flags.make
 CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj: CMakeFiles/zxing.dir/includes_CXX.rsp
-CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj: C:/Users/fgong/Downloads/ServerApp/zxing/cpp/cli/src/ImageReaderSource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/cli/src/ImageReaderSource.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\ImageReaderSource.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\ImageReaderSource.cpp
 
 CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\ImageReaderSource.cpp > CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\ImageReaderSource.cpp > CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.i
 
 CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\ImageReaderSource.cpp -o CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\ImageReaderSource.cpp -o CMakeFiles\zxing.dir\cli\src\ImageReaderSource.cpp.s
 
 CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj.requires:
 .PHONY : CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj.requires
@@ -74,18 +74,18 @@ CMakeFiles/zxing.dir/cli/src/ImageReaderSource.cpp.obj.provides.build: CMakeFile
 
 CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj: CMakeFiles/zxing.dir/flags.make
 CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj: CMakeFiles/zxing.dir/includes_CXX.rsp
-CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj: C:/Users/fgong/Downloads/ServerApp/zxing/cpp/cli/src/jpgd.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/cli/src/jpgd.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\jpgd.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\jpgd.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\jpgd.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\jpgd.cpp
 
 CMakeFiles/zxing.dir/cli/src/jpgd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zxing.dir/cli/src/jpgd.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\jpgd.cpp > CMakeFiles\zxing.dir\cli\src\jpgd.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\jpgd.cpp > CMakeFiles\zxing.dir\cli\src\jpgd.cpp.i
 
 CMakeFiles/zxing.dir/cli/src/jpgd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zxing.dir/cli/src/jpgd.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\jpgd.cpp -o CMakeFiles\zxing.dir\cli\src\jpgd.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\jpgd.cpp -o CMakeFiles\zxing.dir\cli\src\jpgd.cpp.s
 
 CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj.requires:
 .PHONY : CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj.requires
@@ -98,18 +98,18 @@ CMakeFiles/zxing.dir/cli/src/jpgd.cpp.obj.provides.build: CMakeFiles/zxing.dir/c
 
 CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj: CMakeFiles/zxing.dir/flags.make
 CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj: CMakeFiles/zxing.dir/includes_CXX.rsp
-CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj: C:/Users/fgong/Downloads/ServerApp/zxing/cpp/cli/src/lodepng.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/cli/src/lodepng.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\lodepng.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\lodepng.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\lodepng.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\lodepng.cpp
 
 CMakeFiles/zxing.dir/cli/src/lodepng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zxing.dir/cli/src/lodepng.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\lodepng.cpp > CMakeFiles\zxing.dir\cli\src\lodepng.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\lodepng.cpp > CMakeFiles\zxing.dir\cli\src\lodepng.cpp.i
 
 CMakeFiles/zxing.dir/cli/src/lodepng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zxing.dir/cli/src/lodepng.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\lodepng.cpp -o CMakeFiles\zxing.dir\cli\src\lodepng.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\lodepng.cpp -o CMakeFiles\zxing.dir\cli\src\lodepng.cpp.s
 
 CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj.requires:
 .PHONY : CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj.requires
@@ -122,18 +122,18 @@ CMakeFiles/zxing.dir/cli/src/lodepng.cpp.obj.provides.build: CMakeFiles/zxing.di
 
 CMakeFiles/zxing.dir/cli/src/main.cpp.obj: CMakeFiles/zxing.dir/flags.make
 CMakeFiles/zxing.dir/cli/src/main.cpp.obj: CMakeFiles/zxing.dir/includes_CXX.rsp
-CMakeFiles/zxing.dir/cli/src/main.cpp.obj: C:/Users/fgong/Downloads/ServerApp/zxing/cpp/cli/src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_4)
+CMakeFiles/zxing.dir/cli/src/main.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp/cli/src/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build\CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zxing.dir/cli/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\main.cpp.obj -c C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\main.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\zxing.dir\cli\src\main.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\main.cpp
 
 CMakeFiles/zxing.dir/cli/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zxing.dir/cli/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\main.cpp > CMakeFiles\zxing.dir\cli\src\main.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\main.cpp > CMakeFiles\zxing.dir\cli\src\main.cpp.i
 
 CMakeFiles/zxing.dir/cli/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zxing.dir/cli/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\fgong\Downloads\ServerApp\zxing\cpp\cli\src\main.cpp -o CMakeFiles\zxing.dir\cli\src\main.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp\cli\src\main.cpp -o CMakeFiles\zxing.dir\cli\src\main.cpp.s
 
 CMakeFiles/zxing.dir/cli/src/main.cpp.obj.requires:
 .PHONY : CMakeFiles/zxing.dir/cli/src/main.cpp.obj.requires
@@ -180,6 +180,6 @@ CMakeFiles/zxing.dir/clean:
 .PHONY : CMakeFiles/zxing.dir/clean
 
 CMakeFiles/zxing.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\fgong\Downloads\ServerApp\zxing\cpp C:\Users\fgong\Downloads\ServerApp\zxing\cpp C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build C:\Users\fgong\Downloads\ServerApp\zxing\cpp_build\CMakeFiles\zxing.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\lib\zxing\cpp_build\CMakeFiles\zxing.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zxing.dir/depend
 

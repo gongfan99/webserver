@@ -40,6 +40,14 @@ void Server_pp::process() {
         fmt % pos.z;
 
         server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
+		
+		std::vector<char> qrresult = *(decoder->data);
+		std::string qrstring(qrresult.begin(), qrresult.end());
+		incomingPage = qrstring;
+		if (currentPage != incomingPage){
+			currentPage = incomingPage;
+			server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+		}
 	}
 	server.poll();
 }

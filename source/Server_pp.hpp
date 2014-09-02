@@ -16,6 +16,8 @@ private:
 	bool mSocketConnected;
 	ovrQuatf quat;
 	ovrVector3f  pos;
+	std::string currentPage;
+	std::string incomingPage;
 public:
 	Server_pp(OculusBase *o, ImageDecoder *d);
 	~Server_pp();

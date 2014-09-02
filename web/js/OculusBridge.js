@@ -161,6 +161,10 @@ var OculusBridge = function(config) {
 					updateAcceleration(data);
 				break;
 
+				case "updatepage":
+					debug(data["p"]);
+				break;
+				
 				default:
 					debug("Unknown message received from server: " + msg.data);
 					disconnect();
