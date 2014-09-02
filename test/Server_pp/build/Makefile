@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\source
+CMAKE_SOURCE_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\Server_pp\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build
+CMAKE_BINARY_DIR = C:\Users\fgong\Downloads\ServerApp\webserver\test\Server_pp\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\Server_pp\build\CMakeFiles C:\Users\fgong\Downloads\ServerApp\webserver\test\Server_pp\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\Server_pp\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fgong\Downloads\ServerApp\webserver\test\Server_pp\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,125 +114,125 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.cpp.s
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.c.s
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.cpp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.cpp.s
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.cpp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.cpp.s
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
 
 # target to build an object file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.obj
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.obj
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
 
 # target to preprocess a source file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.i
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.i
 
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s: C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
 
 # target to generate assembly for a file
-C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
-.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.cpp.s
+C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
+.PHONY : C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.cpp.s
 
 Server_pp_test.obj: Server_pp_test.cpp.obj
 .PHONY : Server_pp_test.obj
@@ -267,21 +267,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageDecoderQR.s
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/OculusDK2.s
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/Server_pp.s
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.obj
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.i
-	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/utils.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageDecoderQR.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/ImageProduceCamera.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/OculusDK2.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/Server_pp.s
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.obj
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.i
+	@echo ... C_/Users/fgong/Downloads/ServerApp/webserver/source/utils.s
 	@echo ... Server_pp_test.obj
 	@echo ... Server_pp_test.i
 	@echo ... Server_pp_test.s

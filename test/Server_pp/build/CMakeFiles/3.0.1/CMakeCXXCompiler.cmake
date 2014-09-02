@@ -1,7 +1,7 @@
 set(CMAKE_CXX_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "4.8.1")
+set(CMAKE_CXX_COMPILER_VERSION "4.9.1")
 set(CMAKE_CXX_PLATFORM_ID "MinGW")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
@@ -52,7 +52,7 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;iconv;mingw32;moldname;mingwex;msvcrt")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc/i686-w64-mingw32/4.8.1;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/i686-w64-mingw32/lib;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc/i686-w64-mingw32/4.9.1;C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib/gcc;C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/i686-w64-mingw32/lib;C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 

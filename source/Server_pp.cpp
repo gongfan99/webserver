@@ -41,13 +41,19 @@ void Server_pp::process() {
 
         server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 		
-		std::vector<char> qrresult = *(decoder->data);
-		std::string qrstring(qrresult.begin(), qrresult.end());
-		incomingPage = qrstring;
-		if (currentPage != incomingPage){
-			currentPage = incomingPage;
-			server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+		std::vector<char> qrresult;
+		{
+			boost::unique_lock<boost::mutex> lock1(decoder->mutex, boost::try_to_lock);
+			if (lock1.owns_lock()) qrresult = *(decoder->data);
 		}
+		if (!qrresult.empty()) {
+			std::string qrstring(qrresult.begin(), qrresult.end());
+			incomingPage = qrstring;
+			if (currentPage != incomingPage){
+				currentPage = incomingPage;
+				server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+			}
+		}		
 	}
 	server.poll();
 }

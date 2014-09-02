@@ -1,4 +1,17 @@
 cmake_minimum_required (VERSION 2.6)
+
+# mingw32 versions of the different tools
+# (change these depending on your system settings)
+SET(CMAKE_C_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe")
+SET(CMAKE_CXX_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe")
+SET(CMAKE_RC_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/windres")
+
+SET(GCC_COVERAGE_COMPILE_FLAGS "")
+#SET(GCC_COVERAGE_LINK_FLAGS "-DBOOST_THREAD_POSIX -fno-tree-vectorize")
+SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}" )
+message( ${CMAKE_CXX_FLAGS} )
+
 project (try)
 # The version number.
 set (Tutorial_VERSION_MAJOR 1)
@@ -17,12 +30,6 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 # The name of the target operating system
 SET(CMAKE_SYSTEM_NAME Windows)
-
-# mingw32 versions of the different tools
-# (change these depending on your system settings)
-SET(CMAKE_C_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc)
-SET(CMAKE_CXX_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++)
-SET(CMAKE_RC_COMPILER C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/windres)
 
 # add the executable
 set(CFILES
@@ -75,11 +82,16 @@ set_target_properties( LIB7 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-
 set(LIBS ${LIBS} LIB7)
 
 add_library(LIB8 STATIC IMPORTED)
-set_target_properties( LIB8 PROPERTIES IMPORTED_LOCATION "../../../../boost_1_56_0/stage/lib/libboost_thread-mgw48-mt-s-1_56.a")
+set_target_properties( LIB8 PROPERTIES IMPORTED_LOCATION "../../../../boost_1_56_0/stage/lib/libboost_thread-mgw48-mt-1_56.a")
 set(LIBS ${LIBS} LIB8)
 
+add_library(LIB9 STATIC IMPORTED)
+set_target_properties( LIB9 PROPERTIES IMPORTED_LOCATION "../../../../boost_1_56_0/stage/lib/libboost_chrono-mgw48-mt-1_56.a")
+set(LIBS ${LIBS} LIB9)
+
 # add opencv library
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64)
+#set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/fgong/Downloads/opencv/build/x86/MinGW-W64)
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )

@@ -28,10 +28,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.0.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.0.1/CMakeSystem.cmake"
-  "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/Server_pp/source/CMakeLists.txt"
-  "C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/OpenCVConfig-version.cmake"
-  "C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/OpenCVConfig.cmake"
-  "C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/OpenCVModules.cmake"
+  "C:/Users/fgong/Downloads/ServerApp/webserver/test/Server_pp/source/CMakeLists.txt"
+  "C:/Users/fgong/Downloads/opencv/build/x86/MinGW-W64/OpenCVConfig-version.cmake"
+  "C:/Users/fgong/Downloads/opencv/build/x86/MinGW-W64/OpenCVConfig.cmake"
+  "C:/Users/fgong/Downloads/opencv/build/x86/MinGW-W64/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:

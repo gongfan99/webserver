@@ -2,15 +2,14 @@
 #include <conio.h>
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
+#include <boost/chrono.hpp>
 #include "Server_pp.hpp"
 #include "ImageProduceCamera.h"
 #include "Adapter.hpp"
 #include "ImageDecoderQR.hpp"
-#include "utils.hpp"
 
 using namespace ozo;
 
-boost::mutex mutexQRdecoder;
 boost::mutex mutexDone;
 bool done = false;
 	
@@ -20,15 +19,12 @@ void threadQRdecoder(ImageProduceCamera* &ImageProduceCamera1,
 	while(1){ //Create event loop
 		ImageProduceCamera1->ops->process(ImageProduceCamera1);
 		Adapter1->process();
-		{
-			boost::lock_guard<boost::mutex> lock1(mutexQRdecoder);
-			decoder1->process();
-		};
+		decoder1->process();
 		{
 			boost::lock_guard<boost::mutex> lock2(mutexDone);
 			if (done) break;
 		}
-		sleep(5000);
+		boost::this_thread::sleep_for(boost::chrono::milliseconds(5000));
 	}
 }
 
@@ -43,26 +39,22 @@ int main()
 	Server_pp *server = new Server_pp(oculus, decoder1);//(ImageDecoder *)NULL
 
 	boost::thread t1(threadQRdecoder, ImageProduceCamera1, Adapter1, decoder1);
+	//boost::thread t1(func, ImageProduceCamera1, Adapter1, decoder1);
 	
 	while(1){ //Create event loop
-		ImageProduceCamera1->ops->process(ImageProduceCamera1);
-		Adapter1->process();
-		decoder1->process();
 		oculus->process();
-		{
-			boost::lock_guard<boost::mutex> lock1(mutexQRdecoder);
-			server->process();
-		}
+		server->process();
 		if (_kbhit()) {
 			key = _getch();
 			std::cout << key;
 		}
-		sleep(3000);
 		if (key == 27){
-			boost::lock_guard<boost::mutex> lock2(mutexDone);
+			boost::lock_guard<boost::mutex> lock1(mutexDone);
 			done = true;
+			std::cout << done;
 			break;      //If you hit ESC key loop will break.
 		}
+		boost::this_thread::sleep_for(boost::chrono::milliseconds(3000));
 	}
 	
 	t1.join();
