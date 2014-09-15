@@ -163,6 +163,7 @@ try.exe: ../../../lib/zxing/cpp_build/libzxing.a
 try.exe: ../../../lib/LibOVR/build/libovr.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libwsock32.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libws2_32.a
+try.exe: ../../../../boost_1_56_0/stage/lib/libboost_system-mgw48-mt-1_56.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libwinmm.a
 try.exe: ../../../lib/i686-w64-mingw32/lib/libdbghelp.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64/lib/libopencv_core249.a
