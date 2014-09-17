@@ -9,11 +9,11 @@ namespace ozo {
 
 class DirectCamera : public SourceBase{
 public:
-	DirectCamera() {};
-	~DirectCamera() {};
-	void process() {};
+	DirectCamera();
+	~DirectCamera();
+	void process();
 private:
-	Adapter* adapter;
+	AdapterDirect* adapter;
 	ImageProduceCamera* camera;
 };
 

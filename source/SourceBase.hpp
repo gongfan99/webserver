@@ -3,7 +3,6 @@
 
 #include <cv.h>
 #include <highgui.h>
-#include "ImageProduce.h"
 
 namespace ozo {
 

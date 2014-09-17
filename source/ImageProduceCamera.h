@@ -1,8 +1,6 @@
 #ifndef __IMAGEPRODUCECAMERA_H__
 #define __IMAGEPRODUCECAMERA_H__
 
-#include <cv.h>
-#include <highgui.h>
 #include "ImageProduce.h"
 
 #ifdef __cplusplus
