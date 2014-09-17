@@ -8,7 +8,7 @@ extern "C" {
 ImageProduceCamera* ImageProduceCamera_create(){
 	ImageProduceCamera* this_ptr = (ImageProduceCamera*)malloc(sizeof(ImageProduceCamera));
 	this_ptr->ops = (ImageProduceCamera_ops*)malloc(sizeof(ImageProduceCamera_ops));
-	this_ptr->capture = cvCaptureFromCAM(1); //0=default, -1(CV_CAP_ANY)=any camera, 1..99=your camera
+	this_ptr->capture = cvCaptureFromCAM(0); //0=default, -1(CV_CAP_ANY)=any camera, 1..99=your camera
 	if (!this_ptr->capture) {
 		printf("No camera detected! Video file will be used.\n");
 		this_ptr->capture = cvCaptureFromFile("../../../source/qrcode.avi");
@@ -28,7 +28,7 @@ ImageProduceCamera* ImageProduceCamera_create(){
 void ImageProduceCamera_process(ImageProduceCamera* this_ptr){
 	IplImage* frame;
 	do {
-		frame = cvQueryFrame(this_ptr->capture); //capture an image
+		frame = cvQueryFrame(this_ptr->capture); //capture an image; cvQueryFrame is automatically released
 	} while (frame == NULL); //first frame from camera is often NULL
 	cvCvtColor(frame, ((ImageProduce*)this_ptr)->data, CV_BGR2GRAY); //convert RGB to grey
 }

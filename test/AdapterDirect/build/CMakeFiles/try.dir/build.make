@@ -53,15 +53,15 @@ CMakeFiles/try.dir/AdapterDirect_test.cpp.obj: CMakeFiles/try.dir/includes_CXX.r
 CMakeFiles/try.dir/AdapterDirect_test.cpp.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/AdapterDirect/source/AdapterDirect_test.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/try.dir/AdapterDirect_test.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\AdapterDirect_test.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\try.dir\AdapterDirect_test.cpp.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp
 
 CMakeFiles/try.dir/AdapterDirect_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try.dir/AdapterDirect_test.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp > CMakeFiles\try.dir\AdapterDirect_test.cpp.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp > CMakeFiles\try.dir\AdapterDirect_test.cpp.i
 
 CMakeFiles/try.dir/AdapterDirect_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try.dir/AdapterDirect_test.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp -o CMakeFiles\try.dir\AdapterDirect_test.cpp.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\source\AdapterDirect_test.cpp -o CMakeFiles\try.dir\AdapterDirect_test.cpp.s
 
 CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires:
 .PHONY : CMakeFiles/try.dir/AdapterDirect_test.cpp.obj.requires
@@ -77,15 +77,15 @@ CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/sourc
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c
 	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\AdapterDirect\build\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c
 
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.i
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c > CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.i
 
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.s
+	C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c -o CMakeFiles\try.dir\C_\Users\sam\Documents\User\Embeded\ServerApp\webserver\source\ImageProduceCamera.c.s
 
 CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires:
 .PHONY : CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj.requires
@@ -107,9 +107,6 @@ try_EXTERNAL_OBJECTS =
 try.exe: CMakeFiles/try.dir/AdapterDirect_test.cpp.obj
 try.exe: CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
 try.exe: CMakeFiles/try.dir/build.make
-try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libgcc.a
-try.exe: C:/MinGW/lib/gcc/mingw32/4.8.1/libstdc++.a
-try.exe: C:/Users/sam/Documents/User/Embeded/ServerApp/zxing/cpp_build/libzxing.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_videostab249.dll.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_video249.dll.a
 try.exe: C:/Users/sam/Documents/User/Embeded/opencv/build/x64/MinGW/lib/libopencv_ts249.a

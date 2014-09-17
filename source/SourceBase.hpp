@@ -14,17 +14,6 @@ public:
 	~SourceBase() {};
 };
 
-class DirectCamera : public SourceBase{
-public:
-	Adapter
-	DirectCamera() {};
-	~DirectCamera() {};
-	
-	void process() {
-		data = ((ImageProduce*)ImaPtr)->data;
-	}
-};
-
 } //namespace ozo
 
 #endif // __SOURCEBASE_HPP__

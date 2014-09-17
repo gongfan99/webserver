@@ -17,12 +17,12 @@ public:
 
 class AdapterDirect : public Adapter{
 public:
-	AdapterDirect(ImageProduce* p) : Adapter(p) {}; //cast needed in the new statement
-	~AdapterDirect() {};
-	
-	void process() {
+	AdapterDirect(ImageProduce* p) : Adapter(p) {
 		data = ((ImageProduce*)ImaPtr)->data;
-	}
+	}; //cast needed in the new statement
+	
+	~AdapterDirect() {};
+	void process() {};
 };
 
 } //namespace ozo
