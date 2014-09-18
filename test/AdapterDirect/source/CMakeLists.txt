@@ -47,7 +47,7 @@ set(INCLUDE_DIR
 )
 include_directories( ${INCLUDE_DIR} )
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "../../../../../opencv/build/x64/MinGW")
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "../../../../../opencv/build/x86/MinGW")
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )

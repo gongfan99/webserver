@@ -189,7 +189,7 @@ OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=
 OpenCV_CONFIG_PATH:FILEPATH=C:/Users/Sam/Documents/User/Embeded/opencv/build/x64/MinGW
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=C:/Users/Sam/Documents/User/Embeded/opencv/build/x64/MinGW
+OpenCV_DIR:PATH=C:/Users/Sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64
 
 //Path where debug OpenCV libraries are located
 OpenCV_LIB_DIR_DBG:PATH=

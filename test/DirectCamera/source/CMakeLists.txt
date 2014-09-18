@@ -34,7 +34,7 @@ SET(CMAKE_SYSTEM_NAME Windows)
 set(CFILES
 DirectCamera_test.cpp
 ../../../source/ImageProduceCamera.c
-#../../../source/DirectCamera.cpp
+../../../source/DirectCamera.cpp
 )
 add_executable(try ${CFILES})
 
@@ -48,7 +48,7 @@ set(INCLUDE_DIR
 )
 include_directories( ${INCLUDE_DIR} )
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "../../../../../opencv/build/x64/MinGW")
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "../../../../../opencv/build/x86/MinGW")
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )

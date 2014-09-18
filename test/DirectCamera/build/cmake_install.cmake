@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/source
+# Install script for directory: C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/DirectCamera/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

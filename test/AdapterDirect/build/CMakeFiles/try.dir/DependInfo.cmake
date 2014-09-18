@@ -24,7 +24,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/AdapterDirect/source/../../../lib/zxing/cpp/core/src"
   "C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/AdapterDirect/source/../../../lib/i686-w64-mingw32/lib/include"
   "C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/test/AdapterDirect/source/../../../../boost_1_56_0"
-  "C:/Users/Sam/Documents/User/Embeded/opencv/build/x64/MinGW"
+  "C:/Users/Sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64"
   "C:/Users/Sam/Documents/User/Embeded/opencv/sources/include"
   "C:/Users/Sam/Documents/User/Embeded/opencv/sources/include/opencv"
   "C:/Users/Sam/Documents/User/Embeded/opencv/sources/modules/core/include"
