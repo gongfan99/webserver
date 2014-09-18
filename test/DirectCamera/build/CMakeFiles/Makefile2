@@ -46,10 +46,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\source
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build
 
 #=============================================================================
 # Target rules for target CMakeFiles/try.dir
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\
 CMakeFiles/try.dir/all:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/depend
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles  1 2
 	@echo Built target try
 .PHONY : CMakeFiles/try.dir/all
 
@@ -68,9 +68,9 @@ all: CMakeFiles/try.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/try.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/try.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 0
 .PHONY : CMakeFiles/try.dir/rule
 
 # Convenience name for target.

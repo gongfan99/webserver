@@ -34,7 +34,7 @@ SET(CMAKE_SYSTEM_NAME Windows)
 set(CFILES
 DirectCamera_test.cpp
 ../../../source/ImageProduceCamera.c
-../../../source/DirectCamera.cpp
+#../../../source/DirectCamera.cpp
 )
 add_executable(try ${CFILES})
 
