@@ -7,8 +7,6 @@
 extern "C" {
 #endif
 
-#define atomic_t int
-
 typedef struct ImageProduceCamera_ ImageProduceCamera;
 //virtual function table
 typedef struct {
@@ -19,7 +17,6 @@ typedef struct {
 typedef struct ImageProduceCamera_ {
 	ImageProduce _; //base class
 	ImageProduceCamera_ops* ops;
-	atomic_t ref_count;
 	CvCapture* capture;
 }ImageProduceCamera;
 

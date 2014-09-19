@@ -1,4 +1,17 @@
 cmake_minimum_required (VERSION 2.6)
+
+# mingw32 versions of the different tools
+# (change these depending on your system settings)
+SET(CMAKE_C_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe")
+SET(CMAKE_CXX_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe")
+SET(CMAKE_RC_COMPILER "C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/windres")
+
+SET(GCC_COVERAGE_COMPILE_FLAGS "")
+#SET(GCC_COVERAGE_LINK_FLAGS "-DBOOST_THREAD_POSIX -fno-tree-vectorize")
+SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}" )
+message( ${CMAKE_CXX_FLAGS} )
+
 project (try)
 # The version number.
 set (Tutorial_VERSION_MAJOR 1)
@@ -66,7 +79,7 @@ set_target_properties( LIB7 PROPERTIES IMPORTED_LOCATION "../../../lib/i686-w64-
 set(LIBS ${LIBS} LIB7)
 
 # add opencv library
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "../../../../../opencv/build/x86/MinGW-W64")
 find_package( OpenCV REQUIRED )
 if (OpenCV_FOUND)
   include_directories( ${OpenCV_INCLUDE_DIRS} )

@@ -10,7 +10,7 @@ using namespace ozo;
 int main()
 {
 	char key;
-	bool showWindow = true;
+	bool showWindow = false;
     if (showWindow) cvNamedWindow("Camera_Output", 1);    //Create window
 
 	//test 1; use buffer image or file image
@@ -44,12 +44,12 @@ int main()
 	int height = 23;
 	IplImage* image = cvCreateImageHeader(cvSize(width, height), IPL_DEPTH_8U, 1);
 	cvSetData( image, buffer, width );
-	
+
 	//create an AdapterDirect object with buffer or image file
 	AdapterDirect* Adapter2 = new AdapterDirect((ImageProduce*)NULL);
-	//Adapter2->data = image; //use this instead of Adapter2->process()
-	Adapter2->data = cvLoadImage("../source/qrcode.png", CV_LOAD_IMAGE_GRAYSCALE);
-	
+	Adapter2->data = image; //use this instead of Adapter2->process()
+	//Adapter2->data = cvLoadImage("../source/qrcode.png", CV_LOAD_IMAGE_GRAYSCALE);
+
 	ImageDecoderQR* decoder2 = new ImageDecoderQR(Adapter2);
 	decoder2->process();
 	

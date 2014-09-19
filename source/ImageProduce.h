@@ -8,8 +8,6 @@
 extern "C" {
 #endif
 
-#define atomic_t int
-
 typedef struct {
 	//below are the member variables
 	IplImage* data; //this is the external interface

@@ -17,7 +17,7 @@ int main()
 		camera->ops->process(camera);
 		adapter->process();
 		cvShowImage("Camera_Output", adapter->data);   //Show image frames on created window
-        key = cvWaitKey(1000);     //Capture Keyboard stroke
+        key = cvWaitKey(500);     //Capture Keyboard stroke
         if (key == 27){
             break;      //If you hit ESC key loop will break.
         }

@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\source
+CMAKE_SOURCE_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build
+CMAKE_BINARY_DIR = C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\DirectCamera\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,53 +114,53 @@ try/fast:
 	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/build
 .PHONY : try/fast
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj
 
 # target to build an object file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.obj
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i
 
 # target to preprocess a source file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.i
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s
 
 # target to generate assembly for a file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.cpp.s
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
 
 # target to build an object file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.obj
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
 
 # target to preprocess a source file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.i
 
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s: C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
 
 # target to generate assembly for a file
-C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s:
-	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
-.PHONY : C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s:
+	$(MAKE) -f CMakeFiles\try.dir\build.make CMakeFiles/try.dir/C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
+.PHONY : C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.c.s
 
 DirectCamera_test.obj: DirectCamera_test.cpp.obj
 .PHONY : DirectCamera_test.obj
@@ -195,12 +195,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... try
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
-	@echo ... C_/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/DirectCamera.s
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.obj
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.i
+	@echo ... C_/Users/sam/Documents/User/Embeded/ServerApp/webserver/source/ImageProduceCamera.s
 	@echo ... DirectCamera_test.obj
 	@echo ... DirectCamera_test.i
 	@echo ... DirectCamera_test.s

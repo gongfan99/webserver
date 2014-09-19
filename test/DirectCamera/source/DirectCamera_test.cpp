@@ -5,12 +5,10 @@ int main()
 {
 	using namespace ozo;
 	char key;
-    cvNamedWindow("Camera_Output", 1);    //Create window
-	
+	DirectCamera* camera = new DirectCamera();
 	//std::cout << "I am here" << std::endl;
 	
-	DirectCamera* camera = new DirectCamera();
-
+/*     cvNamedWindow("Camera_Output", 1);    //Create window
     while(1){ //Create infinte loop for live streaming
 		camera->process();
 		imshow("Camera_Output", *(camera->data));   //Show image frames on created window
@@ -19,10 +17,16 @@ int main()
             break;      //If you hit ESC key loop will break.
         }
     }
+	cvDestroyWindow("Camera_Output"); //Destroy Window */
+
+	cv::namedWindow("Camera_Output", CV_WINDOW_AUTOSIZE); 
+	while (cv::waitKey(500) != 27) { 
+		camera->process();; 
+		cv::imshow("Camera_Output", *(camera->data)); 
+	} 
 	
 	delete camera;
-	
-    cvDestroyWindow("Camera_Output"); //Destroy Window
+    cv::destroyWindow("Camera_Output"); //Destroy Window
 
     return 0;
 }
