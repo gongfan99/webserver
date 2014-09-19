@@ -6,17 +6,17 @@
 #include <vector>
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
-#include "Adapter.hpp"
+#include "SourceBase.hpp"
 
 namespace ozo {
 
 class ImageDecoder {
 public:
-	Adapter* adapter; //external input interface
+	SourceBase* source; //external input interface
 	std::vector<char> *data; //external output interface
 	boost::mutex mutex; //external output interface
 	
-	ImageDecoder(Adapter* p) : adapter(p) {
+	ImageDecoder(SourceBase* p) : source(p) {
 		data = new std::vector<char>();
 	}; 
 	

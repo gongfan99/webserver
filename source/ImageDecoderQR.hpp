@@ -15,7 +15,7 @@ namespace ozo {
 
 class ImageDecoderQR : public ImageDecoder {
 public:
-	ImageDecoderQR(Adapter* p);
+	ImageDecoderQR(SourceBase* p);
 	~ImageDecoderQR();
 	void process();
 };

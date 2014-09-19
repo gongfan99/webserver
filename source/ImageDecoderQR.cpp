@@ -2,7 +2,7 @@
 
 namespace ozo {
 
-ImageDecoderQR::ImageDecoderQR(Adapter* p) : ImageDecoder(p) {
+ImageDecoderQR::ImageDecoderQR(SourceBase* p) : ImageDecoder(p) {
 	(*data).reserve(10);
 }
 
@@ -16,8 +16,8 @@ void ImageDecoderQR::process() {
 	try
 	{
 		using namespace zxing;
-		cv::Mat image = cv::cvarrToMat(adapter->data); //convert IplImage to cv::Mat
-		ArrayRef<char> greyData((char*)image.data, image.rows*image.cols); //image.data is uchar* from opencv and needs to change to char* for use in zxing
+		cv::Mat image = *(source->data);
+		ArrayRef<char> greyData((char*)image.data, image.rows*image.cols); //image.data is uchar* per opencv and needs to be converted to char* for zxing use.
 		Ref<LuminanceSource> source(new GreyscaleLuminanceSource(greyData, image.step, image.rows, 0, 0, image.cols, image.rows));
 		Ref<Binarizer> binarizer(new HybridBinarizer(source));
 		Ref<BinaryBitmap> bitmap(new BinaryBitmap(binarizer));

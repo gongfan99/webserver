@@ -34,6 +34,7 @@ set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ../../../source/)
 set(CFILES
 ImageDecoderQR_test.cpp
 ../../../source/ImageProduceCamera.c
+../../../source/DirectCamera.cpp
 ../../../source/ImageDecoderQR.cpp
 ../../../source/utils.cpp
 )
