@@ -28,7 +28,7 @@ set (Tutorial_VERSION_MINOR 0)
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}")
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ../../../source/)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "C:/Program Files (x86)/CodeBlocks")
 
 # add the executable
 set(CFILES

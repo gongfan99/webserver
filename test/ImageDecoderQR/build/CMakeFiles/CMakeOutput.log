@@ -14,7 +14,7 @@ The C compiler identification is GNU, found in "C:/Users/sam/Documents/User/Embe
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe 
-Build flags: 
+Build flags: ;
 Id flags: 
 
 The output was:
@@ -28,36 +28,33 @@ The CXX compiler identification is GNU, found in "C:/Users/sam/Documents/User/Em
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec1572832725/fast"
-C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1572832725.dir\build.make CMakeFiles/cmTryCompileExec1572832725.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1572832725.dir/testCCompiler.c.obj
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1572832725.dir\testCCompiler.c.obj   -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTryCompileExec1572832725.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1572832725.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1572832725.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec1572832725.dir/objects.a @CMakeFiles\cmTryCompileExec1572832725.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec1572832725.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1572832725.exe -Wl,--out-implib,libcmTryCompileExec1572832725.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-mingw32-make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec3922748847/fast"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec3922748847.dir/build.make CMakeFiles/cmTryCompileExec3922748847.dir/build
+make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"Building C object CMakeFiles/cmTryCompileExec3922748847.dir/testCCompiler.c.obj"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe    -o CMakeFiles/cmTryCompileExec3922748847.dir/testCCompiler.c.obj   -c C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/testCCompiler.c
+"Linking C executable cmTryCompileExec3922748847.exe"
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec3922748847.dir/objects.a
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec3922748847.dir/objects.a @CMakeFiles/cmTryCompileExec3922748847.dir/objects1.rsp
+make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec2241226872/fast"
-C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2241226872.dir\build.make CMakeFiles/cmTryCompileExec2241226872.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2241226872.dir/CMakeCCompilerABI.c.obj
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec2241226872.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTryCompileExec2241226872.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2241226872.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2241226872.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec2241226872.dir/objects.a @CMakeFiles\cmTryCompileExec2241226872.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec2241226872.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2241226872.exe -Wl,--out-implib,libcmTryCompileExec2241226872.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec677148894/fast"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec677148894.dir/build.make CMakeFiles/cmTryCompileExec677148894.dir/build
+make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"Building C object CMakeFiles/cmTryCompileExec677148894.dir/CMakeCCompilerABI.c.obj"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe    -o CMakeFiles/cmTryCompileExec677148894.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCCompilerABI.c"
+"Linking C executable cmTryCompileExec677148894.exe"
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec677148894.dir/objects.a
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec677148894.dir/objects.a @CMakeFiles/cmTryCompileExec677148894.dir/objects1.rsp
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe     -v -Wl,--whole-archive CMakeFiles/cmTryCompileExec677148894.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec677148894.exe -Wl,--out-implib,libcmTryCompileExec677148894.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
-COLLECT_GCC=C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe
+COLLECT_GCC=C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe
 COLLECT_LTO_WRAPPER=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/lto-wrapper.exe
 Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.8.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpfr=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpc=/tmp/mingw-prereq/i686-w64-mingw32-static --with-isl=/tmp/mingw-prereq/i686-w64-mingw32-static --with-cloog=/tmp/mingw-prereq/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev2, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/lib -L/tmp/mingw-prereq/i686-zlib/lib -L/tmp/mingw-prereq/i686-w64-mingw32-static/lib -L/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32/opt/lib -Wl,--large-address-aware'
@@ -65,28 +62,27 @@ Thread model: win32
 gcc version 4.8.1 (rev2, Built by MinGW-W64 project) 
 COMPILER_PATH=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2241226872.exe' '-mtune=generic' '-march=i686'
- c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec2241226872.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec2241226872.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec2241226872.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec677148894.exe' '-mtune=generic' '-march=i686'
+ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec677148894.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles/cmTryCompileExec677148894.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec677148894.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o
+make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec2241226872/fast"]
-  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2241226872.dir\build.make CMakeFiles/cmTryCompileExec2241226872.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp']
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2241226872.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec2241226872.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTryCompileExec2241226872.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2241226872.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2241226872.dir/objects.a]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec2241226872.dir/objects.a @CMakeFiles\cmTryCompileExec2241226872.dir\objects1.rsp]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec2241226872.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2241226872.exe -Wl,--out-implib,libcmTryCompileExec2241226872.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec677148894/fast"]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec677148894.dir/build.make CMakeFiles/cmTryCompileExec677148894.dir/build]
+  ignore line: [make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp']
+  ignore line: ["C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: ["Building C object CMakeFiles/cmTryCompileExec677148894.dir/CMakeCCompilerABI.c.obj"]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe    -o CMakeFiles/cmTryCompileExec677148894.dir/CMakeCCompilerABI.c.obj   -c "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCCompilerABI.c"]
+  ignore line: ["Linking C executable cmTryCompileExec677148894.exe"]
+  ignore line: ["C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec677148894.dir/objects.a]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec677148894.dir/objects.a @CMakeFiles/cmTryCompileExec677148894.dir/objects1.rsp]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe     -v -Wl,--whole-archive CMakeFiles/cmTryCompileExec677148894.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec677148894.exe -Wl,--out-implib,libcmTryCompileExec677148894.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\gcc.exe]
+  ignore line: [COLLECT_GCC=C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/lto-wrapper.exe]
   ignore line: [Target: i686-w64-mingw32]
   ignore line: [Configured with: ../../../src/gcc-4.8.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpfr=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpc=/tmp/mingw-prereq/i686-w64-mingw32-static --with-isl=/tmp/mingw-prereq/i686-w64-mingw32-static --with-cloog=/tmp/mingw-prereq/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev2, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/lib -L/tmp/mingw-prereq/i686-zlib/lib -L/tmp/mingw-prereq/i686-w64-mingw32-static/lib -L/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32/opt/lib -Wl,--large-address-aware']
@@ -101,15 +97,15 @@ Parsed C implicit link information from above output:
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib/]
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/]
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2241226872.exe' '-mtune=generic' '-march=i686']
-  link line: [ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec2241226872.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec2241226872.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec2241226872.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec677148894.exe' '-mtune=generic' '-march=i686']
+  link line: [ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec677148894.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles/cmTryCompileExec677148894.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec677148894.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o]
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [--sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32] ==> ignore
     arg [-m] ==> ignore
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2241226872.exe] ==> ignore
+    arg [cmTryCompileExec677148894.exe] ==> ignore
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o] ==> ignore
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1]
@@ -119,10 +115,10 @@ Parsed C implicit link information from above output:
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib]
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../..] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTryCompileExec2241226872.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec677148894.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTryCompileExec2241226872.dll.a] ==> ignore
+    arg [libcmTryCompileExec677148894.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -163,36 +159,33 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec3882917646/fast"
-C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3882917646.dir\build.make CMakeFiles/cmTryCompileExec3882917646.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3882917646.dir/testCXXCompiler.cxx.obj
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe     -o CMakeFiles\cmTryCompileExec3882917646.dir\testCXXCompiler.cxx.obj -c C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec3882917646.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3882917646.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec3882917646.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec3882917646.dir/objects.a @CMakeFiles\cmTryCompileExec3882917646.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec3882917646.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3882917646.exe -Wl,--out-implib,libcmTryCompileExec3882917646.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-mingw32-make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec1881148533/fast"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec1881148533.dir/build.make CMakeFiles/cmTryCompileExec1881148533.dir/build
+make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"Building CXX object CMakeFiles/cmTryCompileExec1881148533.dir/testCXXCompiler.cxx.obj"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe     -o CMakeFiles/cmTryCompileExec1881148533.dir/testCXXCompiler.cxx.obj -c C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+"Linking CXX executable cmTryCompileExec1881148533.exe"
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec1881148533.dir/objects.a
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec1881148533.dir/objects.a @CMakeFiles/cmTryCompileExec1881148533.dir/objects1.rsp
+make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec387514829/fast"
-C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec387514829.dir\build.make CMakeFiles/cmTryCompileExec387514829.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec387514829.dir/CMakeCXXCompilerABI.cpp.obj
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe     -o CMakeFiles\cmTryCompileExec387514829.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTryCompileExec387514829.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec387514829.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec387514829.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec387514829.dir/objects.a @CMakeFiles\cmTryCompileExec387514829.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec387514829.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec387514829.exe -Wl,--out-implib,libcmTryCompileExec387514829.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec3558962928/fast"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec3558962928.dir/build.make CMakeFiles/cmTryCompileExec3558962928.dir/build
+make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"Building CXX object CMakeFiles/cmTryCompileExec3558962928.dir/CMakeCXXCompilerABI.cpp.obj"
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe     -o CMakeFiles/cmTryCompileExec3558962928.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp"
+"Linking CXX executable cmTryCompileExec3558962928.exe"
+"C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec3558962928.dir/objects.a
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec3558962928.dir/objects.a @CMakeFiles/cmTryCompileExec3558962928.dir/objects1.rsp
+C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe      -v -Wl,--whole-archive CMakeFiles/cmTryCompileExec3558962928.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3558962928.exe -Wl,--out-implib,libcmTryCompileExec3558962928.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
 Using built-in specs.
-COLLECT_GCC=C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe
+COLLECT_GCC=C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe
 COLLECT_LTO_WRAPPER=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/lto-wrapper.exe
 Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.8.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpfr=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpc=/tmp/mingw-prereq/i686-w64-mingw32-static --with-isl=/tmp/mingw-prereq/i686-w64-mingw32-static --with-cloog=/tmp/mingw-prereq/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev2, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/lib -L/tmp/mingw-prereq/i686-zlib/lib -L/tmp/mingw-prereq/i686-w64-mingw32-static/lib -L/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32/opt/lib -Wl,--large-address-aware'
@@ -200,28 +193,27 @@ Thread model: win32
 gcc version 4.8.1 (rev2, Built by MinGW-W64 project) 
 COMPILER_PATH=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/;c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec387514829.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
- c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec387514829.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec387514829.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec387514829.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3558962928.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec3558962928.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles/cmTryCompileExec3558962928.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3558962928.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o
+make.exe[1]: Leaving directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe" "cmTryCompileExec387514829/fast"]
-  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec387514829.dir\build.make CMakeFiles/cmTryCompileExec387514829.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp']
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\sam\Documents\User\Embeded\ServerApp\webserver\test\ImageDecoderQR\build\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec387514829.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe     -o CMakeFiles\cmTryCompileExec387514829.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTryCompileExec387514829.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec387514829.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec387514829.dir/objects.a]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\cmTryCompileExec387514829.dir/objects.a @CMakeFiles\cmTryCompileExec387514829.dir\objects1.rsp]
-  ignore line: [C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec387514829.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec387514829.exe -Wl,--out-implib,libcmTryCompileExec387514829.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe" "cmTryCompileExec3558962928/fast"]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f CMakeFiles/cmTryCompileExec3558962928.dir/build.make CMakeFiles/cmTryCompileExec3558962928.dir/build]
+  ignore line: [make.exe[1]: Entering directory 'C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp']
+  ignore line: ["C:/Program Files (x86)/CMake/bin/cmake.exe" -E cmake_progress_report C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: ["Building CXX object CMakeFiles/cmTryCompileExec3558962928.dir/CMakeCXXCompilerABI.cpp.obj"]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe     -o CMakeFiles/cmTryCompileExec3558962928.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files (x86)/CMake/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp"]
+  ignore line: ["Linking CXX executable cmTryCompileExec3558962928.exe"]
+  ignore line: ["C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/cmTryCompileExec3558962928.dir/objects.a]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/ar.exe cr CMakeFiles/cmTryCompileExec3558962928.dir/objects.a @CMakeFiles/cmTryCompileExec3558962928.dir/objects1.rsp]
+  ignore line: [C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe      -v -Wl,--whole-archive CMakeFiles/cmTryCompileExec3558962928.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3558962928.exe -Wl,--out-implib,libcmTryCompileExec3558962928.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe]
+  ignore line: [COLLECT_GCC=C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/lto-wrapper.exe]
   ignore line: [Target: i686-w64-mingw32]
   ignore line: [Configured with: ../../../src/gcc-4.8.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpfr=/tmp/mingw-prereq/i686-w64-mingw32-static --with-mpc=/tmp/mingw-prereq/i686-w64-mingw32-static --with-isl=/tmp/mingw-prereq/i686-w64-mingw32-static --with-cloog=/tmp/mingw-prereq/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev2, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/include -I/tmp/mingw-prereq/i686-zlib/include -I/tmp/mingw-prereq/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-481-win32-sjlj-rt_v3-r2/libs/lib -L/tmp/mingw-prereq/i686-zlib/lib -L/tmp/mingw-prereq/i686-w64-mingw32-static/lib -L/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32/opt/lib -Wl,--large-address-aware']
@@ -236,15 +228,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib/]
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/]
   ignore line: [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec387514829.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec387514829.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec387514829.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec387514829.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3558962928.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32 -m i386pe -Bdynamic -o cmTryCompileExec3558962928.exe c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1 -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib -Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../.. --whole-archive CMakeFiles/cmTryCompileExec3558962928.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3558962928.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtend.o]
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [--sysroot=C:/Temp/msys64/tmp/i686-481-win32-sjlj-rt_v3-r2/mingw32] ==> ignore
     arg [-m] ==> ignore
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec387514829.exe] ==> ignore
+    arg [cmTryCompileExec3558962928.exe] ==> ignore
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/crtbegin.o] ==> ignore
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1]
@@ -254,10 +246,10 @@ Parsed CXX implicit link information from above output:
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/lib]
     arg [-Lc:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../..] ==> dir [c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTryCompileExec387514829.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3558962928.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTryCompileExec387514829.dll.a] ==> ignore
+    arg [libcmTryCompileExec3558962928.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore

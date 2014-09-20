@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="try" />
+		<Option makefile_is_custom="1" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\opencv\;CMake Files\..\..\..\..\..\opencv\build\;CMake Files\..\..\..\..\..\opencv\build\x86\;CMake Files\..\..\..\..\..\opencv\build\x86\MinGW-W64\;" />
+		<Build>
+			<Target title="all">
+				<Option output="try.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 edit_cache' />
+					<CompileFile command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 rebuild_cache' />
+					<CompileFile command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="try">
+				<Option output="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/try.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../../boost_1_56_0" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib/i686-w64-mingw32/lib/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib/zxing/cpp/core/src" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../source" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/calib3d/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/contrib/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/core/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/features2d/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/flann/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/gpu/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/highgui/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/imgproc/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/legacy/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ml/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/nonfree/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/objdetect/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ocl/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/photo/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/stitching/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/superres/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ts/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/video/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/videostab/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++/i686-w64-mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 try' />
+					<CompileFile command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="try/fast">
+				<Option output="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/try.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../../boost_1_56_0" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib/i686-w64-mingw32/lib/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../lib/zxing/cpp/core/src" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/source/../../../source" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/build/x86/MinGW-W64" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/include/opencv" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/calib3d/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/contrib/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/core/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/features2d/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/flann/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/gpu/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/highgui/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/imgproc/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/legacy/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ml/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/nonfree/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/objdetect/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ocl/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/photo/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/stitching/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/superres/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/ts/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/video/include" />
+					<Add directory="C:/Users/sam/Documents/User/Embeded/opencv/sources/modules/videostab/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/../../../../i686-w64-mingw32/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.1/include/c++/i686-w64-mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 try/fast' />
+					<CompileFile command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/mingw-w64/i686-4.8.1-win32-sjlj-rt_v3-rev2/mingw32/bin/make.exe -f &quot;C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/test/ImageDecoderQR/build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="../../../../../opencv/build/x86/MinGW-W64/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files/../../../../../opencv/build/x86/MinGW-W64/" />
+		</Unit>
+		<Unit filename="../../../../../opencv/build/x86/MinGW-W64/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files/../../../../../opencv/build/x86/MinGW-W64/" />
+		</Unit>
+		<Unit filename="../../../../../opencv/build/x86/MinGW-W64/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files/../../../../../opencv/build/x86/MinGW-W64/" />
+		</Unit>
+		<Unit filename="../../../source/DirectCamera.cpp" />
+		<Unit filename="../../../source/DirectCamera.hpp" />
+		<Unit filename="../../../source/ImageDecoderQR.cpp" />
+		<Unit filename="../../../source/ImageDecoderQR.hpp" />
+		<Unit filename="../../../source/ImageProduceCamera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../source/ImageProduceCamera.h" />
+		<Unit filename="../../../source/utils.cpp" />
+		<Unit filename="../../../source/utils.hpp" />
+		<Unit filename="../source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/" />
+		</Unit>
+		<Unit filename="../source/ImageDecoderQR_test.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
