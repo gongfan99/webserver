@@ -30,8 +30,8 @@ void ImageProduceCamera_process(ImageProduceCamera* this_ptr){
 }
 
 void ImageProduceCamera_destroy(ImageProduceCamera* this_ptr){
-	cvReleaseCapture(&(this_ptr->capture)); //Release capture.
-	cvReleaseImage(&(((ImageProduce*)this_ptr)->data));
+	cvReleaseCapture(&(this_ptr->capture)); //Release capture
+	//cvReleaseImage(&(((ImageProduce*)this_ptr)->data)); //it should be removed if the data will be transferred to cv::Mat
 	free(this_ptr->ops);
 	free(this_ptr);
 }

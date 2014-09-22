@@ -8,7 +8,7 @@ namespace ozo {
 
 class SourceBase {
 public:
-	cv::Mat *data; //the external output interface
+	cv::Mat data; //the external output interface
 	SourceBase() {};
 	~SourceBase() {};
 };
