@@ -2,7 +2,7 @@
 #ifndef __OZO_TEST_CONFIGURE_HPP__
 #define __OZO_TEST_CONFIGURE_HPP__
 
-#define PROJECT_SOURCE_DIR @PROJECT_SOURCE_DIR@
+#define OZO_TEST_SOURCE_DIR "@PROJECT_SOURCE_DIR@"
 
 #include "OzoConfigure.hpp"
 

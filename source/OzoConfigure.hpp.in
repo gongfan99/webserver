@@ -4,6 +4,6 @@
 
 #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
 #define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
-#define OZO_PROJ_SRC @PROJ_SRC@
+#define OZO_PROJ_SRC "@PROJ_SRC@"
 
 #endif // __OZO_OZO_CONFIGURE_HPP__

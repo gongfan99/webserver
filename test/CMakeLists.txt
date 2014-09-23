@@ -70,6 +70,8 @@ endif (OpenCV_FOUND)
 # add the executable
 add_executable(DecoderQR_test DecoderQR_test.cpp)
 add_executable(OculusDK2_test OculusDK2_test.cpp)
+add_executable(Server_pp_test Server_pp_test.cpp)
 
 target_link_libraries( DecoderQR_test ${LIBS} )
 target_link_libraries( OculusDK2_test ${LIBS} )
+target_link_libraries( Server_pp_test ${LIBS} )

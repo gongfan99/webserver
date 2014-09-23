@@ -5,8 +5,6 @@
 #include "utils.hpp"
 #include "TestConfigure.hpp"
 
-#define OZO_TEST_FOLDER STR(PROJECT_SOURCE_DIR)
-
 using namespace ozo;
 
 int main()
@@ -55,8 +53,8 @@ int main()
 	
 	//process each component
 	//camera.data = image; //use this instead of camera.process()
-	camera.data = cv::cvarrToMat(cvLoadImage(OZO_TEST_FOLDER"/resource/qrcode.jpg", CV_LOAD_IMAGE_GRAYSCALE));
-	std::cout << OZO_TEST_FOLDER"/resource/qrcode.jpg" << std::endl;
+	std::cout << OZO_TEST_SOURCE_DIR"/resource/qrcode.jpg" << std::endl;
+	camera.data = cv::cvarrToMat(cvLoadImage(OZO_TEST_SOURCE_DIR"/resource/qrcode.jpg", CV_LOAD_IMAGE_GRAYSCALE));
 	decoder.process();
 
 	//show result

@@ -1,9 +1,6 @@
 #ifndef __OZO_UTILS_HPP__
 #define __OZO_UTILS_HPP__
 
-#define QUOTEME(x) #x
-#define STR(macro) QUOTEME(macro)
-
 #include <string>
 #include <sstream>
 

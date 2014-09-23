@@ -3,9 +3,10 @@
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
 #include <boost/chrono.hpp>
-#include "Server_pp.hpp"
 #include "SourceCamera.hpp"
 #include "DecoderQR.hpp"
+#include "OculusDK2.hpp"
+#include "Server_pp.hpp"
 #include "utils.hpp"
 #include "TestConfigure.hpp"
 
@@ -14,10 +15,10 @@ using namespace ozo;
 boost::mutex mutexDone;
 bool done = false;
 	
-void threadQRdecoder(SourceCamera &camera, DecoderQR &decoder) {
+void threadQRdecoder(SourceCamera *camera, DecoderQR *decoder) { //DecoderQR has mutex member; only pointer is allowed here
 	while(1){ //event loop
-		camera.process();
-		decoder.process();
+		camera->process();
+		decoder->process();
 		{
 			boost::lock_guard<boost::mutex> lock2(mutexDone);
 			if (done) break;
@@ -38,21 +39,16 @@ int main()
 
 	//link components
 	decoder.source = &(camera.data);
+	server.mutex = &(decoder.mutex);
+	server.decoder_data = &(decoder.data);
 	server.hmd = &(oculus.hmd);
 	server.oculus_data = &(oculus.data);
-	
-	//process each component
-	//camera.data = image; //use this instead of camera.process()
-	camera.data = cv::cvarrToMat(cvLoadImage(OZO_TEST_FOLDER"/resource/qrcode.jpg", CV_LOAD_IMAGE_GRAYSCALE));
-	std::cout << TEST_FOLDER"/resource/qrcode.jpg" << std::endl;
-	decoder.process();
 
-	//show result
-	
+	//create another thread to run the QR decoding
+	boost::thread t1(threadQRdecoder, &camera, &decoder);
 
-	boost::thread t1(camera, decoder);
-
-	while(1){ //main event loop
+	//main event loop
+	while(1){
 		oculus.process();
 		server.process();
 		if (_kbhit()) {

@@ -1,16 +1,14 @@
 #include "SourceCamera.hpp"
-#include "utils.hpp"
 #include "OzoConfigure.hpp"
-
-#define OZO_PROJ_SRC_ STR(OZO_PROJ_SRC)
+#include <iostream>
 
 namespace ozo {
 
 SourceCamera::SourceCamera() {
 	cap.open(1);
 	if (!cap.isOpened()) {
-		std::cout << "camera cannot be opened; instead use " << OZO_PROJ_SRC_"/qrcode.avi" << std::endl;
-		cap.open(OZO_PROJ_SRC_"/qrcode.avi");
+		std::cout << "cannot open camera; instead use " << OZO_PROJ_SRC"/qrcode.avi" << std::endl;
+		cap.open(OZO_PROJ_SRC"/qrcode.avi");
 	}
  /* 	cap.set(CV_CAP_PROP_FRAME_WIDTH, 320); 
 	cap.set(CV_CAP_PROP_FRAME_HEIGHT, 240);  */
