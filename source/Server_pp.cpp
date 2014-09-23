@@ -8,7 +8,7 @@ using websocketpp::lib::bind;
 
 namespace ozo {
 
-Server_pp::Server_pp(OculusBase *o, ImageDecoder *d) : Server(o, d), mSocketConnected(false) {
+Server_pp::Server_pp() : mSocketConnected(false) {
 	server.set_open_handler(bind(&Server_pp::on_open,this,::_1));
 	//server.set_fail_handler(bind(&Server_pp::on_fail,this,::_1));
 	server.set_close_handler(bind(&Server_pp::on_close,this,::_1));
@@ -25,8 +25,8 @@ Server_pp::~Server_pp() {
 
 void Server_pp::process() {
     if( mSocketConnected ) {
-		quat = oculus->data->HeadPose.ThePose.Orientation;
-		pos = oculus->data->HeadPose.ThePose.Position;
+		quat = oculus_data.HeadPose.ThePose.Orientation;
+		pos = oculus_data.HeadPose.ThePose.Position;
 		
         boost::format fmt("{ \"m\" : \"update\", \"o\" : [%f,%f,%f,%f], \"a\" : [%f,%f,%f] }");
 
@@ -43,8 +43,8 @@ void Server_pp::process() {
 		
 		std::vector<char> qrresult;
 		{
-			boost::unique_lock<boost::mutex> lock1(decoder->mutex, boost::try_to_lock);
-			if (lock1.owns_lock()) qrresult = *(decoder->data);
+			boost::unique_lock<boost::mutex> lock1(*mutex, boost::try_to_lock);
+			if (lock1.owns_lock()) qrresult = *decoder_data;
 		}
 		if (!qrresult.empty()) {
 			std::string qrstring(qrresult.begin(), qrresult.end());
@@ -71,7 +71,7 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
     std::cout << "Connected..\n";
 	
 	boost::format fmt("{ \"m\" : \"config\", \"name\" : [\"%s\"] }");
-	fmt % oculus->hmd->ProductName;
+	fmt % (*hmd)->ProductName;
 
 	server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 }

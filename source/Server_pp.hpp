@@ -3,8 +3,10 @@
 
 #include "../lib/websocketpp/config/asio_no_tls.hpp"
 #include "../lib/websocketpp/server.hpp"
-#include "Server.hpp"
-#include "OculusDK2.hpp"
+#include "../lib/LibOVR/Src/OVR_CAPI.h"
+#include <vector>
+#include <boost/thread.hpp>
+#include <boost/thread/mutex.hpp>
 #include <boost/format.hpp>
 
 namespace ozo {
@@ -19,7 +21,16 @@ private:
 	std::string currentPage;
 	std::string incomingPage;
 public:
-	Server_pp(OculusBase *o, ImageDecoder *d);
+	//all are external input interfaces
+	ovrHmdDesc** hmd;
+	ovrEyeRenderDesc* RenderDesc[2];
+	ovrDistortionMesh* meshData[2];
+	ovrTrackingState* oculus_data;
+	
+	std::vector<char> *decoder_data;
+	boost::mutex *mutex; //mutex for decoder_data
+	
+	Server_pp();
 	~Server_pp();
 	void process();
 	void on_open(websocketpp::connection_hdl hdl);

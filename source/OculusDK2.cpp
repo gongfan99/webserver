@@ -22,8 +22,6 @@ OculusDK2::OculusDK2() {
 
 	// Start the sensor which informs of the Rift's pose and motion
     ovrHmd_ConfigureTracking(hmd, ovrTrackingCap_Orientation | ovrTrackingCap_MagYawCorrection | ovrTrackingCap_Position, 0);
-
-	data = new ovrTrackingState;
 }
 
 OculusDK2::~OculusDK2() {
@@ -32,7 +30,6 @@ OculusDK2::~OculusDK2() {
 		ovrHmd_DestroyDistortionMesh( &(meshData[eyeNum]) );
 	}
 	
-	delete data;
 	ovrHmd_Destroy(hmd);
 	ovr_Shutdown();
 }
