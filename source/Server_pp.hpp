@@ -1,9 +1,9 @@
-#ifndef __SERVER_PP_HPP__
-#define __SERVER_PP_HPP__
+#ifndef __OZO_SERVER_PP_HPP__
+#define __OZO_SERVER_PP_HPP__
 
-#include "../lib/websocketpp/config/asio_no_tls.hpp"
-#include "../lib/websocketpp/server.hpp"
-#include "../lib/LibOVR/Src/OVR_CAPI.h"
+#include "./websocketpp/config/asio_no_tls.hpp"
+#include "./websocketpp/server.hpp"
+#include "OVR_CAPI.h"
 #include <vector>
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
@@ -11,7 +11,7 @@
 
 namespace ozo {
 
-class Server_pp : public Server {
+class Server_pp {
 private:
 	websocketpp::server<websocketpp::config::asio> server;
 	websocketpp::connection_hdl mHandle;
@@ -39,4 +39,4 @@ public:
 
 } //namespace ozo
 
-#endif // __SERVER_PP_HPP__
+#endif // __OZO_SERVER_PP_HPP__

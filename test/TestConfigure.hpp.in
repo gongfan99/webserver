@@ -1,0 +1,9 @@
+// configure a header file to pass some of the CMake settings to the source code
+#ifndef __OZO_TEST_CONFIGURE_HPP__
+#define __OZO_TEST_CONFIGURE_HPP__
+
+#define PROJECT_SOURCE_DIR @PROJECT_SOURCE_DIR@
+
+#include "OzoConfigure.hpp"
+
+#endif // __OZO_TEST_CONFIGURE_HPP__

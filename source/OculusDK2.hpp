@@ -1,11 +1,11 @@
-#ifndef __OCULUSDK2_HPP__
-#define __OCULUSDK2_HPP__
+#ifndef __OZO_OCULUSDK2_HPP__
+#define __OZO_OCULUSDK2_HPP__
 
-#include "../lib/LibOVR/Src/OVR_CAPI.h"
+#include "OVR_CAPI.h"
 
 namespace ozo {
 
-class OculusDK2 : public OculusBase {
+class OculusDK2 {
 public:
 	//all are external output interfaces
 	ovrHmdDesc* hmd;
@@ -21,4 +21,4 @@ public:
 
 } //namespace ozo
 
-#endif // __OCULUSDK2_HPP__
+#endif // __OZO_OCULUSDK2_HPP__

@@ -1,5 +1,5 @@
-#ifndef __DECODERQR_HPP__
-#define __DECODERQR_HPP__
+#ifndef __OZO_DECODERQR_HPP__
+#define __OZO_DECODERQR_HPP__
 
 #include <cv.h>
 #include <highgui.h>
@@ -27,4 +27,4 @@ public:
 
 } //namespace ozo
 
-#endif // __DECODERQR_HPP__
+#endif // __OZO_DECODERQR_HPP__

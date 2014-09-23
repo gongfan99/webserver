@@ -1,2 +1,0 @@
-C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp_build/CMakeFiles/libzxing.dir
-C:/Users/sam/Documents/User/Embeded/ServerApp/webserver/lib/zxing/cpp_build/CMakeFiles/zxing.dir

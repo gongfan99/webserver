@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\zxing.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\zxing.dir/objects.a @CMakeFiles\zxing.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\zxing.dir/objects.a -Wl,--no-whole-archive  -o zxing.exe -Wl,--out-implib,libzxing.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libzxing.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

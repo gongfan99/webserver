@@ -1,5 +1,8 @@
-#ifndef __UTILS_HPP__
-#define __UTILS_HPP__
+#ifndef __OZO_UTILS_HPP__
+#define __OZO_UTILS_HPP__
+
+#define QUOTEME(x) #x
+#define STR(macro) QUOTEME(macro)
 
 #include <string>
 #include <sstream>
@@ -16,4 +19,4 @@ namespace ozo
 	}
 }
 
-#endif // __UTILS_HPP__
+#endif // __OZO_UTILS_HPP__

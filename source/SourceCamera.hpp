@@ -1,5 +1,5 @@
-#ifndef __SOURCECAMERA_HPP__
-#define __SOURCECAMERA_HPP__
+#ifndef __OZO_SOURCECAMERA_HPP__
+#define __OZO_SOURCECAMERA_HPP__
 
 #include <cv.h>
 #include <highgui.h>
@@ -19,4 +19,4 @@ private:
 
 } //namespace ozo
 
-#endif // __SOURCECAMERA_HPP__
+#endif // __OZO_SOURCECAMERA_HPP__

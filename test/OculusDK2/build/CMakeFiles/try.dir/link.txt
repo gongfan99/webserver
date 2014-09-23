@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\try.dir/objects.a
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\ar.exe cr CMakeFiles\try.dir/objects.a @CMakeFiles\try.dir\objects1.rsp
-C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin\g++      -Wl,--whole-archive CMakeFiles\try.dir/objects.a -Wl,--no-whole-archive  -o try.exe -Wl,--out-implib,libtry.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ..\..\..\lib\zxing\cpp_build\libzxing.a ..\..\..\lib\LibOVR\build\libovr.a ..\..\..\lib\i686-w64-mingw32\lib\libwinmm.a ..\..\..\lib\i686-w64-mingw32\lib\libws2_32.a ..\..\..\lib\i686-w64-mingw32\lib\libdbghelp.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

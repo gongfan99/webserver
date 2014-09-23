@@ -25,8 +25,8 @@ Server_pp::~Server_pp() {
 
 void Server_pp::process() {
     if( mSocketConnected ) {
-		quat = oculus_data.HeadPose.ThePose.Orientation;
-		pos = oculus_data.HeadPose.ThePose.Position;
+		quat = oculus_data->HeadPose.ThePose.Orientation;
+		pos = oculus_data->HeadPose.ThePose.Position;
 		
         boost::format fmt("{ \"m\" : \"update\", \"o\" : [%f,%f,%f,%f], \"a\" : [%f,%f,%f] }");
 
