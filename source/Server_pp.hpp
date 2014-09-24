@@ -20,6 +20,9 @@ private:
 	ovrVector3f  pos;
 	std::string currentPage;
 	std::string incomingPage;
+	void on_open(websocketpp::connection_hdl hdl);
+	void on_close(websocketpp::connection_hdl hdl);
+	void on_message(websocketpp::connection_hdl hdl, websocketpp::server<websocketpp::config::asio>::message_ptr msg);
 public:
 	//all are external input interfaces
 	ovrHmdDesc** hmd;
@@ -27,14 +30,12 @@ public:
 	ovrDistortionMesh* meshData[2];
 	ovrTrackingState* oculus_data;
 	
-	std::vector<char> *decoder_data;
+	std::string *decoder_data;
 	boost::mutex *mutex; //mutex for decoder_data
 	
 	Server_pp();
 	~Server_pp();
 	void process();
-	void on_open(websocketpp::connection_hdl hdl);
-	void on_close(websocketpp::connection_hdl hdl);
 };
 
 } //namespace ozo

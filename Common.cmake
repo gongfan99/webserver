@@ -25,7 +25,7 @@ SET(ZXING_INC "C:/Users/Sam/Documents/User/Embeded/ServerApp/zxing/cpp/core/src"
 SET(ZXING_LIB "C:/Users/Sam/Documents/User/Embeded/ServerApp/zxing/cpp_build")
 SET(OVR_INC "C:/Users/Sam/Documents/User/Embeded/ServerApp/LibOVR/Src")
 SET(OVR_LIB "C:/Users/Sam/Documents/User/Embeded/ServerApp/LibOVR/build")
-SET(WEBSOCKETPP_INC "C:/Users/Sam/Documents/User/Embeded/ServerApp") #header only library
+SET(WEBSOCKETPP_INC "C:/Users/Sam/Documents/User/Embeded/ServerApp/websocketpp/..") #header only library
 
 #extra path for packages or programs
 SET(OPENCV_PATH "C:/Users/Sam/Documents/User/Embeded/ServerApp/opencv/build/x86/MinGW-W64")

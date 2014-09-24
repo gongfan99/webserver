@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-include(../Common.cmake NO_POLICY_SCOPE)
+include(../common.cmake NO_POLICY_SCOPE)
 
 project (test)
 # The version number.
@@ -8,10 +8,6 @@ set (Tutorial_VERSION_MINOR 0)
  
 # configure a header file to pass some of the CMake settings
 # to the source code
-configure_file (
- "${PROJECT_SOURCE_DIR}/TestConfigure.hpp.in"
- "${PROJECT_BINARY_DIR}/TestConfigure.hpp"
- )
 configure_file (
 "${PROJ_SRC}/OzoConfigure.hpp.in"
 "${PROJECT_BINARY_DIR}/OzoConfigure.hpp"

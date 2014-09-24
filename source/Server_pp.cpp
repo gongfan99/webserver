@@ -12,7 +12,7 @@ Server_pp::Server_pp() : mSocketConnected(false) {
 	server.set_open_handler(bind(&Server_pp::on_open,this,::_1));
 	//server.set_fail_handler(bind(&Server_pp::on_fail,this,::_1));
 	server.set_close_handler(bind(&Server_pp::on_close,this,::_1));
-	//server.set_message_handler(bind(&Server_pp::on_message,this,::_1,::_2));
+	server.set_message_handler(bind(&Server_pp::on_message,this,::_1,::_2));
 	
 	server.init_asio();
 	server.listen(9002);
@@ -41,19 +41,14 @@ void Server_pp::process() {
 
         server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 		
-		std::vector<char> qrresult;
 		{
 			boost::unique_lock<boost::mutex> lock1(*mutex, boost::try_to_lock);
-			if (lock1.owns_lock()) qrresult = *decoder_data;
+			if (lock1.owns_lock()) incomingPage = *decoder_data;
 		}
-		if (!qrresult.empty()) {
-			std::string qrstring(qrresult.begin(), qrresult.end());
-			incomingPage = qrstring;
-			if (currentPage != incomingPage){
-				currentPage = incomingPage;
-				server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
-			}
-		}		
+		if (currentPage != incomingPage){
+			currentPage = incomingPage;
+			server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+		}
 	}
 	server.poll();
 }
@@ -69,14 +64,12 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
     
     mSocketConnected = true;
     std::cout << "Connected..\n";
-	
+
 	boost::format fmt("{ \"m\" : \"config\", \"name\" : [\"%s\"] }");
 	fmt % (*hmd)->ProductName;
 
 	server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
 }
-
-
 
 void Server_pp::on_close(websocketpp::connection_hdl hdl) {
     std::cout << "Disonnected..\n";
@@ -84,6 +77,9 @@ void Server_pp::on_close(websocketpp::connection_hdl hdl) {
 }
 
 //void Server_pp::on_fail(websocketpp::connection_hdl hdl) {}
-//void Server_pp::on_message(websocketpp::connection_hdl hdl, server::message_ptr msg) {}
+void Server_pp::on_message(websocketpp::connection_hdl hdl, 
+							websocketpp::server<websocketpp::config::asio>::message_ptr msg) {
+	std::cout << msg->get_payload() << std::endl;
+}
 
 } //namespace ozo

@@ -18,11 +18,13 @@ namespace ozo {
 class DecoderQR {
 public:
 	cv::Mat *source; //external input interface
-	std::vector<char> data; //external output interface
+	std::string data; //external output interface
 	boost::mutex mutex; //external interface; mutex for data
 	DecoderQR();
 	~DecoderQR();
 	void process();
+private:
+	std::string result_text;
 };
 
 } //namespace ozo

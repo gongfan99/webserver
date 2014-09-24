@@ -91,7 +91,7 @@ var OculusBridge = function(config) {
 	}
 
 	var updateConfig = function(data) {
-		displayMetrics.hScreenSize				= data["screenSize"][0];
+/* 		displayMetrics.hScreenSize				= data["screenSize"][0];
 		displayMetrics.vScreenSize				= data["screenSize"][1];
 		displayMetrics.vScreenCenter			= data["screenSize"][1] / 2;
 
@@ -105,7 +105,8 @@ var OculusBridge = function(config) {
 
 		displayMetrics.distortionK				= [ data["distortion"][0], data["distortion"][1], data["distortion"][2], data["distortion"][3] ];
 
-		displayMetrics.FOV						= data["fov"];
+		displayMetrics.FOV						= data["fov"]; */
+		displayMetrics.name						= data["name"]
 
 		if(callbacks["onConfigUpdate"]) {
 			callbacks["onConfigUpdate"]( displayMetrics );
@@ -157,6 +158,7 @@ var OculusBridge = function(config) {
 				break;
 
 				case "update":
+					debug(data["o"][0]+data["o"][1]+data["o"][2]+data["o"][3]);
 					updateOrientation(data);
 					updateAcceleration(data);
 				break;
