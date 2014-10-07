@@ -128,6 +128,6 @@ require([
 		]);
 	}
 	//document.body.appendChild(img);
-	img.src = "Land_shallow_topo_alpha_2048.png";//"Big_ben_equirectangular.jpg";"14087020332_1221918a9e_o.jpg""Land_shallow_topo_alpha_2048.png"
+	img.src = "Land_shallow_topo_2048.jpg";//"Big_ben_equirectangular.jpg";"14087020332_1221918a9e_o.jpg""Land_shallow_topo_alpha_2048.png"
 
 })
