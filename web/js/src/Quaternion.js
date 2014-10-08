@@ -14,11 +14,11 @@ PANA.Quaternion = function () {
 		mouse.y	= -((event.clientY / window.innerHeight) - 0.5);
 		//console.log(mouse.x, mouse.y);
 	}, false);
+	this.mouse = mouse;
 
-	this.u = new THREE.Vector3( 0, 0, 1 );
+	this.u = new THREE.Vector3( 0, 0, -1 );
 	this.v = new THREE.Vector3();
 	this.axis = new THREE.Vector3();
-	this.mouse = mouse;
 };
 
 PANA.Quaternion.prototype = {

@@ -1,11 +1,16 @@
 //http://learningthreejs.com/blog/2013/09/16/how-to-make-the-earth-in-webgl/
 //http://blog.thematicmapping.org/2014/01/photo-spheres-with-threejs.html
 require([
-"js/OculusBridge.js",
 "js/async.js",
+"js/Detector.js",
 "js/three.min.js",
+"js/pixastic.custom.js",
 "js/src/PANA.js",
-"js/src/Quaternion.js"], function(){
+"js/src/ImageSource.js",
+"js/src/Quaternion.js",
+"js/src/PerspCamera.js",
+"js/src/Scene1.js",
+"js/src/Renderer.js"], function(){
 	var name = document.getElementById("name");
 	var orientation = document.getElementById("orientation");
 	var qrcode = document.getElementById("qrcode");
@@ -30,16 +35,57 @@ require([
 	});
 
 	bridge.connect(); */
-	
-	var quaternion = new PANA.Quaternion();
-	requestAnimationFrame(function animate(){
-		// keep looping
-		requestAnimationFrame( animate );
-		quaternion.process();
 
-		name.textContent = 'xy: '+quaternion.mouse.x.toString()+" "+quaternion.mouse.y.toString();
+	var vec, imagesource, scene1, quaternion, rightcamera, rightrenderer, leftrenderer;
+	vec = new THREE.Vector3( 0, 0, -1 );
+	imagesource = new PANA.ImageSource();
+	var checkedimageloaded = function(){
+		if (!(imagesource.loaded && imagesource.loaded.status)) {
+			setTimeout(checkedimageloaded, 50);
+			return;
+		};
+		async.series([
+			function(callback){
+				scene1 = new PANA.Scene1();
+				quaternion = new PANA.Quaternion();
+				rightcamera = new PANA.PerspCamera('right');
+				rightrenderer = new PANA.Renderer('right');
+				//leftrenderer = rightrenderer.clone('left');
+				console.log(imagesource.loaded);
+				callback();
+			},
 
-		orientation.textContent = 'wxyz: '+quaternion.quaternion.w.toString()+" "+quaternion.quaternion.x.toString()+" "+quaternion.quaternion.y.toString()+" "+quaternion.quaternion.z.toString();
-	});
+			function(callback){
+				scene1.loaded = imagesource.loaded;
+				scene1.image = imagesource.image;
+				rightcamera.quaternion = quaternion.quaternion;
+				rightrenderer.scene = scene1.scene;
+				rightrenderer.camera = rightcamera.camera;
+				callback();
+			},
+			
+			function(callback){		
+				requestAnimationFrame(function animate(){
+					// keep looping
+					requestAnimationFrame( animate );
+					quaternion.process();
 
+					name.textContent = 'xy: '+quaternion.mouse.x.toString()+" "+quaternion.mouse.y.toString();
+
+			/* 		orientation.textContent = 'wxyz: '+quaternion.quaternion.w.toString()+" "+quaternion.quaternion.x.toString()+" "+quaternion.quaternion.y.toString()+" "+quaternion.quaternion.z.toString();
+					
+					vec.set(0, 0, -1);
+					vec.applyQuaternion(quaternion.quaternion);
+					qrcode.textContent = 'xyz: '+vec.x.toString()+" "+vec.y.toString()+" "+vec.z.toString(); */
+					imagesource.process();
+					scene1.process();
+					quaternion.process();
+					rightcamera.process();
+					rightrenderer.process(true); //'true' means render to screen
+				});
+				callback();
+			}
+		]);
+	};
+	checkedimageloaded();
 });

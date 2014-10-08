@@ -4,12 +4,12 @@
 * output: renderTarget or (to screen)
 */ 
 
-PANA.Renderer = function () {
+PANA.Renderer = function (side) {
 	// temperarily put here; should point to OculusBridge eventually
-	var HMD = (options && options.HMD) ? options.HMD: {
+	var HMD = {
 		// Parameters from the Oculus Rift DK1
-		hResolution: window.innerWidth,//1280,
-		vResolution: window.innerHeight,//800,
+		hResolution: window.innerWidth/10,//1280,
+		vResolution: window.innerHeight/10,//800,
 		hScreenSize: 0.14976,
 		vScreenSize: 0.0936,
 		interpupillaryDistance: 0.064,
@@ -22,6 +22,11 @@ PANA.Renderer = function () {
 
 	this.renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
 	this.renderer.setSize( HMD.hResolution, HMD.vResolution );
+	if ( side == 'left' ) {
+		this.renderer.setViewport(0, 0, HMD.hResolution/2, HMD.vResolution);
+	} else {
+		this.renderer.setViewport(HMD.hResolution/2, 0, HMD.hResolution/2, HMD.vResolution);
+	}
 	this.renderer.autoClear = false;
 	document.body.appendChild( this.renderer.domElement );
 
@@ -31,13 +36,17 @@ PANA.Renderer = function () {
 
 PANA.Renderer.prototype = {
 	contructor: PANA.Renderer,
-	process: function () {
-		//this.renderer.render( this.scene, this.camera, this.renderTarget, true );
-		this.renderer.render( this.scene, this.camera );
-	}
-	clone: function () {
-		var renderer = new PANA.Renderer();
+	process: function (toScreen) {
+		if (toScreen) {
+			this.renderer.render( this.scene, this.camera );
+		} else {
+			this.renderer.render( this.scene, this.camera, this.renderTarget, true );
+		};
+	},
+	clone: function (side) {
+		var renderer = new PANA.Renderer(side);
 		renderer.renderer = this.renderer; //share the renderer
-		renderer.renderTarget = this.renderTarget.clone();
+		//renderer.renderTarget = this.renderTarget.clone();
+		return renderer;
 	}
 };

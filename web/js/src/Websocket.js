@@ -55,6 +55,7 @@ PANA.Websocket = function(config) {
 		debug("Socket error.");
 	}
 	
+	var config, quaternion, acceleration, mesh, image; //enclosure variables
 	this.socket.onmessage = function(msg) {
 		
 		var data = JSON.parse( msg.data );
@@ -78,41 +79,41 @@ PANA.Websocket = function(config) {
 				displayMetrics.distortionK				= [ data["distortion"][0], data["distortion"][1], data["distortion"][2], data["distortion"][3] ];
 
 				displayMetrics.FOV						= data["fov"]; */
-				this.config.name						= data["name"]
+				config.name						= data["name"]
 			break;
 
 			// For backwards compatability with the bridge application.
 			case "orientation":
 				if(data["o"] && (data["o"].length == 4)) {
-					this.quaternion.x = Number(data["o"][1]);
-					this.quaternion.y = Number(data["o"][2]);
-					this.quaternion.z = Number(data["o"][3]);
-					this.quaternion.w = Number(data["o"][0]);
+					quaternion.x = Number(data["o"][1]);
+					quaternion.y = Number(data["o"][2]);
+					quaternion.z = Number(data["o"][3]);
+					quaternion.w = Number(data["o"][0]);
 				}
 			break;
 
 			case "acceleration":
 				if(data["a"] && (data["a"].length == 3)) {			
-					this.acceleration.x = Number(data["a"][0]);
-					this.acceleration.y = Number(data["a"][1]);
-					this.acceleration.z = Number(data["a"][2]);
+					acceleration.x = Number(data["a"][0]);
+					acceleration.y = Number(data["a"][1]);
+					acceleration.z = Number(data["a"][2]);
 				}
 			break;
 
 			case "mesh":
-				this.mesh.ScreenPosNDC = data["ScreenPosNDC"];
-				this.mesh.TimeWarpFactor = data["TimeWarpFactor"];
-				this.mesh.VignetteFactor = data["VignetteFactor"];
-				this.mesh.TanEyeAnglesR = data["TanEyeAnglesR"];
-				this.mesh.TanEyeAnglesG = data["TanEyeAnglesG"];
-				this.mesh.TanEyeAnglesB = data["TanEyeAnglesB"];
-				this.mesh.pIndexData = data["pIndexData"];
-				this.mesh.VertexCount = data["VertexCount"];
-				this.mesh.IndexCount = data["IndexCount"];
+				mesh.ScreenPosNDC = data["ScreenPosNDC"];
+				mesh.TimeWarpFactor = data["TimeWarpFactor"];
+				mesh.VignetteFactor = data["VignetteFactor"];
+				mesh.TanEyeAnglesR = data["TanEyeAnglesR"];
+				mesh.TanEyeAnglesG = data["TanEyeAnglesG"];
+				mesh.TanEyeAnglesB = data["TanEyeAnglesB"];
+				mesh.pIndexData = data["pIndexData"];
+				mesh.VertexCount = data["VertexCount"];
+				mesh.IndexCount = data["IndexCount"];
 			break;
 
 			case "image":
-				this.image.path = data["path"];
+				image.path = data["path"];
 			break;
 			
 			default:
@@ -122,6 +123,11 @@ PANA.Websocket = function(config) {
 		}
 
 	}
+	this.config = config;
+	this.quaternion = quaternion;
+	this.acceleration = acceleration;
+	this.mesh = mesh;
+	this.image = image;
 
 	this.socket.onclose = function() {
 		this.socket.close();
