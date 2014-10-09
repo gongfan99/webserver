@@ -8,8 +8,8 @@ PANA.Renderer = function (side) {
 	// temperarily put here; should point to OculusBridge eventually
 	var HMD = {
 		// Parameters from the Oculus Rift DK1
-		hResolution: window.innerWidth/10,//1280,
-		vResolution: window.innerHeight/10,//800,
+		hResolution: window.innerWidth/2,//1280,
+		vResolution: window.innerHeight/2,//800,
 		hScreenSize: 0.14976,
 		vScreenSize: 0.0936,
 		interpupillaryDistance: 0.064,

@@ -18,7 +18,8 @@ PANA.PerspCamera = function (side) {
 PANA.PerspCamera.prototype = {
 	contructor: PANA.PerspCamera,
 	process: function () {
-		this.camera.quaternion = this.quaternion;
-		this.camera.updateMatrix();
+		this.camera.quaternion.copy( this.quaternion ); //camera.quaternion is not writable directly so 'copy' has to be used.
+/* 		this.camera.updateMatrix();
+		this.camera.updateProjectionMatrix(); */
 	}
 };

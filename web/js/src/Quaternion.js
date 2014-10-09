@@ -15,10 +15,6 @@ PANA.Quaternion = function () {
 		//console.log(mouse.x, mouse.y);
 	}, false);
 	this.mouse = mouse;
-
-	this.u = new THREE.Vector3( 0, 0, -1 );
-	this.v = new THREE.Vector3();
-	this.axis = new THREE.Vector3();
 };
 
 PANA.Quaternion.prototype = {
@@ -26,12 +22,10 @@ PANA.Quaternion.prototype = {
 	process: function () {
 		var x = this.mouse.x;
 		var y = this.mouse.y;
-		this.v.set( x, y, Math.sqrt(0.25-x*x-y*y) );
-		this.axis.crossVectors( this.u, this.v );
-		this.axis.normalize();
-		var cosTheta = this.u.dot(this.v)/(this.u.length() * this.v.length());
-		var cosHalfTheta = Math.sqrt(( 1 + cosTheta ) / 2);
-		var sinHalfTheta = Math.sqrt(( 1 - cosTheta ) / 2);
-		this.quaternion.set( this.axis.x * sinHalfTheta, this.axis.y * sinHalfTheta, this.axis.z * sinHalfTheta, cosHalfTheta ); //xyzw
+		var z = -Math.sqrt(0.25-x*x-y*y);
+		var theta1 = Math.atan(x/z);
+		var theta2 = Math.asin(y);
+		//this.quaternion.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'XYZ')); //intrinsic Euler angles
+		this.quaternion.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'YXZ')); //intrinsic Euler angles
 	}
 };

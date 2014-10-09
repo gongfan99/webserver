@@ -38,6 +38,7 @@ require([
 
 	var vec, imagesource, scene1, quaternion, rightcamera, rightrenderer, leftrenderer;
 	vec = new THREE.Vector3( 0, 0, -1 );
+	var quatValue;
 	imagesource = new PANA.ImageSource();
 	var checkedimageloaded = function(){
 		if (!(imagesource.loaded && imagesource.loaded.status)) {
@@ -49,8 +50,9 @@ require([
 				scene1 = new PANA.Scene1();
 				quaternion = new PANA.Quaternion();
 				rightcamera = new PANA.PerspCamera('right');
+				leftcamera = new PANA.PerspCamera('left');
 				rightrenderer = new PANA.Renderer('right');
-				//leftrenderer = rightrenderer.clone('left');
+				leftrenderer = rightrenderer.clone('left');
 				console.log(imagesource.loaded);
 				callback();
 			},
@@ -59,8 +61,11 @@ require([
 				scene1.loaded = imagesource.loaded;
 				scene1.image = imagesource.image;
 				rightcamera.quaternion = quaternion.quaternion;
+				leftcamera.quaternion = quaternion.quaternion;
 				rightrenderer.scene = scene1.scene;
 				rightrenderer.camera = rightcamera.camera;
+				leftrenderer.scene = scene1.scene;
+				leftrenderer.camera = leftcamera.camera;
 				callback();
 			},
 			
@@ -71,17 +76,21 @@ require([
 					quaternion.process();
 
 					name.textContent = 'xy: '+quaternion.mouse.x.toString()+" "+quaternion.mouse.y.toString();
-
-			/* 		orientation.textContent = 'wxyz: '+quaternion.quaternion.w.toString()+" "+quaternion.quaternion.x.toString()+" "+quaternion.quaternion.y.toString()+" "+quaternion.quaternion.z.toString();
+					
+					quatValue = rightrenderer.camera.quaternion;
+					orientation.textContent = 'wxyz: '+quatValue.w.toString()+" "+quatValue.x.toString()+" "+quatValue.y.toString()+" "+quatValue.z.toString();
 					
 					vec.set(0, 0, -1);
-					vec.applyQuaternion(quaternion.quaternion);
-					qrcode.textContent = 'xyz: '+vec.x.toString()+" "+vec.y.toString()+" "+vec.z.toString(); */
+					vec.applyQuaternion(quatValue);
+					qrcode.textContent = 'xyz: '+vec.x.toString()+" "+vec.y.toString()+" "+vec.z.toString();
+					
 					imagesource.process();
 					scene1.process();
 					quaternion.process();
 					rightcamera.process();
+					leftcamera.process();
 					rightrenderer.process(true); //'true' means render to screen
+					leftrenderer.process(true);
 				});
 				callback();
 			}
