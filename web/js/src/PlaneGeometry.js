@@ -6,11 +6,28 @@
 
 PANA.PlaneGeometry = function () {
 	this.geometry = new THREE.BufferGeometry();
+	this.geometry.dynamic = true;
 };
 
 PANA.PlaneGeometry.prototype = {
 	contructor: PANA.PlaneGeometry,
 	process: function () {
+		if ( !this.mesh.processed ) {
+			var mesh = this.mesh;
+			var positions = new Float32Array( mesh.IndexCount * 3 );
+
+			for( var v = 0; v < mesh.IndexCount; v++ ) {
+				positions[ v * 3 + 0 ] = mesh.ScreenPosNDC[ mesh.pIndexData[ v ] * 2 + 0 ];
+				positions[ v * 3 + 1 ] = mesh.ScreenPosNDC[ mesh.pIndexData[ v ] * 2 + 1 ];
+				positions[ v * 3 + 2 ] = 0.0;
+			}
+
+			this.geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+
+			this.mesh.processed = true;
+		}
+	}
+/* 	process: function () {
 		if ( !this.mesh.processed ) {
 			var mesh = this.mesh;
 			var positions = new Float32Array( mesh.IndexCount * 2 );
@@ -35,14 +52,14 @@ PANA.PlaneGeometry.prototype = {
 				TanEyeAnglesB[ v * 2 + 1 ] = mesh.TanEyeAnglesB[ mesh.pIndexData[ v ] * 2 + 1 ];
 			}
 
-			this.geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 2 ) );
-			this.geometry.addAttribute( 'TimeWarpFactor', new THREE.BufferAttribute( TimeWarpFactor, 1 ) );
-			this.geometry.addAttribute( 'VignetteFactor', new THREE.BufferAttribute( VignetteFactor, 1 ) );
-			this.geometry.addAttribute( 'TanEyeAnglesR', new THREE.BufferAttribute( TanEyeAnglesR, 2 ) );
-			this.geometry.addAttribute( 'TanEyeAnglesG', new THREE.BufferAttribute( TanEyeAnglesG, 2 ) );
-			this.geometry.addAttribute( 'TanEyeAnglesB', new THREE.BufferAttribute( TanEyeAnglesB, 2 ) );
+			this.geometry.addAttribute( 'position2', new THREE.BufferAttribute( positions, 2 ) );
+			this.geometry.addAttribute( 'timewarpLerpFactor', new THREE.BufferAttribute( TimeWarpFactor, 1 ) );
+			this.geometry.addAttribute( 'vignette', new THREE.BufferAttribute( VignetteFactor, 1 ) );
+			this.geometry.addAttribute( 'texCoord0', new THREE.BufferAttribute( TanEyeAnglesR, 2 ) );
+			this.geometry.addAttribute( 'texCoord1', new THREE.BufferAttribute( TanEyeAnglesG, 2 ) );
+			this.geometry.addAttribute( 'texCoord2', new THREE.BufferAttribute( TanEyeAnglesB, 2 ) );
 			
 			this.mesh.processed = true;
 		}
-	}
+	} */
 };

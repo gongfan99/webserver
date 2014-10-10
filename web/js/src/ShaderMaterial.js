@@ -1,63 +1,106 @@
 /** 
 * @author fangong
-* input: renderTarget
+* input: renderTarget eyeInfo
 * output: ShaderMaterial
 */ 
 
 PANA.ShaderMaterial = function () {
-	this.ShaderMaterial = new THREE.ShaderMaterial( {
+/* 	this.material = new THREE.ShaderMaterial( {
 		uniforms: {
-			"tDiffuse": { type: "t", value: this.renderTarget },
-			"scale": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"scaleIn": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"lensCenter": { type: "v2", value: new THREE.Vector2(0.0,0.0) },
-			"hmdWarpParam": { type: "v4", value: new THREE.Vector4(1.0,0.0,0.0,0.0) },
-			"chromAbParam": { type: "v4", value: new THREE.Vector4(1.0,0.0,0.0,0.0) }
+			"texture0": { type: "t", value: null },
+			"eyeToSourceUVscale": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
+			"eyeToSourceUVoffset": { type: "v2", value: new THREE.Vector2(0.0,0.0) },
+			"eyeRotationStart": { type: "m4", value: new THREE.Matrix4() },
+			"eyeRotationEnd": { type: "m4", value: new THREE.Matrix4() }
 		},
 		attributes: {
-			"TimeWarpFactor": { type: "f", value: new THREE.Vector2(0.0,0.0) },
-			"VignetteFactor": { type: "f", value: new THREE.Vector4(1.0,0.0,0.0,0.0) },		"TanEyeAnglesR": { type: "v2", value: renderTarget },
-			"TanEyeAnglesG": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"TanEyeAnglesB": { type: "v2", value: new THREE.Vector2(1.0,1.0) }
+			"position2": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
+			"timewarpLerpFactor": { type: "f", value: 1.0 },
+			"vignette": { type: "f", value: 1.0 },
+			"texCoord0": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
+			"texCoord1": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
+			"texCoord2": { type: "v2", value: new THREE.Vector2(1.0,1.0) }
 		},
 		vertexShader: [
-			"varying vec2 vUv;",
+			"attribute vec2 position2;",
+			"attribute float timewarpLerpFactor;",
+			"attribute float vignette;",
+			"attribute vec2 texCoord0;",
+			"attribute vec2 texCoord1;",
+			"attribute vec2 texCoord2;",
+			"",
+			"uniform vec2 eyeToSourceUVscale;",
+			"uniform vec2 eyeToSourceUVoffset;",
+			"uniform mat4 eyeRotationStart;",
+			"uniform mat4 eyeRotationEnd;",
+			"",
+			"varying vec2 oTexCoord0;",
+			"varying vec2 oTexCoord1;",
+			"varying vec2 oTexCoord2;",
+			"varying float oVignette;",
+			"",
+			"vec2 timeWarpTexCoord(in vec2 texCoord, in mat4 rotMat) {",
+				"vec3 transformed = (rotMat * vec4(texCoord.xy, 1.0, 1.0)).xyz;",
+				"vec2 flattened = transformed.xy / transformed.z;",
+				"return eyeToSourceUVscale * flattened + eyeToSourceUVoffset;",
+			"}",
+			"",
 			"void main() {",
-			" vUv = uv;",
-			"	gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );",
+			"	mat4 lerpedEyeRot = eyeRotationStart * (1.0 - timewarpLerpFactor) + eyeRotationEnd * timewarpLerpFactor;",
+			"	oTexCoord0 = timeWarpTexCoord(texCoord0, lerpedEyeRot);",
+			"	oTexCoord1 = timeWarpTexCoord(texCoord1, lerpedEyeRot);",
+			"	oTexCoord2 = timeWarpTexCoord(texCoord2, lerpedEyeRot);",
+			"	gl_Position = vec4(position2.x, position2.y, 0.5, 1.0);",
+			"	oVignette = vignette;",
 			"}"
 		].join("\n"),
 		fragmentShader: [
-			"uniform vec2 scale;",
-			"uniform vec2 scaleIn;",
-			"uniform vec2 lensCenter;",
-			"uniform vec4 hmdWarpParam;",
-			'uniform vec4 chromAbParam;',
-			"uniform sampler2D texid;",
-			"varying vec2 vUv;",
-			"void main()",
-			"{",
-			"  vec2 uv = (vUv*2.0)-1.0;", // range from [0,1] to [-1,1]
-			"  vec2 theta = (uv-lensCenter)*scaleIn;",
-			"  float rSq = theta.x*theta.x + theta.y*theta.y;",
-			"  vec2 rvector = theta*(hmdWarpParam.x + hmdWarpParam.y*rSq + hmdWarpParam.z*rSq*rSq + hmdWarpParam.w*rSq*rSq*rSq);",
-			'  vec2 rBlue = rvector * (chromAbParam.z + chromAbParam.w * rSq);',
-			"  vec2 tcBlue = (lensCenter + scale * rBlue);",
-			"  tcBlue = (tcBlue+1.0)/2.0;", // range from [-1,1] to [0,1]
-			"  if (any(bvec2(clamp(tcBlue, vec2(0.0,0.0), vec2(1.0,1.0))-tcBlue))) {",
-			"    gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);",
-			"    return;}",
-			"  vec2 tcGreen = lensCenter + scale * rvector;",
-			"  tcGreen = (tcGreen+1.0)/2.0;", // range from [-1,1] to [0,1]
-			"  vec2 rRed = rvector * (chromAbParam.x + chromAbParam.y * rSq);",
-			"  vec2 tcRed = lensCenter + scale * rRed;",
-			"  tcRed = (tcRed+1.0)/2.0;", // range from [-1,1] to [0,1]
-			"  gl_FragColor = vec4(texture2D(texid, tcRed).r, texture2D(texid, tcGreen).g, texture2D(texid, tcBlue).b, 1);",
+			"uniform sampler2D texture0;",
+			"",
+			"varying vec2 oTexCoord0;",
+			"varying vec2 oTexCoord1;",
+			"varying vec2 oTexCoord2;",
+			"varying float oVignette;",
+			"",
+			"void main() {",
+			"	float r = texture2D(texture0, oTexCoord0).r;",
+			"	float g = texture2D(texture0, oTexCoord1).g;",
+			"	float b = texture2D(texture0, oTexCoord2).b;",
+			"	gl_FragColor = vec4(r, g, b, 1) * oVignette;",
 			"}"
-		].join("\n")
+		].join("\n"),
+		side: THREE.DoubleSide,
+		transparent: true
+	} ); */
+	this.material = new THREE.ShaderMaterial( {
+/* 		uniforms: {},
+		attributes: {
+			"position2": { type: "v2", value: new THREE.Vector2(1.0,1.0) }
+		},
+		vertexShader: [
+			//"attribute vec2 position2;",
+			//"",
+			"void main() {",
+			"	gl_Position = vec4(position, 1.0);",
+			"}"
+		].join("\n"), */
+		fragmentShader: [
+			"void main() {",
+			"	gl_FragColor = vec4(1.0, 0.2, 0.2, 1.0);",
+			"}"
+		].join("\n"),
+		side: THREE.DoubleSide,
+		transparent: true
 	} );
 };
 
 PANA.ShaderMaterial.prototype = {
-	contructor: PANA.ShaderMaterial
+	contructor: PANA.ShaderMaterial,
+	process: function () {
+		//this.material.uniforms['texture0'].value = this.renderTarget;
+/* 		this.material.uniforms['eyeToSourceUVscale'].value = this.eyeInfo.eyeToSourceUVscale;
+		this.material.uniforms['eyeToSourceUVoffset'].value = this.eyeInfo.eyeToSourceUVoffset;
+		this.material.uniforms['eyeRotationStart'].value = this.eyeInfo.eyeRotationStart;
+		this.material.uniforms['eyeRotationEnd'].value = this.eyeInfo.eyeRotationEnd; */
+	}
 };

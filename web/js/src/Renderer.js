@@ -26,8 +26,8 @@ PANA.Renderer = (function () {
 			renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
 			renderer.setSize( HMD.hResolution, HMD.vResolution ); //set canvas size
 			renderer.autoClear = false;
-			document.body.appendChild( renderer.domElement );
-		};
+			document.body.appendChild( renderer.domElement ); //add canvas only once
+		}
 		this.renderer = renderer;
 
 		this.viewport = [0, 0, HMD.hResolution/2, HMD.vResolution];
@@ -43,8 +43,8 @@ PANA.Renderer = (function () {
 PANA.Renderer.prototype = {
 	contructor: PANA.Renderer,
 	process: function () {
-		this.renderer.setViewport(this.viewport[0], this.viewport[1], this.viewport[2], this.viewport[3]);
 		if (this.toScreen) {
+			this.renderer.setViewport(this.viewport[0], this.viewport[1], this.viewport[2], this.viewport[3]);
 			this.renderer.render( this.scene, this.camera );
 		} else {
 			this.renderer.render( this.scene, this.camera, this.renderTarget, true );

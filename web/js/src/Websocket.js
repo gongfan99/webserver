@@ -59,7 +59,29 @@ PANA.Websocket = function(config) {
 		pIndexData: [0, 1, 2, 2, 1, 3],
 		processed: false
 	};
-	var config, quaternion, acceleration, mesh; //enclosure variables
+	var eyeInfo = {
+		right: {
+			eyeToSourceUVscale: new THREE.Vector2(1.0,1.0),
+			eyeToSourceUVoffset: new THREE.Vector2(0.0,0.0),
+			eyeRotationStart: new THREE.Matrix4(),
+			eyeRotationEnd: new THREE.Matrix4()
+		},
+		left: {
+			eyeToSourceUVscale: new THREE.Vector2(1.0,1.0),
+			eyeToSourceUVoffset: new THREE.Vector2(0.0,0.0),
+			eyeRotationStart: new THREE.Matrix4(),
+			eyeRotationEnd: new THREE.Matrix4()
+		}
+	};
+	var quaternion = new THREE.Quaternion();
+	var mouse	= {x : 0, y : 0}; //closure variable
+	document.addEventListener('mousemove', function(event){
+		mouse.x	= ((event.clientX / window.innerWidth ) - 0.5 ) * 2;
+		mouse.y	= - ((event.clientY / window.innerHeight) - 0.5) * 2;
+	}, false);
+	this.mouse = mouse;
+	
+	var config, acceleration; //enclosure variables
 	socket.onmessage = function(msg) {
 		
 		var data = JSON.parse( msg.data );
@@ -132,6 +154,7 @@ PANA.Websocket = function(config) {
 	this.acceleration = acceleration;
 	this.mesh = mesh;
 	this.imagePath = imagePath;
+	this.eyeInfo = eyeInfo;
 
 	socket.onclose = function() {
 		socket.close();
@@ -140,5 +163,17 @@ PANA.Websocket = function(config) {
 
 PANA.Websocket.prototype = {
 	contructor: PANA.Websocket,
-	process: function () {}
+	process: function () {
+		var x = this.mouse.x;
+		var y = this.mouse.y;
+		var t = Math.sqrt( x * x + y * y );
+		if ( t > 0.99 ) { //scale x, y below unit circle
+			x = x * 0.99 / t;
+			y = y * 0.99 / t;
+		}
+		var z = -Math.sqrt(1-x*x-y*y);
+		var theta1 = Math.atan(x/z);
+		var theta2 = Math.asin(y);
+		this.quaternion.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'YXZ')); //intrinsic Euler angles; 'theta2' is for X
+	}
 };
