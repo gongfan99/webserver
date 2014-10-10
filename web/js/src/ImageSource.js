@@ -2,36 +2,30 @@
 * @author fangong 
 * input: imagePath
 * output: image
-* in/out: loaded
+* in/out: status
 */
 
 PANA.ImageSource = function () {
-	this.imagePath = {};
-	this.imagePath.path = this.imagePath.previouspath = "Land_shallow_topo_2048.jpg";
-
 	this.image = new Image();
-	var loaded = {
-		status: false,
-		processed: true
-	};
+	var status = { processed: true };
 	this.image.onload = function() {
-		console.log('image loaded!');
-		loaded.status = true;
-		loaded.processed = false; //scene will set this flag to true
+		console.log('PANA.ImageSource: image loaded!');
+		status.processed = false; //to trigger scene1.process
 	};
-	this.loaded = loaded;
-
-	this.image.src = this.imagePath.path;//"Big_ben_equirectangular.jpg";"14087020332_1221918a9e_o.jpg""Land_shallow_topo_alpha_2048.png"
-	console.log('loading...'+this.imagePath.path);
+	this.status = status;
 };
 
 PANA.ImageSource.prototype = {
 	contructor: PANA.ImageSource,
-	process: function () {
-		if ( this.loaded.status && (this.imagePath.previouspath != this.imagePath.path) ) {
-			this.imagePath.previouspath = this.imagePath.path;
-			this.loaded.status = false;
-			this.image.src = this.imagePath.path;
-		}
-	}
+	process: (function () {
+		var previouspath;
+		return function () {
+			if ( (!this.imagePath.processed) && (previouspath != this.imagePath.path) ) {
+				previouspath = this.imagePath.path;
+				this.image.src = this.imagePath.path;
+				console.log('PANA.ImageSource: loading...'+this.imagePath.path);
+				this.imagePath.processed = true;
+			}
+		};
+	})()
 };

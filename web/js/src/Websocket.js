@@ -10,7 +10,6 @@ PANA.Websocket = function(config) {
 	var websocketAddress 	= config.hasOwnProperty("address") 			? config["address"] 		: "localhost";
 	var websocketPort 		= config.hasOwnProperty("port") 			? config["port"] 			: 9002;
 	var retryInterval 		= config.hasOwnProperty("retryInterval") 	? config["retryInterval"] 	: 1;
-	var debugEnabled		= config.hasOwnProperty("debug") 			? config["debug"] 			: true;
 
 	// Display metrics, set to defaults from the dev kit hardware
 	var displayMetrics = {
@@ -27,36 +26,41 @@ PANA.Websocket = function(config) {
 
 		hResolution				: 1280,
 		vResolution				: 720,
-
-		distortionK				: [1, .22, .24, 0],
-		chromaAbParameter		: [0.996, -0.004, 1.014, 0]
-	}
-
-	var debug = function(message){
-		if(debugEnabled){
-			console.log("PANA.Websocket: " + message);
-		}
 	}
 	
 	var socketURL = "ws://" + websocketAddress + ":" + websocketPort + "/";
-	
-	// attempt to open the socket connection
-	this.socket = new WebSocket(socketURL); 
 
-	debug("Attempting to connect: " + socketURL);
+	console.log("PANA.Websocket: attempting to connect " + socketURL);
+	// attempt to open the socket connection
+	var socket = new WebSocket(socketURL); 
 
 	// hook up websocket events //
-	this.socket.onopen = function(){
-		debug("Connected!")
-		this.socket.send("Here's some text that the server is urgently awaiting!");
+	socket.onopen = function(){
+		console.log("PANA.Websocket: connected!")
+		socket.send("Here's some text that the server is urgently awaiting!");
 	}
 
-	this.socket.onerror = function(e){
-		debug("Socket error.");
+	socket.onerror = function(e){
+		console.log("PANA.Websocket: socket error.");
 	}
 	
-	var config, quaternion, acceleration, mesh, image; //enclosure variables
-	this.socket.onmessage = function(msg) {
+	var imagePath = {
+		path: 'Land_shallow_topo_2048.jpg',
+		processed: false
+	};
+	var mesh = {
+		IndexCount: 6,
+		ScreenPosNDC: [-1, 1, 1, 1, -1, -1, 1, -1],
+		TimeWarpFactor: [1, 1, 1, 1],
+		VignetteFactor: [1, 1, 1, 1],
+		TanEyeAnglesR: [0, 1, 1, 1, 0, 0, 1, 0],
+		TanEyeAnglesG: [0, 1, 1, 1, 0, 0, 1, 0],
+		TanEyeAnglesB: [0, 1, 1, 1, 0, 0, 1, 0],
+		pIndexData: [0, 1, 2, 2, 1, 3],
+		processed: false
+	};
+	var config, quaternion, acceleration, mesh; //enclosure variables
+	socket.onmessage = function(msg) {
 		
 		var data = JSON.parse( msg.data );
 
@@ -113,12 +117,12 @@ PANA.Websocket = function(config) {
 			break;
 
 			case "image":
-				image.path = data["path"];
+				imagePath.path = data["path"];
 			break;
 			
 			default:
-				debug("Unknown message received from server: " + msg.data);
-				disconnect();
+				console.log("PANA.Websocket: unknown message received from server: " + msg.data);
+				socket.close();
 			break;
 		}
 
@@ -127,10 +131,10 @@ PANA.Websocket = function(config) {
 	this.quaternion = quaternion;
 	this.acceleration = acceleration;
 	this.mesh = mesh;
-	this.image = image;
+	this.imagePath = imagePath;
 
-	this.socket.onclose = function() {
-		this.socket.close();
+	socket.onclose = function() {
+		socket.close();
 	}
 };
 

@@ -7,11 +7,13 @@ require([
 "js/pixastic.custom.js",
 "js/stats.min.js",
 "js/src/PANA.js",
+"js/src/Websocket.js",
 "js/src/ImageSource.js",
 "js/src/Quaternion.js",
 "js/src/PerspCamera.js",
 "js/src/Scene1.js",
-"js/src/Renderer.js"], function(){
+"js/src/Renderer.js",
+"js/src/PlaneGeometry.js"], function(){
 	var name = document.getElementById("name");
 	var orientation = document.getElementById("orientation");
 	var qrcode = document.getElementById("qrcode");
@@ -20,47 +22,37 @@ require([
 	qrcode.textContent = "reserved for QR code";
 
 /* 	window.onbeforeunload = function () {
-		bridge.disconnect();
 		return "Do you really want to close?";
-	};
+	}; */
 
-	var bridge = new OculusBridge({
-		"onConfigUpdate" : function(displayMetrics) {
-			//giantSquid.quaternion.set(quatValues.x, quatValues.y, quatValues.z, quatValues.w);
-			name.textContent = displayMetrics.name;
-		},
-		"onOrientationUpdate" : function(quatValues) {
-			//giantSquid.quaternion.set(quatValues.x, quatValues.y, quatValues.z, quatValues.w);
-			orientation.textContent = quatValues.w.toString()+" "+quatValues.x.toString()+" "+quatValues.y.toString()+" "+quatValues.z.toString();
-		}
-	});
-
-	bridge.connect(); */
 	var stats = new Stats();
 	stats.domElement.style.position = 'absolute';
 	stats.domElement.style.top = '0px';
 	stats.domElement.style.left = window.innerWidth*3/4 + 'px';
 	document.body.appendChild( stats.domElement );
 
-	var imagesource, scene1, quaternion, rightcamera, rightrenderer, leftrenderer;
+	var websocket, imagesource, scene1, quaternion, rightcamera, rightrenderer, leftrenderer;
 	var vec = new THREE.Vector3( 0, 0, -1 );
 	var quatValue;
 	//imagesource = new PANA.ImageSource();
 	async.series([
 		function(callback){
+			websocket = new PANA.Websocket({});
 			imagesource = new PANA.ImageSource(); //scene1.process will build the scene after the image is loaded.
 			scene1 = new PANA.Scene1();
 			quaternion = new PANA.Quaternion();
 			rightcamera = new PANA.PerspCamera('right');
 			leftcamera = new PANA.PerspCamera('left');
-			rightrenderer = new PANA.Renderer('right');
-			leftrenderer = new PANA.Renderer('left');
-			console.log(imagesource.loaded);
+			rightrenderer = new PANA.Renderer('right', true);
+			leftrenderer = new PANA.Renderer('left', true);
+			planegeometry = new PANA.PlaneGeometry();
+			console.log(imagesource.status);
 			callback();
 		},
 
 		function(callback){
-			scene1.loaded = imagesource.loaded;
+			imagesource.imagePath = websocket.imagePath;
+			scene1.status = imagesource.status;
 			scene1.image = imagesource.image;
 			rightcamera.quaternion = quaternion.quaternion;
 			leftcamera.quaternion = quaternion.quaternion;
@@ -68,6 +60,7 @@ require([
 			rightrenderer.camera = rightcamera.camera;
 			leftrenderer.scene = scene1.scene;
 			leftrenderer.camera = leftcamera.camera;
+			planegeometry.mesh = websocket.mesh;
 			callback();
 		},
 		
@@ -91,69 +84,12 @@ require([
 				quaternion.process();
 				rightcamera.process();
 				leftcamera.process();
-				rightrenderer.process(true); //'true' means render to screen
-				leftrenderer.process(true);
+				rightrenderer.process(); //'true' means render to screen
+				leftrenderer.process();
+				planegeometry.process();
 				stats.update();
 			});
 			callback();
 		}
 	]);
 });
-
-/* 	var checkedimageloaded = function(){
-		if (!(imagesource.loaded && imagesource.loaded.status)) {
-			setTimeout(checkedimageloaded, 50);
-			return;
-		};
-		async.series([
-			function(callback){
-				scene1 = new PANA.Scene1();
-				quaternion = new PANA.Quaternion();
-				rightcamera = new PANA.PerspCamera('right');
-				leftcamera = new PANA.PerspCamera('left');
-				rightrenderer = new PANA.Renderer('right');
-				leftrenderer = new PANA.Renderer('left');
-				console.log(imagesource.loaded);
-				callback();
-			},
-
-			function(callback){
-				scene1.loaded = imagesource.loaded;
-				scene1.image = imagesource.image;
-				rightcamera.quaternion = quaternion.quaternion;
-				leftcamera.quaternion = quaternion.quaternion;
-				rightrenderer.scene = scene1.scene;
-				rightrenderer.camera = rightcamera.camera;
-				leftrenderer.scene = scene1.scene;
-				leftrenderer.camera = leftcamera.camera;
-				callback();
-			},
-			
-			function(callback){		
-				requestAnimationFrame(function animate(){
-					// keep looping
-					requestAnimationFrame( animate );
-					quaternion.process();
-
-					name.textContent = 'xy: '+quaternion.mouse.x.toString()+" "+quaternion.mouse.y.toString();
-					
-					quatValue = leftrenderer.camera.quaternion;
-					orientation.textContent = 'wxyz: '+quatValue.w.toString()+" "+quatValue.x.toString()+" "+quatValue.y.toString()+" "+quatValue.z.toString();
-					
-					vec.set(0, 0, -1);
-					vec.applyQuaternion(quatValue);
-					qrcode.textContent = 'xyz: '+vec.x.toString()+" "+vec.y.toString()+" "+vec.z.toString();
-					
-					imagesource.process();
-					scene1.process();
-					quaternion.process();
-					rightcamera.process();
-					leftcamera.process();
-					rightrenderer.process(true); //'true' means render to screen
-					leftrenderer.process(true);
-				});
-				callback();
-			}
-		]);
-	};
-	checkedimageloaded(); */

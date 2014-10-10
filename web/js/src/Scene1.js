@@ -2,7 +2,7 @@
 * @author fangong
 * input: image
 * output: scene
-* in/out: loaded
+* in/out: status
 */ 
 
 PANA.Scene1 = function () {
@@ -12,7 +12,7 @@ PANA.Scene1 = function () {
 PANA.Scene1.prototype = {
 	contructor: PANA.Scene1,
 	process: function () {
-		if ( this.loaded.status && !this.loaded.processed ) {
+		if ( !this.status.processed ) {
 			//empty the scene
 			for (var i = this.scene.children.length-1; i >= 0; i--) {
 				this.scene.remove(this.scene.children[i]);
@@ -50,7 +50,7 @@ PANA.Scene1.prototype = {
 					);
 				}
 			}
-			this.loaded.processed = true;
+			this.status.processed = true;
 		};
 	}
 };
