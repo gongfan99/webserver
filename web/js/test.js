@@ -3,7 +3,7 @@
 require([
 "js/async.js",
 "js/Detector.js",
-"js/three.min.js",
+"js/three.js",
 "js/pixastic.custom.js",
 "js/stats.min.js",
 "js/src/PANA.js",
@@ -47,8 +47,8 @@ require([
 			rightcamera = new PANA.PerspCamera('right');
 			leftcamera = new PANA.PerspCamera('left');
 			
-			//rightrenderer1 = new PANA.Renderer('right', false);
-			//leftrenderer1 = new PANA.Renderer('left', false);
+			rightrenderer1 = new PANA.Renderer('right', false);
+			leftrenderer1 = new PANA.Renderer('left', false);
 
 			planegeometry = new PANA.PlaneGeometry();
 
@@ -60,9 +60,8 @@ require([
 			
 			oCamera = new PANA.OrthoCamera();
 			
-			//rightrenderer2 = new PANA.Renderer('right', true);
-			//leftrenderer2 = new PANA.Renderer('left', true);
-			console.log(imagesource.status);
+			rightrenderer2 = new PANA.Renderer('right', true);
+			leftrenderer2 = new PANA.Renderer('left', true);
 			callback();
 		},
 
@@ -75,34 +74,25 @@ require([
 			rightcamera.quaternion = websocket.quaternion;
 			leftcamera.quaternion = websocket.quaternion;
 			
-/* 			rightrenderer1.scene = scene1.scene;
+			rightrenderer1.scene = scene1.scene;
 			rightrenderer1.camera = rightcamera.camera;
 			leftrenderer1.scene = scene1.scene;
-			leftrenderer1.camera = leftcamera.camera; */
+			leftrenderer1.camera = leftcamera.camera;
 			
 			planegeometry.mesh = websocket.mesh;
 
-			rightmaterial.renderTarget = THREE.ImageUtils.loadTexture('Land_shallow_topo_2048.jpg');//rightrenderer1.renderTarget;
-			leftmaterial.renderTarget = rightmaterial.renderTarget;//leftrenderer1.renderTarget;
+			rightmaterial.renderTarget = rightrenderer1.renderTarget;
+			leftmaterial.renderTarget = leftrenderer1.renderTarget;
 			rightmaterial.eyeInfo = websocket.eyeInfo.right;
 			leftmaterial.eyeInfo = websocket.eyeInfo.left;
 
-			rightscene.add(new THREE.Mesh(planegeometry.geometry, 
-			//new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} )
-			new THREE.ShaderMaterial( {	
-				vertexShader: 'void main() {\n\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}',
-				fragmentShader: 'void main() {\n\tgl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );\n}',
-				side: THREE.DoubleSide } )
-			));
-			renderer = new THREE.WebGLRenderer({ antialias:true, alpha: true });
-			renderer.setSize( window.innerWidth/10, window.innerHeight/10 );
-			document.body.appendChild( renderer.domElement );
-			//leftscene.add(new THREE.Mesh(planegeometry.geometry, leftmaterial.material));
+			rightscene.add(new THREE.Mesh(planegeometry.geometry, rightmaterial.material));
+			leftscene.add(new THREE.Mesh(planegeometry.geometry, leftmaterial.material));
 			
-/* 			rightrenderer2.scene = rightscene;
-			rightrenderer2.camera = oCamera.camera; */
-			//leftrenderer2.scene = rightscene; //set to rightscene to avoid a bug
-			//leftrenderer2.camera = oCamera.camera;
+			rightrenderer2.scene = rightscene;
+			rightrenderer2.camera = oCamera.camera;
+			leftrenderer2.scene = leftscene;
+			leftrenderer2.camera = oCamera.camera;
 			callback();
 		},
 		
@@ -125,15 +115,14 @@ require([
 				scene1.process();
 				rightcamera.process();
 				leftcamera.process();
-/* 				rightrenderer1.process();
-				leftrenderer1.process(); */
+				rightrenderer1.process();
+				leftrenderer1.process();
 				planegeometry.process();
 				rightmaterial.process();
 				leftmaterial.process();
 				oCamera.process(); //empty process
-				//rightrenderer2.process();
-				//leftrenderer2.process();
-				renderer.render( rightscene, oCamera.camera );
+				rightrenderer2.process();
+				leftrenderer2.process();
 				stats.update();
 			});
 			callback();

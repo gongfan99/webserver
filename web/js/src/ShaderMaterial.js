@@ -5,24 +5,22 @@
 */ 
 
 PANA.ShaderMaterial = function () {
-/* 	this.material = new THREE.ShaderMaterial( {
+	this.material = new THREE.ShaderMaterial( {
 		uniforms: {
 			"texture0": { type: "t", value: null },
-			"eyeToSourceUVscale": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"eyeToSourceUVoffset": { type: "v2", value: new THREE.Vector2(0.0,0.0) },
+			"eyeToSourceUVscale": { type: "v2", value: new THREE.Vector2() },
+			"eyeToSourceUVoffset": { type: "v2", value: new THREE.Vector2() },
 			"eyeRotationStart": { type: "m4", value: new THREE.Matrix4() },
 			"eyeRotationEnd": { type: "m4", value: new THREE.Matrix4() }
 		},
 		attributes: {
-			"position2": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
 			"timewarpLerpFactor": { type: "f", value: 1.0 },
 			"vignette": { type: "f", value: 1.0 },
-			"texCoord0": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"texCoord1": { type: "v2", value: new THREE.Vector2(1.0,1.0) },
-			"texCoord2": { type: "v2", value: new THREE.Vector2(1.0,1.0) }
+			"texCoord0": { type: "v2", value: new THREE.Vector2() },
+			"texCoord1": { type: "v2", value: new THREE.Vector2() },
+			"texCoord2": { type: "v2", value: new THREE.Vector2() }
 		},
 		vertexShader: [
-			"attribute vec2 position2;",
 			"attribute float timewarpLerpFactor;",
 			"attribute float vignette;",
 			"attribute vec2 texCoord0;",
@@ -50,7 +48,7 @@ PANA.ShaderMaterial = function () {
 			"	oTexCoord0 = timeWarpTexCoord(texCoord0, lerpedEyeRot);",
 			"	oTexCoord1 = timeWarpTexCoord(texCoord1, lerpedEyeRot);",
 			"	oTexCoord2 = timeWarpTexCoord(texCoord2, lerpedEyeRot);",
-			"	gl_Position = vec4(position2.x, position2.y, 0.5, 1.0);",
+			"	gl_Position = vec4(position, 1.0);",
 			"	oVignette = vignette;",
 			"}"
 		].join("\n"),
@@ -71,19 +69,16 @@ PANA.ShaderMaterial = function () {
 		].join("\n"),
 		side: THREE.DoubleSide,
 		transparent: true
-	} ); */
-	this.material = new THREE.ShaderMaterial( {
-/* 		uniforms: {},
+	} );
+/* 	this.material = new THREE.ShaderMaterial( {
+		uniforms: {},
 		attributes: {
-			"position2": { type: "v2", value: new THREE.Vector2(1.0,1.0) }
 		},
 		vertexShader: [
-			//"attribute vec2 position2;",
-			//"",
 			"void main() {",
 			"	gl_Position = vec4(position, 1.0);",
 			"}"
-		].join("\n"), */
+		].join("\n"),
 		fragmentShader: [
 			"void main() {",
 			"	gl_FragColor = vec4(1.0, 0.2, 0.2, 1.0);",
@@ -91,16 +86,16 @@ PANA.ShaderMaterial = function () {
 		].join("\n"),
 		side: THREE.DoubleSide,
 		transparent: true
-	} );
+	} ); */
 };
 
 PANA.ShaderMaterial.prototype = {
 	contructor: PANA.ShaderMaterial,
 	process: function () {
-		//this.material.uniforms['texture0'].value = this.renderTarget;
-/* 		this.material.uniforms['eyeToSourceUVscale'].value = this.eyeInfo.eyeToSourceUVscale;
+		this.material.uniforms['texture0'].value = this.renderTarget;
+		this.material.uniforms['eyeToSourceUVscale'].value = this.eyeInfo.eyeToSourceUVscale;
 		this.material.uniforms['eyeToSourceUVoffset'].value = this.eyeInfo.eyeToSourceUVoffset;
 		this.material.uniforms['eyeRotationStart'].value = this.eyeInfo.eyeRotationStart;
-		this.material.uniforms['eyeRotationEnd'].value = this.eyeInfo.eyeRotationEnd; */
+		this.material.uniforms['eyeRotationEnd'].value = this.eyeInfo.eyeRotationEnd;
 	}
 };
