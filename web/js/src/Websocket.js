@@ -59,7 +59,7 @@ PANA.Websocket = (function () {
 			path: 'Land_shallow_topo_2048.jpg',
 			processed: false
 		};
-		var mesh = {
+/* 		var mesh = {
 			IndexCount: 6,
 			VertexCount: 4,
 			ScreenPosNDC: [-1, 1, 1, 1, -1, -1, 1, -1],
@@ -70,16 +70,46 @@ PANA.Websocket = (function () {
 			TanEyeAnglesB: [0, 1, 1, 1, 0, 0, 1, 0],
 			pIndexData: [0, 1, 2, 2, 1, 3],
 			processed: false
-		};
+		}; */
+/* 		var tempGeo = new THREE.PlaneGeometry( 2, 2, 64, 64 );
+		var vertex_posi = new Array(4225*2);
+		var uv_posi = new Array(4225*2);
+		var vignette =  new Array(4225);
+		for( var v = 0; v < 4225; v++ ) {
+			vertex_posi[ v * 2 + 0 ] = tempGeo.vertices[v].x;
+			vertex_posi[ v * 2 + 1 ] = tempGeo.vertices[v].y;
+			uv_posi[ v * 2 + 0 ] = tempGeo.vertices[v].x;
+			uv_posi[ v * 2 + 1 ] = tempGeo.vertices[v].y;
+			vignette[ v ] =  Math.exp(-tempGeo.vertices[v].length());
+		}
+		var position_index = new Array(24576);
+		for( v = 0; v < 24576/3; v++ ) {
+			position_index[ v * 3 + 0 ] = tempGeo.faces[v].a;
+			position_index[ v * 3 + 1 ] = tempGeo.faces[v].b;
+			position_index[ v * 3 + 2 ] = tempGeo.faces[v].c;
+		}
+		var mesh = {
+			IndexCount: 24576,
+			VertexCount: 4225,
+			ScreenPosNDC: vertex_posi,
+			TimeWarpFactor: Array.apply(null, Array(4225)).map(function() { return 1.0 }),
+			VignetteFactor: vignette,
+			TanEyeAnglesR: uv_posi,
+			TanEyeAnglesG: uv_posi,
+			TanEyeAnglesB: uv_posi,
+			pIndexData: position_index,
+			processed: false
+		}; */
+		mesh = PANA.MeshInitValues;
 		var eyeInfo = {
 			right: {
-				eyeToSourceUVscale: new THREE.Vector2(1.0,1.0),
+				eyeToSourceUVscale: new THREE.Vector2(0.9,0.9),
 				eyeToSourceUVoffset: new THREE.Vector2(0.0,0.0),
 				eyeRotationStart: new THREE.Matrix4(),
 				eyeRotationEnd: new THREE.Matrix4()
 			},
 			left: {
-				eyeToSourceUVscale: new THREE.Vector2(1.0,1.0),
+				eyeToSourceUVscale: new THREE.Vector2(0.9,0.9),
 				eyeToSourceUVoffset: new THREE.Vector2(0.0,0.0),
 				eyeRotationStart: new THREE.Matrix4(),
 				eyeRotationEnd: new THREE.Matrix4()
@@ -139,16 +169,16 @@ PANA.Websocket = (function () {
 					}
 				break;
 
-				case "mesh":
-					mesh.ScreenPosNDC = data["ScreenPosNDC"].map(Number);;
-					mesh.TimeWarpFactor = data["TimeWarpFactor"].map(Number);
-					mesh.VignetteFactor = data["VignetteFactor"].map(Number);
-					mesh.TanEyeAnglesR = data["TanEyeAnglesR"].map(Number);;
-					mesh.TanEyeAnglesG = data["TanEyeAnglesG"].map(Number);;
-					mesh.TanEyeAnglesB = data["TanEyeAnglesB"].map(Number);;
-					mesh.pIndexData = data["pIndexData"].map(Number);;
-					mesh.VertexCount = Number(data["VertexCount"]);
-					mesh.IndexCount = Number(data["IndexCount"]);
+				case "mesh0":
+					mesh.left.ScreenPosNDC = data["ScreenPosNDC"].map(Number);
+					mesh.left.TimeWarpFactor = data["TimeWarpFactor"].map(Number);
+					mesh.left.VignetteFactor = data["VignetteFactor"].map(Number);
+					mesh.left.TanEyeAnglesR = data["TanEyeAnglesR"].map(Number);
+					mesh.left.TanEyeAnglesG = data["TanEyeAnglesG"].map(Number);
+					mesh.left.TanEyeAnglesB = data["TanEyeAnglesB"].map(Number);
+					mesh.left.pIndexData = data["pIndexData"].map(Number);
+					mesh.left.VertexCount = Number(data["VertexCount"]);
+					mesh.left.IndexCount = Number(data["IndexCount"]);
 					mesh.processed = false;
 				break;
 

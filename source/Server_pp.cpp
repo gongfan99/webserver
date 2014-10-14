@@ -70,59 +70,59 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
     std::cout << "Connected..\n";
 
 
-	tempString << "{ \"m\" : \"mesh\", \"VertexCount\" : " << meshData[0]->VertexCount;
-	tempString << ", \"IndexCount\" : " << meshData[0]->IndexCount << ", ";
+	tempString << "{ \"m\" : \"mesh\", \"VertexCount\" : " << meshData[1]->VertexCount;
+	tempString << ", \"IndexCount\" : " << meshData[1]->IndexCount << ", ";
 	
 	tempString << "\"ScreenPosNDC\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].ScreenPosNDC.x << ",";
-		tempString << meshData[0]->pVertexData[i].ScreenPosNDC.y;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].ScreenPosNDC.x << ",";
+		tempString << meshData[1]->pVertexData[i].ScreenPosNDC.y;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 	
 	tempString << "], \"TimeWarpFactor\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].TimeWarpFactor;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].TimeWarpFactor;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 
 	tempString << "], \"VignetteFactor\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].VignetteFactor;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].VignetteFactor;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 
 	tempString << "], \"TanEyeAnglesR\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesR.x << ",";
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesR.y;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesR.x << ",";
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesR.y;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 
 	tempString << "], \"TanEyeAnglesG\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesG.x << ",";
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesG.y;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesG.x << ",";
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesG.y;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 
 	tempString << "], \"TanEyeAnglesB\" : [";
-	for ( i = 0; i < meshData[0]->VertexCount; ++i ) {
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesB.x << ",";
-		tempString << meshData[0]->pVertexData[i].TanEyeAnglesB.y;
-		if ( i != meshData[0]->VertexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesB.x << ",";
+		tempString << meshData[1]->pVertexData[i].TanEyeAnglesB.y;
+		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
 	}
 
 	tempString << "], \"pIndexData\" : [";
-	for ( i = 0; i < meshData[0]->IndexCount; ++i ) {
-		tempString << meshData[0]->pIndexData[i];
-		if ( i != meshData[0]->IndexCount-1 ) tempString << ",";
+	for ( i = 0; i < meshData[1]->IndexCount; ++i ) {
+		tempString << meshData[1]->pIndexData[i];
+		if ( i != meshData[1]->IndexCount-1 ) tempString << ",";
 	}
 	
 	tempString << "] }";
 
 	std::ofstream myfile;
-	myfile.open ("mesh.txt");
+	myfile.open ("mesh.txt", std::fstream::out | std::fstream::trunc);
 	myfile << tempString.str();
 	myfile.close();
 

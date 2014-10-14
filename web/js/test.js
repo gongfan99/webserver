@@ -7,6 +7,7 @@ require([
 "js/pixastic.custom.js",
 "js/stats.min.js",
 "js/src/PANA.js",
+"js/src/MeshInitValues.js",
 "js/src/Websocket.js",
 "js/src/ImageSource.js",
 "js/src/PerspCamera.js",
@@ -33,7 +34,7 @@ require([
 	document.body.appendChild( stats.domElement );
 
 	var websocket, imagesource, scene1, quaternion, rightcamera, rightrenderer1, leftrenderer1;
-	var rightmaterial, leftmaterial, rightscene, leftscene, rightrenderer2, leftrenderer2;
+	var rightmaterial, leftmaterial, rightscene, leftscene, renderer2, leftrenderer2;
 	var renderer;
 	var vec = new THREE.Vector3( 0, 0, -1 );
 	var quatValue;
@@ -50,18 +51,17 @@ require([
 			rightrenderer1 = new PANA.Renderer('right', false);
 			leftrenderer1 = new PANA.Renderer('left', false);
 
-			planegeometry = new PANA.PlaneGeometry();
+			rightplanegeometry = new PANA.PlaneGeometry();
+			leftplanegeometry = new PANA.PlaneGeometry();
 
 			rightmaterial = new PANA.ShaderMaterial();
 			leftmaterial = new PANA.ShaderMaterial();
 			
-			rightscene = new THREE.Scene();
-			leftscene = new THREE.Scene(); //very simple so unnecessary to write a wrapper object
+			scene2 = new THREE.Scene(); //very simple so unnecessary to write a wrapper object
 			
 			oCamera = new PANA.OrthoCamera();
 			
-			rightrenderer2 = new PANA.Renderer('right', true);
-			leftrenderer2 = new PANA.Renderer('left', true);
+			renderer2 = new PANA.Renderer('right', true);
 			callback();
 		},
 
@@ -79,20 +79,19 @@ require([
 			leftrenderer1.scene = scene1.scene;
 			leftrenderer1.camera = leftcamera.camera;
 			
-			planegeometry.mesh = websocket.mesh;
+			rightplanegeometry.mesh = websocket.mesh.right;
+			leftplanegeometry.mesh = websocket.mesh.left;
 
 			rightmaterial.renderTarget = rightrenderer1.renderTarget;
 			leftmaterial.renderTarget = leftrenderer1.renderTarget;
 			rightmaterial.eyeInfo = websocket.eyeInfo.right;
 			leftmaterial.eyeInfo = websocket.eyeInfo.left;
 
-			rightscene.add(new THREE.Mesh(planegeometry.geometry, rightmaterial.material));
-			leftscene.add(new THREE.Mesh(planegeometry.geometry, leftmaterial.material));
+			scene2.add(new THREE.Mesh(rightplanegeometry.geometry, rightmaterial.material));
+			scene2.add(new THREE.Mesh(leftplanegeometry.geometry, leftmaterial.material));
 			
-			rightrenderer2.scene = rightscene;
-			rightrenderer2.camera = oCamera.camera;
-			leftrenderer2.scene = leftscene;
-			leftrenderer2.camera = oCamera.camera;
+			renderer2.scene = scene2;
+			renderer2.camera = oCamera.camera;
 			console.log(websocket.mesh);
 			callback();
 		},
@@ -118,12 +117,12 @@ require([
 				leftcamera.process();
 				rightrenderer1.process();
 				leftrenderer1.process();
-				planegeometry.process();
+				rightplanegeometry.process();
+				leftplanegeometry.process();
 				rightmaterial.process();
 				leftmaterial.process();
 				oCamera.process(); //empty process
-				rightrenderer2.process();
-				leftrenderer2.process();
+				renderer2.process();
 				stats.update();
 			});
 			callback();

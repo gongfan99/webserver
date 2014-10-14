@@ -7,18 +7,18 @@
 PANA.ShaderMaterial = function () {
 	this.material = new THREE.ShaderMaterial( {
 		uniforms: {
-			"texture0": { type: "t", value: null },
-			"eyeToSourceUVscale": { type: "v2", value: new THREE.Vector2() },
-			"eyeToSourceUVoffset": { type: "v2", value: new THREE.Vector2() },
-			"eyeRotationStart": { type: "m4", value: new THREE.Matrix4() },
-			"eyeRotationEnd": { type: "m4", value: new THREE.Matrix4() }
+			texture0: { type: "t", value: null },
+			eyeToSourceUVscale: { type: "v2", value: new THREE.Vector2() },
+			eyeToSourceUVoffset: { type: "v2", value: new THREE.Vector2() },
+			eyeRotationStart: { type: "m4", value: new THREE.Matrix4() },
+			eyeRotationEnd: { type: "m4", value: new THREE.Matrix4() }
 		},
 		attributes: {
-			"timewarpLerpFactor": { type: "f", value: 1.0 },
-			"vignette": { type: "f", value: 1.0 },
-			"texCoord0": { type: "v2", value: new THREE.Vector2() },
-			"texCoord1": { type: "v2", value: new THREE.Vector2() },
-			"texCoord2": { type: "v2", value: new THREE.Vector2() }
+			timewarpLerpFactor: { type: "f", value: 1.0 },
+			vignette: { type: "f", value: 1.0 },
+			texCoord0: { type: "v2", value: new THREE.Vector2() },
+			texCoord1: { type: "v2", value: new THREE.Vector2() },
+			texCoord2: { type: "v2", value: new THREE.Vector2() }
 		},
 		vertexShader: [
 			"attribute float timewarpLerpFactor;",
@@ -70,23 +70,6 @@ PANA.ShaderMaterial = function () {
 		side: THREE.DoubleSide,
 		transparent: true
 	} );
-/* 	this.material = new THREE.ShaderMaterial( {
-		uniforms: {},
-		attributes: {
-		},
-		vertexShader: [
-			"void main() {",
-			"	gl_Position = vec4(position, 1.0);",
-			"}"
-		].join("\n"),
-		fragmentShader: [
-			"void main() {",
-			"	gl_FragColor = vec4(1.0, 0.2, 0.2, 1.0);",
-			"}"
-		].join("\n"),
-		side: THREE.DoubleSide,
-		transparent: true
-	} ); */
 };
 
 PANA.ShaderMaterial.prototype = {
