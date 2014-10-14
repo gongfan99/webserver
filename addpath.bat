@@ -1,1 +1,1 @@
-path=%path%;C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin;C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\lib\DLL
+path=%path%;C:\mingw-w64\i686-4.8.1-win32-sjlj-rt_v3-rev2\mingw32\bin;C:\Users\Sam\Documents\User\Embeded\ServerApp\webserver\lib\DLL;C:\Users\sam\Documents\User\Embeded\ServerApp\boost_1_56_0\stage\lib

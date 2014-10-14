@@ -61,6 +61,7 @@ PANA.Websocket = (function () {
 		};
 		var mesh = {
 			IndexCount: 6,
+			VertexCount: 4,
 			ScreenPosNDC: [-1, 1, 1, 1, -1, -1, 1, -1],
 			TimeWarpFactor: [1, 1, 1, 1],
 			VignetteFactor: [1, 1, 1, 1],
@@ -93,7 +94,7 @@ PANA.Websocket = (function () {
 		}, false);
 		this.mouse = mouse;
 		
-		var config, acceleration; //enclosure variables
+		var config, acceleration; //closure variables
 		socket.onmessage = function(msg) {
 			
 			var data = JSON.parse( msg.data );
@@ -139,19 +140,23 @@ PANA.Websocket = (function () {
 				break;
 
 				case "mesh":
-					mesh.ScreenPosNDC = data["ScreenPosNDC"];
-					mesh.TimeWarpFactor = data["TimeWarpFactor"];
-					mesh.VignetteFactor = data["VignetteFactor"];
-					mesh.TanEyeAnglesR = data["TanEyeAnglesR"];
-					mesh.TanEyeAnglesG = data["TanEyeAnglesG"];
-					mesh.TanEyeAnglesB = data["TanEyeAnglesB"];
-					mesh.pIndexData = data["pIndexData"];
-					mesh.VertexCount = data["VertexCount"];
-					mesh.IndexCount = data["IndexCount"];
+					mesh.ScreenPosNDC = data["ScreenPosNDC"].map(Number);;
+					mesh.TimeWarpFactor = data["TimeWarpFactor"].map(Number);
+					mesh.VignetteFactor = data["VignetteFactor"].map(Number);
+					mesh.TanEyeAnglesR = data["TanEyeAnglesR"].map(Number);;
+					mesh.TanEyeAnglesG = data["TanEyeAnglesG"].map(Number);;
+					mesh.TanEyeAnglesB = data["TanEyeAnglesB"].map(Number);;
+					mesh.pIndexData = data["pIndexData"].map(Number);;
+					mesh.VertexCount = Number(data["VertexCount"]);
+					mesh.IndexCount = Number(data["IndexCount"]);
+					mesh.processed = false;
 				break;
 
 				case "image":
 					imagePath.path = data["path"];
+				break;
+
+				case "update":
 				break;
 				
 				default:

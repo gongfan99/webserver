@@ -52,6 +52,8 @@ int main()
 	server.decoder_data = &(decoder.data);
 	server.hmd = &(oculus.hmd);
 	server.oculus_data = &(oculus.data);
+	server.meshData[0] = &(oculus.meshData[0]);
+	server.meshData[1] = &(oculus.meshData[1]);
 
 	//create another thread to run the QR decoding
 	boost::thread t1(threadQRdecoder, &camera, &decoder);

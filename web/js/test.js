@@ -93,6 +93,7 @@ require([
 			rightrenderer2.camera = oCamera.camera;
 			leftrenderer2.scene = leftscene;
 			leftrenderer2.camera = oCamera.camera;
+			console.log(websocket.mesh);
 			callback();
 		},
 		
