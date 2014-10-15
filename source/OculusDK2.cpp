@@ -13,9 +13,17 @@ OculusDK2::OculusDK2() {
 	ovrFovPort eyeFov[2] = { hmd->DefaultEyeFov[0], hmd->DefaultEyeFov[1] };
 
 	int eyeNum;
+	ovrRecti EyeRenderViewport;
 	for ( eyeNum = 0; eyeNum < 2; eyeNum++ ) {
-		RenderDesc[eyeNum] = ovrHmd_GetRenderDesc(hmd, (ovrEyeType)eyeNum, eyeFov[eyeNum]);
+		RenderTargetSize[eyeNum] = ovrHmd_GetFovTextureSize(hmd, (ovrEyeType)eyeNum, eyeFov[eyeNum], 1.0f);
+		
+		EyeRenderDesc[eyeNum] = ovrHmd_GetRenderDesc(hmd, (ovrEyeType)eyeNum, eyeFov[eyeNum]);
+		
 		ovrHmd_CreateDistortionMesh(hmd, (ovrEyeType)eyeNum, eyeFov[eyeNum], ovrDistortionCap_Chromatic | ovrDistortionCap_TimeWarp, &(meshData[eyeNum]));
+
+		EyeRenderViewport.Pos =  Vector2i(0,0);
+		EyeRenderViewport.Size =  Sizei(RenderTargetSize.w, RenderTargetSize.h);
+		ovrHmd_GetRenderScaleAndOffset(eyeFov[eyeNum], RenderTargetSize[eyeNum], EyeRenderViewport, UVScaleOffset[eyeNum]);
 	}
 
     ovrHmd_SetEnabledCaps(hmd, ovrHmdCap_LowPersistence | ovrHmdCap_DynamicPrediction);

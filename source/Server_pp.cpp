@@ -13,6 +13,7 @@ Server_pp::Server_pp() : mSocketConnected(false) {
 	//server.set_fail_handler(bind(&Server_pp::on_fail,this,::_1));
 	server.set_close_handler(bind(&Server_pp::on_close,this,::_1));
 	server.set_message_handler(bind(&Server_pp::on_message,this,::_1,::_2));
+	server.clear_access_channels(websocketpp::log::alevel::frame_header | websocketpp::log::alevel::frame_payload);
 	
 	server.init_asio();
 	server.listen(9002);
@@ -47,7 +48,7 @@ void Server_pp::process() {
 		}
 		if (currentPage != incomingPage){
 			currentPage = incomingPage;
-			server.send(mHandle, "{ \"m\" : \"updatepage\", \"p\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+			server.send(mHandle, "{ \"m\" : \"image\", \"path\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
 		}
 	}
 	server.poll();

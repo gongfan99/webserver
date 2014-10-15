@@ -48,8 +48,8 @@ require([
 			rightcamera = new PANA.PerspCamera('right');
 			leftcamera = new PANA.PerspCamera('left');
 			
-			rightrenderer1 = new PANA.Renderer('right', false);
-			leftrenderer1 = new PANA.Renderer('left', false);
+			rightrenderer1 = new PANA.Renderer(false); //false means not to render to screen
+			leftrenderer1 = new PANA.Renderer(false);
 
 			rightplanegeometry = new PANA.PlaneGeometry();
 			leftplanegeometry = new PANA.PlaneGeometry();
@@ -61,7 +61,8 @@ require([
 			
 			oCamera = new PANA.OrthoCamera();
 			
-			renderer2 = new PANA.Renderer('right', true);
+			renderer2 = new PANA.Renderer(true);
+
 			callback();
 		},
 
@@ -92,8 +93,7 @@ require([
 			
 			renderer2.scene = scene2;
 			renderer2.camera = oCamera.camera;
-			console.log(rightplanegeometry.mesh);
-			console.log(rightplanegeometry.mesh.processed);
+
 			callback();
 		},
 		

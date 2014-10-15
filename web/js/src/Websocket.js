@@ -59,7 +59,8 @@ PANA.Websocket = (function () {
 			path: 'Land_shallow_topo_2048.jpg',
 			processed: false
 		};
-/* 		var mesh = {
+		var mesh = {};
+		/* 		var mesh = {
 			IndexCount: 6,
 			VertexCount: 4,
 			ScreenPosNDC: [-1, 1, 1, 1, -1, -1, 1, -1],
@@ -71,7 +72,7 @@ PANA.Websocket = (function () {
 			pIndexData: [0, 1, 2, 2, 1, 3],
 			processed: false
 		}; */
-/* 		var tempGeo = new THREE.PlaneGeometry( 2, 2, 64, 64 );
+		var tempGeo = new THREE.PlaneGeometry( 2, 2, 64, 64 );
 		var vertex_posi = new Array(4225*2);
 		var uv_posi = new Array(4225*2);
 		var vignette =  new Array(4225);
@@ -88,7 +89,7 @@ PANA.Websocket = (function () {
 			position_index[ v * 3 + 1 ] = tempGeo.faces[v].b;
 			position_index[ v * 3 + 2 ] = tempGeo.faces[v].c;
 		}
-		var mesh = {
+		mesh.right = {
 			IndexCount: 24576,
 			VertexCount: 4225,
 			ScreenPosNDC: vertex_posi,
@@ -99,13 +100,25 @@ PANA.Websocket = (function () {
 			TanEyeAnglesB: uv_posi,
 			pIndexData: position_index,
 			processed: false
-		}; */
-		var mesh = {};
-		mesh.right = PANA.MeshInitValues["right"];
+		};
+		mesh.left = {
+			IndexCount: 24576,
+			VertexCount: 4225,
+			ScreenPosNDC: vertex_posi,
+			TimeWarpFactor: Array.apply(null, Array(4225)).map(function() { return 1.0 }),
+			VignetteFactor: vignette,
+			TanEyeAnglesR: uv_posi,
+			TanEyeAnglesG: uv_posi,
+			TanEyeAnglesB: uv_posi,
+			pIndexData: position_index,
+			processed: false
+		};
+
+/* 		mesh.right = PANA.MeshInitValues["right"];
 		mesh.left = PANA.MeshInitValues["left"];
 		mesh.right.processed = false;
-		mesh.left.processed = false;
-		var geometryRebuild;
+		mesh.left.processed = false; */
+
 		var eyeInfo = {
 			right: {
 				eyeToSourceUVscale: new THREE.Vector2(0.9,0.9),
@@ -177,32 +190,21 @@ PANA.Websocket = (function () {
 					break;
 
 					case "mesh":
-						mesh.right.ScreenPosNDC = data["right"]["ScreenPosNDC"];
-						mesh.right.TimeWarpFactor = data["right"]["TimeWarpFactor"];
-						mesh.right.VignetteFactor = data["right"]["VignetteFactor"];
-						mesh.right.TanEyeAnglesR = data["right"]["TanEyeAnglesR"];
-						mesh.right.TanEyeAnglesG = data["right"]["TanEyeAnglesG"];
-						mesh.right.TanEyeAnglesB = data["right"]["TanEyeAnglesB"];
-						mesh.right.pIndexData = data["right"]["pIndexData"];
-						mesh.right.VertexCount = data["right"]["VertexCount"];
-						mesh.right.IndexCount = data["right"]["IndexCount"];
-						mesh.left.ScreenPosNDC = data["left"]["ScreenPosNDC"];
-						mesh.left.TimeWarpFactor = data["left"]["TimeWarpFactor"];
-						mesh.left.VignetteFactor = data["left"]["VignetteFactor"];
-						mesh.left.TanEyeAnglesR = data["left"]["TanEyeAnglesR"];
-						mesh.left.TanEyeAnglesG = data["left"]["TanEyeAnglesG"];
-						mesh.left.TanEyeAnglesB = data["left"]["TanEyeAnglesB"];
-						mesh.left.pIndexData = data["left"]["pIndexData"];
-						mesh.left.VertexCount = data["left"]["VertexCount"];
-						mesh.left.IndexCount = data["left"]["IndexCount"];
+						var key;
+						for ( key in data["right"] ) {
+							mesh.right[key] = data["right"][key];
+						}
+						for ( key in data["left"] ) {
+							mesh.left[key] = data["left"][key];
+						}
 						mesh.right.processed = false;
 						mesh.left.processed = false;
 						console.log("PANA.Websocket: mesh transmission complete.");
-						console.log(mesh);
 					break;
 
 					case "image":
-						imagePath.path = data["path"];
+						//imagePath.path = data["path"];
+						console.log("PANA.Websocket: image changes to " + data["path"]);
 					break;
 
 					case "update":
