@@ -92,7 +92,8 @@ require([
 			
 			renderer2.scene = scene2;
 			renderer2.camera = oCamera.camera;
-			console.log(websocket.mesh);
+			console.log(rightplanegeometry.mesh);
+			console.log(rightplanegeometry.mesh.processed);
 			callback();
 		},
 		

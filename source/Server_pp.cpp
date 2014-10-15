@@ -1,7 +1,5 @@
 #include "Server_pp.hpp"
 #include <iostream>
-#include <sstream>
-#include <fstream>
 
 using websocketpp::connection_hdl;
 using websocketpp::lib::placeholders::_1;
@@ -56,8 +54,6 @@ void Server_pp::process() {
 }
 
 void Server_pp::on_open(websocketpp::connection_hdl hdl) {
-	int i;
-	std::ostringstream tempString;
 	mHandle = hdl;
 	std::cout << server.get_con_from_hdl(mHandle)->get_host() << std::endl;
     // Only accept connections from localhost
@@ -65,68 +61,11 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
         server.close(hdl, websocketpp::close::status::normal, "Connection closed.");
 		return;
     }
-    
+   
     mSocketConnected = true;
     std::cout << "Connected..\n";
 
-
-	tempString << "{ \"m\" : \"mesh\", \"VertexCount\" : " << meshData[1]->VertexCount;
-	tempString << ", \"IndexCount\" : " << meshData[1]->IndexCount << ", ";
-	
-	tempString << "\"ScreenPosNDC\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].ScreenPosNDC.x << ",";
-		tempString << meshData[1]->pVertexData[i].ScreenPosNDC.y;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-	
-	tempString << "], \"TimeWarpFactor\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].TimeWarpFactor;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-
-	tempString << "], \"VignetteFactor\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].VignetteFactor;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-
-	tempString << "], \"TanEyeAnglesR\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesR.x << ",";
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesR.y;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-
-	tempString << "], \"TanEyeAnglesG\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesG.x << ",";
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesG.y;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-
-	tempString << "], \"TanEyeAnglesB\" : [";
-	for ( i = 0; i < meshData[1]->VertexCount; ++i ) {
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesB.x << ",";
-		tempString << meshData[1]->pVertexData[i].TanEyeAnglesB.y;
-		if ( i != meshData[1]->VertexCount-1 ) tempString << ",";
-	}
-
-	tempString << "], \"pIndexData\" : [";
-	for ( i = 0; i < meshData[1]->IndexCount; ++i ) {
-		tempString << meshData[1]->pIndexData[i];
-		if ( i != meshData[1]->IndexCount-1 ) tempString << ",";
-	}
-	
-	tempString << "] }";
-
-	std::ofstream myfile;
-	myfile.open ("mesh.txt", std::fstream::out | std::fstream::trunc);
-	myfile << tempString.str();
-	myfile.close();
-
-	server.send(mHandle, tempString.str(), websocketpp::frame::opcode::TEXT);
+	server.send(mHandle, meshString(meshData), websocketpp::frame::opcode::TEXT);
 }
 
 void Server_pp::on_close(websocketpp::connection_hdl hdl) {

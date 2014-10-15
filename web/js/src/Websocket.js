@@ -100,7 +100,12 @@ PANA.Websocket = (function () {
 			pIndexData: position_index,
 			processed: false
 		}; */
-		mesh = PANA.MeshInitValues;
+		var mesh = {};
+		mesh.right = PANA.MeshInitValues["right"];
+		mesh.left = PANA.MeshInitValues["left"];
+		mesh.right.processed = false;
+		mesh.left.processed = false;
+		var geometryRebuild;
 		var eyeInfo = {
 			right: {
 				eyeToSourceUVscale: new THREE.Vector2(0.9,0.9),
@@ -125,77 +130,92 @@ PANA.Websocket = (function () {
 		this.mouse = mouse;
 		
 		var config, acceleration; //closure variables
-		socket.onmessage = function(msg) {
+		socket.onmessage = (function(mesh) {
+			var mesh = mesh;
+			return function(msg) {
 			
-			var data = JSON.parse( msg.data );
+				var data = JSON.parse( msg.data );
 
-			var message = data["m"];
+				var message = data["m"];
 
-			switch(message){
-				case "config" :
-			/* 		displayMetrics.hScreenSize				= data["screenSize"][0];
-					displayMetrics.vScreenSize				= data["screenSize"][1];
-					displayMetrics.vScreenCenter			= data["screenSize"][1] / 2;
+				switch(message){
+					case "config" :
+				/* 		displayMetrics.hScreenSize				= data["screenSize"][0];
+						displayMetrics.vScreenSize				= data["screenSize"][1];
+						displayMetrics.vScreenCenter			= data["screenSize"][1] / 2;
 
-					displayMetrics.eyeToScreenDistance		= data["eyeToScreen"];
+						displayMetrics.eyeToScreenDistance		= data["eyeToScreen"];
 
-					displayMetrics.lensSeparationDistance	= data["lensDistance"];
-					displayMetrics.interpupillaryDistance	= data["interpupillaryDistance"];
+						displayMetrics.lensSeparationDistance	= data["lensDistance"];
+						displayMetrics.interpupillaryDistance	= data["interpupillaryDistance"];
 
-					displayMetrics.hResolution				= data["screenResolution"][0];
-					displayMetrics.vResolution				= data["screenResolution"][1];
+						displayMetrics.hResolution				= data["screenResolution"][0];
+						displayMetrics.vResolution				= data["screenResolution"][1];
 
-					displayMetrics.distortionK				= [ data["distortion"][0], data["distortion"][1], data["distortion"][2], data["distortion"][3] ];
+						displayMetrics.distortionK				= [ data["distortion"][0], data["distortion"][1], data["distortion"][2], data["distortion"][3] ];
 
-					displayMetrics.FOV						= data["fov"]; */
-					config.name						= data["name"]
-				break;
+						displayMetrics.FOV						= data["fov"]; */
+						config.name						= data["name"]
+					break;
 
-				// For backwards compatability with the bridge application.
-				case "orientation":
-					if(data["o"] && (data["o"].length == 4)) {
-						quaternion.x = Number(data["o"][1]);
-						quaternion.y = Number(data["o"][2]);
-						quaternion.z = Number(data["o"][3]);
-						quaternion.w = Number(data["o"][0]);
-					}
-				break;
+					// For backwards compatability with the bridge application.
+					case "orientation":
+						if(data["o"] && (data["o"].length == 4)) {
+							quaternion.x = Number(data["o"][1]);
+							quaternion.y = Number(data["o"][2]);
+							quaternion.z = Number(data["o"][3]);
+							quaternion.w = Number(data["o"][0]);
+						}
+					break;
 
-				case "acceleration":
-					if(data["a"] && (data["a"].length == 3)) {			
-						acceleration.x = Number(data["a"][0]);
-						acceleration.y = Number(data["a"][1]);
-						acceleration.z = Number(data["a"][2]);
-					}
-				break;
+					case "acceleration":
+						if(data["a"] && (data["a"].length == 3)) {			
+							acceleration.x = Number(data["a"][0]);
+							acceleration.y = Number(data["a"][1]);
+							acceleration.z = Number(data["a"][2]);
+						}
+					break;
 
-				case "mesh0":
-					mesh.left.ScreenPosNDC = data["ScreenPosNDC"].map(Number);
-					mesh.left.TimeWarpFactor = data["TimeWarpFactor"].map(Number);
-					mesh.left.VignetteFactor = data["VignetteFactor"].map(Number);
-					mesh.left.TanEyeAnglesR = data["TanEyeAnglesR"].map(Number);
-					mesh.left.TanEyeAnglesG = data["TanEyeAnglesG"].map(Number);
-					mesh.left.TanEyeAnglesB = data["TanEyeAnglesB"].map(Number);
-					mesh.left.pIndexData = data["pIndexData"].map(Number);
-					mesh.left.VertexCount = Number(data["VertexCount"]);
-					mesh.left.IndexCount = Number(data["IndexCount"]);
-					mesh.processed = false;
-				break;
+					case "mesh":
+						mesh.right.ScreenPosNDC = data["right"]["ScreenPosNDC"];
+						mesh.right.TimeWarpFactor = data["right"]["TimeWarpFactor"];
+						mesh.right.VignetteFactor = data["right"]["VignetteFactor"];
+						mesh.right.TanEyeAnglesR = data["right"]["TanEyeAnglesR"];
+						mesh.right.TanEyeAnglesG = data["right"]["TanEyeAnglesG"];
+						mesh.right.TanEyeAnglesB = data["right"]["TanEyeAnglesB"];
+						mesh.right.pIndexData = data["right"]["pIndexData"];
+						mesh.right.VertexCount = data["right"]["VertexCount"];
+						mesh.right.IndexCount = data["right"]["IndexCount"];
+						mesh.left.ScreenPosNDC = data["left"]["ScreenPosNDC"];
+						mesh.left.TimeWarpFactor = data["left"]["TimeWarpFactor"];
+						mesh.left.VignetteFactor = data["left"]["VignetteFactor"];
+						mesh.left.TanEyeAnglesR = data["left"]["TanEyeAnglesR"];
+						mesh.left.TanEyeAnglesG = data["left"]["TanEyeAnglesG"];
+						mesh.left.TanEyeAnglesB = data["left"]["TanEyeAnglesB"];
+						mesh.left.pIndexData = data["left"]["pIndexData"];
+						mesh.left.VertexCount = data["left"]["VertexCount"];
+						mesh.left.IndexCount = data["left"]["IndexCount"];
+						mesh.right.processed = false;
+						mesh.left.processed = false;
+						console.log("PANA.Websocket: mesh transmission complete.");
+						console.log(mesh);
+					break;
 
-				case "image":
-					imagePath.path = data["path"];
-				break;
+					case "image":
+						imagePath.path = data["path"];
+					break;
 
-				case "update":
-				break;
-				
-				default:
-					console.log("PANA.Websocket: unknown message received from server: " + msg.data);
-					socket.close();
-				break;
+					case "update":
+					break;
+					
+					default:
+						console.log("PANA.Websocket: unknown message received from server: " + msg.data);
+						socket.close();
+					break;
+				}
+
 			}
-
-		}
+		})(mesh);
 		this.config = config;
 		this.quaternion = quaternion;
 		this.acceleration = acceleration;
