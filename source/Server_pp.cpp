@@ -26,21 +26,7 @@ Server_pp::~Server_pp() {
 
 void Server_pp::process() {
     if( mSocketConnected ) {
-		quat = oculus_data->HeadPose.ThePose.Orientation;
-		pos = oculus_data->HeadPose.ThePose.Position;
-		
-        boost::format fmt("{ \"m\" : \"update\", \"o\" : [%f,%f,%f,%f], \"a\" : [%f,%f,%f] }");
-
-        fmt % quat.w;
-        fmt % quat.x;
-        fmt % quat.y;
-        fmt % quat.z;
-
-        fmt % pos.x;
-        fmt % pos.y;
-        fmt % pos.z;
-
-        server.send(mHandle, fmt.str(), websocketpp::frame::opcode::TEXT);
+        server.send(mHandle, OculusUpdateString(OcuInf), websocketpp::frame::opcode::TEXT);
 		
 		{
 			boost::unique_lock<boost::mutex> lock1(*mutex, boost::try_to_lock);
@@ -62,11 +48,11 @@ void Server_pp::on_open(websocketpp::connection_hdl hdl) {
         server.close(hdl, websocketpp::close::status::normal, "Connection closed.");
 		return;
     }
-   
+
     mSocketConnected = true;
     std::cout << "Connected..\n";
 
-	server.send(mHandle, meshString(meshData), websocketpp::frame::opcode::TEXT);
+	server.send(mHandle, OculusInitString(OcuInf), websocketpp::frame::opcode::TEXT);
 }
 
 void Server_pp::on_close(websocketpp::connection_hdl hdl) {

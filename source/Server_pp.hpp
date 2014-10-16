@@ -13,6 +13,17 @@
 namespace ozo {
 
 class Server_pp {
+public:
+	//external input interface from OculusDK2
+	OculusInterface* OcuInf;
+
+	//external input interfaces from DecoderQR
+	std::string *decoder_data;
+	boost::mutex *mutex; //mutex for decoder_data
+
+	Server_pp();
+	~Server_pp();
+	void process();
 private:
 	websocketpp::server<websocketpp::config::asio> server;
 	websocketpp::connection_hdl mHandle;
@@ -25,19 +36,6 @@ private:
 	void on_open(websocketpp::connection_hdl hdl);
 	void on_close(websocketpp::connection_hdl hdl);
 	void on_message(websocketpp::connection_hdl hdl, websocketpp::server<websocketpp::config::asio>::message_ptr msg);
-public:
-	//all are external input interfaces
-	ovrHmdDesc** hmd;
-	ovrEyeRenderDesc* RenderDesc[2];
-	ovrDistortionMesh* meshData[2];
-	ovrTrackingState* oculus_data;
-	
-	std::string *decoder_data;
-	boost::mutex *mutex; //mutex for decoder_data
-	
-	Server_pp();
-	~Server_pp();
-	void process();
 };
 
 } //namespace ozo

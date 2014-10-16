@@ -39,6 +39,7 @@ void threadQRdecoder(SourceCamera *camera, DecoderQR *decoder) { //DecoderQR has
 int main()
 {
 	char key;
+	int i, j;
 
 	//create components
 	SourceCamera camera;
@@ -50,10 +51,7 @@ int main()
 	decoder.source = &(camera.data);
 	server.mutex = &(decoder.mutex);
 	server.decoder_data = &(decoder.data);
-	server.hmd = &(oculus.hmd);
-	server.oculus_data = &(oculus.data);
-	server.meshData[0] = &(oculus.meshData[0]);
-	server.meshData[1] = &(oculus.meshData[1]);
+	server.OcuInf = &(oculus.OcuInf);
 
 	//create another thread to run the QR decoding
 	boost::thread t1(threadQRdecoder, &camera, &decoder);

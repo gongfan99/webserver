@@ -2,29 +2,26 @@
 #define __OZO_OCULUSDK2_HPP__
 
 #include "OVR_CAPI.h"
+#include "utils.hpp"
 
 namespace ozo {
 
 class OculusDK2 {
 public:
-	//all are external output interfaces
-	ovrHmdDesc* hmd;
-	ovrEyeRenderDesc EyeRenderDesc[2];
-	ovrDistortionMesh meshData[2];
-	Sizei RenderTargetSize[2];
-	ovrVector2f UVScaleOffset[2][2];
-	ovrMatrix4f timeWarpMatrices[2][2];
-	ovrTrackingState trackingState;
+	//external output interface
+	OculusInterface OcuInf;
+
 	OculusDK2();
 	~OculusDK2();
 	inline void process(){
+		OcuInf.trackingState = ovrHmd_GetTrackingState(OcuInf.hmd, ovr_GetTimeInSeconds());
+/* 		//time warp is not used; so timeWarpMatrices are all identity matrix.
 		int eyeNum;
 		ovrPosef eyeRenderPose[2];
-		trackingState = ovrHmd_GetTrackingState(hmd, ovr_GetTimeInSeconds());
 		for ( eyeNum = 0; eyeNum < 2; eyeNum++ ) {
 			eyeRenderPose[eyeNum] = trackingState.HeadPose.ThePose;
 			ovrHmd_GetEyeTimewarpMatrices(hmd, (ovrEyeType)eyeNum, eyeRenderPose[eyeNum], timeWarpMatrices[eyeNum]);
-		}
+		} */
 	};
 };
 
