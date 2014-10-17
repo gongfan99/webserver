@@ -1,14 +1,15 @@
 /** 
 * @author fangong
-* input: mesh
+* input: OcuInf
 * output: geometry
 */ 
 
-PANA.PlaneGeometry = function () {
+PANA.PlaneGeometry = function (side) {
+	this.side = side;
 	this.geometry = new THREE.BufferGeometry();
 	this.geometry.dynamic = true;
 
-	var IndexCount = 24576;
+	var IndexCount = 24576; //number of the mesh index from Oculus SDK
 	this.positions = new Float32Array( IndexCount * 3 );
 	this.TimeWarpFactor = new Float32Array( IndexCount );
 	this.VignetteFactor = new Float32Array( IndexCount );
@@ -27,8 +28,8 @@ PANA.PlaneGeometry = function () {
 PANA.PlaneGeometry.prototype = {
 	contructor: PANA.PlaneGeometry,
 	process: function () {
-		if ( !this.mesh.processed ) {
-			var mesh = this.mesh;
+		if ( !this.OcuInf["OculusInit"]["processed"]["meshData"][this.side] ) {
+			var mesh = this.OcuInf["OculusInit"]["meshData"][this.side];
 			for( var v = 0; v < mesh.IndexCount; v++ ) {
 				this.positions[ v * 3 + 0 ] = mesh.ScreenPosNDC[ mesh.pIndexData[ v ] * 2 + 0 ];
 				this.positions[ v * 3 + 1 ] = mesh.ScreenPosNDC[ mesh.pIndexData[ v ] * 2 + 1 ];
@@ -49,8 +50,8 @@ PANA.PlaneGeometry.prototype = {
 				this.geometry.attributes[ key ].needsUpdate = true;
 			}
 
-			this.mesh.processed = true;
-			console.log("PANA.PlaneGeometry: geometry created.");
+			this.OcuInf["OculusInit"]["processed"]["meshData"][this.side] = true;
+			console.log("PANA.PlaneGeometry: " + this.side + " geometry created.");
 		}
 	}
 };

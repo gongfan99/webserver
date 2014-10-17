@@ -7,7 +7,7 @@ require([
 "js/pixastic.custom.js",
 "js/stats.min.js",
 "js/src/PANA.js",
-"js/src/MeshInitValues.js",
+"js/src/InitValues.js",
 "js/src/Websocket.js",
 "js/src/ImageSource.js",
 "js/src/PerspCamera.js",
@@ -41,21 +41,21 @@ require([
 
 	async.series([
 		function(callback){
-			websocket = new PANA.Websocket({});
+			websocket = new PANA.Websocket();
 			imagesource = new PANA.ImageSource(); //scene1.process will build the scene after the image is loaded.
 			scene1 = new PANA.Scene1();
 			
-			rightcamera = new PANA.PerspCamera('right');
-			leftcamera = new PANA.PerspCamera('left');
+			rightcamera = new PANA.PerspCamera("right");
+			leftcamera = new PANA.PerspCamera("left");
 			
-			rightrenderer1 = new PANA.Renderer(false); //false means not to render to screen
-			leftrenderer1 = new PANA.Renderer(false);
+			rightrenderer1 = new PANA.Renderer(false, "right"); //false means not to render to screen
+			leftrenderer1 = new PANA.Renderer(false, "left");
 
-			rightplanegeometry = new PANA.PlaneGeometry();
-			leftplanegeometry = new PANA.PlaneGeometry();
+			rightplanegeometry = new PANA.PlaneGeometry("right");
+			leftplanegeometry = new PANA.PlaneGeometry("left");
 
-			rightmaterial = new PANA.ShaderMaterial();
-			leftmaterial = new PANA.ShaderMaterial();
+			rightmaterial = new PANA.ShaderMaterial("right");
+			leftmaterial = new PANA.ShaderMaterial("left");
 			
 			scene2 = new THREE.Scene(); //very simple so unnecessary to write a wrapper object
 			
@@ -67,30 +67,33 @@ require([
 		},
 
 		function(callback){
-			imagesource.imagePath = websocket.imagePath;
+			imagesource.OcuInf = websocket.OcuInf;
 			
 			scene1.status = imagesource.status;
 			scene1.image = imagesource.image;
 			
-			rightcamera.quaternion = websocket.quaternion;
-			leftcamera.quaternion = websocket.quaternion;
+			rightcamera.OcuInf = websocket.OcuInf;
+			leftcamera.OcuInf = websocket.OcuInf;
 			
+			rightrenderer1.OcuInf = websocket.OcuInf;
 			rightrenderer1.scene = scene1.scene;
 			rightrenderer1.camera = rightcamera.camera;
+			leftrenderer1.OcuInf = websocket.OcuInf;
 			leftrenderer1.scene = scene1.scene;
 			leftrenderer1.camera = leftcamera.camera;
-			
-			rightplanegeometry.mesh = websocket.mesh.right;
-			leftplanegeometry.mesh = websocket.mesh.left;
+
+			rightplanegeometry.OcuInf = websocket.OcuInf;
+			leftplanegeometry.OcuInf = websocket.OcuInf;
 
 			rightmaterial.renderTarget = rightrenderer1.renderTarget;
 			leftmaterial.renderTarget = leftrenderer1.renderTarget;
-			rightmaterial.eyeInfo = websocket.eyeInfo.right;
-			leftmaterial.eyeInfo = websocket.eyeInfo.left;
+			rightmaterial.OcuInf = websocket.OcuInf;
+			leftmaterial.OcuInf = websocket.OcuInf;
 
 			scene2.add(new THREE.Mesh(rightplanegeometry.geometry, rightmaterial.material));
 			scene2.add(new THREE.Mesh(leftplanegeometry.geometry, leftmaterial.material));
-			
+
+			renderer2.OcuInf = websocket.OcuInf;
 			renderer2.scene = scene2;
 			renderer2.camera = oCamera.camera;
 

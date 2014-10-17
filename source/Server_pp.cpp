@@ -34,7 +34,7 @@ void Server_pp::process() {
 		}
 		if (currentPage != incomingPage){
 			currentPage = incomingPage;
-			server.send(mHandle, "{ \"m\" : \"image\", \"path\" : \"" + currentPage + "\" }", websocketpp::frame::opcode::TEXT);
+			server.send(mHandle, "{ \"Image\" : {\"processed\" : false, \"path\" : \"" + currentPage + "\" } }", websocketpp::frame::opcode::TEXT);
 		}
 	}
 	server.poll();

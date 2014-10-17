@@ -1,10 +1,11 @@
 /** 
 * @author fangong
-* input: renderTarget eyeInfo
+* input: renderTarget OcuInf
 * output: ShaderMaterial
 */ 
 
-PANA.ShaderMaterial = function () {
+PANA.ShaderMaterial = function (side) {
+	this.side = side;
 	this.material = new THREE.ShaderMaterial( {
 		uniforms: {
 			texture0: { type: "t", value: null },
@@ -75,10 +76,21 @@ PANA.ShaderMaterial = function () {
 PANA.ShaderMaterial.prototype = {
 	contructor: PANA.ShaderMaterial,
 	process: function () {
+		var m;
 		this.material.uniforms['texture0'].value = this.renderTarget;
-		this.material.uniforms['eyeToSourceUVscale'].value = this.eyeInfo.eyeToSourceUVscale;
-		this.material.uniforms['eyeToSourceUVoffset'].value = this.eyeInfo.eyeToSourceUVoffset;
-		this.material.uniforms['eyeRotationStart'].value = this.eyeInfo.eyeRotationStart;
-		this.material.uniforms['eyeRotationEnd'].value = this.eyeInfo.eyeRotationEnd;
+
+		if ( !this.OcuInf["OculusInit"]["processed"]["UVScaleOffset"][this.side] ) {
+			this.material.uniforms['eyeToSourceUVscale'].value.fromArray( this.OcuInf["OculusInit"]["UVScaleOffset"][this.side]["Scale"] );
+			this.material.uniforms['eyeToSourceUVoffset'].value.fromArray( this.OcuInf["OculusInit"]["UVScaleOffset"][this.side]["Offset"] );
+			this.OcuInf["OculusInit"]["processed"]["UVScaleOffset"][this.side] = true;
+		}
+
+		if ( !this.OcuInf["OculusUpdate"]["processed"]["timeWarpMatrices"][this.side] ) {
+			m = this.OcuInf["OculusUpdate"]["timeWarpMatrices"][this.side]["Start"];
+			this.material.uniforms['eyeRotationStart'].value.set(m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7],m[8],m[9],m[10],m[11],m[12],m[13],m[14],m[15]);
+			m = this.OcuInf["OculusUpdate"]["timeWarpMatrices"][this.side]["End"];
+			this.material.uniforms['eyeRotationEnd'].value.set(m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7],m[8],m[9],m[10],m[11],m[12],m[13],m[14],m[15]);
+			this.OcuInf["OculusUpdate"]["processed"]["timeWarpMatrices"][this.side] = true;
+		}
 	}
 };

@@ -1,6 +1,6 @@
 /** 
 * @author fangong 
-* input: imagePath
+* input: OcuInf
 * output: image
 * in/out: status
 */
@@ -18,13 +18,13 @@ PANA.ImageSource = function () {
 PANA.ImageSource.prototype = {
 	contructor: PANA.ImageSource,
 	process: (function () {
-		var previouspath;
+		var previouspath = null;
 		return function () {
-			if ( (!this.imagePath.processed) && (previouspath != this.imagePath.path) ) {
-				previouspath = this.imagePath.path;
-				this.image.src = this.imagePath.path;
-				console.log('PANA.ImageSource: loading...'+this.imagePath.path);
-				this.imagePath.processed = true;
+			if ( (!this.OcuInf["Image"]["processed"]) && (previouspath != this.OcuInf["Image"]["path"]) ) {
+				previouspath = this.OcuInf["Image"]["path"];
+				this.image.src = this.OcuInf["Image"]["path"];
+				console.log('PANA.ImageSource: loading...'+this.OcuInf["Image"]["path"]);
+				this.OcuInf["Image"]["processed"] = true;
 			}
 		};
 	})()
