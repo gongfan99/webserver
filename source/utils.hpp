@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <cmath> 
 #include "OVR_CAPI.h"
 
 namespace ozo

@@ -42,7 +42,7 @@ PANA.Renderer.prototype = {
 
 		if ( this.toScreen && !this.OcuInf["OculusInit"]["processed"]["resolution"] ) {
 			r = this.OcuInf["OculusInit"]["resolution"];
-			this.renderer.setSize( r[0]/20, r[1]/20 ); //set canvas size
+			this.renderer.setSize( r[0]/10, r[1]/10 ); //set canvas size
 			this.OcuInf["OculusInit"]["processed"]["resolution"] = true;
 		}
 

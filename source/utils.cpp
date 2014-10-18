@@ -37,10 +37,22 @@ namespace ozo
 		int i,j;
 		std::ostringstream tempString;
 
-		tempString << "{\"OculusInit\" : {\n\"processed\" : {\"aspect\" : false, \"resolution\" : false, \"FOV\" : {\"left\" : false, \"right\" : false}, \"meshData\" : {\"left\" : false, \"right\" : false}, \"RenderTargetSize\" : {\"left\" : false, \"right\" : false}, \"UVScaleOffset\" : {\"left\" : false, \"right\" : false}},\n";
+		tempString << "{\"OculusInit\" : {\n\"processed\" : {\"aspect\" : {\"left\" : false, \"right\" : false}, \"resolution\" : false, \"FOV\" : {\"left\" : false, \"right\" : false}, \"meshData\" : {\"left\" : false, \"right\" : false}, \"RenderTargetSize\" : {\"left\" : false, \"right\" : false}, \"UVScaleOffset\" : {\"left\" : false, \"right\" : false}},\n";
 
 		//send Oculus camera aspect
-		tempString << "\"aspect\" : " << 0.5*OcuInf->hmd->Resolution.w/OcuInf->hmd->Resolution.h << ",\n"; //end of camera aspect
+		tempString << "\"aspect\" : {\n";
+		for ( i = 0; i < 2; ++i ) {
+			if ( i == 0 ) {
+				tempString << "\"left\" : ";
+			} else {
+				tempString << "\"right\" : ";
+			}
+			tempString << 1.0*OcuInf->RenderTargetSize[i].w/OcuInf->RenderTargetSize[i].h;
+			if ( i == 0 ) {
+				tempString << ",\n";
+			}
+		}
+		tempString << "\n},\n"; //end of camera aspect
 
 		//send Oculus screen resolution
 		tempString << "\"resolution\" : [" << OcuInf->hmd->Resolution.w << "," << OcuInf->hmd->Resolution.h << "],\n"; //end of resolution
@@ -172,10 +184,10 @@ namespace ozo
 		tempString << "\n}";
 		tempString << "\n}";
 
-		std::ofstream myfile;
+/* 		std::ofstream myfile;
 		myfile.open ("mesh.txt", std::fstream::out | std::fstream::trunc);
 		myfile << tempString.str();
-		myfile.close();
+		myfile.close(); */
 
 		return tempString.str();
 	}
@@ -183,6 +195,7 @@ namespace ozo
 	std::string OculusUpdateString(OculusInterface* OcuInf) {
 		int i, j, k, eyeNum;
 		std::ostringstream tempString;
+		const static boost::chrono::system_clock::time_point start = boost::chrono::system_clock::now();
 
 		tempString << "{\"OculusUpdate\" : {\n\"processed\" : {\"timeWarpMatrices\" : {\"left\" : false, \"right\" : false}, \"Orientation\" : false, \"Position\" : false},\n";
 
@@ -222,9 +235,10 @@ namespace ozo
 
 		//send Oculus Orientation
 		ovrQuatf &q = OcuInf->trackingState.HeadPose.ThePose.Orientation;
-		tempString << "\"Orientation\" : [" << q.x << "," << q.y << "," << q.z << "," << q.w << "],\n";
-		auto time1 = boost::chrono::high_resolution_clock::now();
-		int count1 = time1.count();
+		//tempString << "\"Orientation\" : [" << q.x << "," << q.y << "," << q.z << "," << q.w << "],\n";
+		boost::chrono::duration<double> sec = boost::chrono::system_clock::now() - start;
+		float theta = (sec.count())*(3.14159/20);
+		tempString << "\"Orientation\" : [" << 0 << "," << sin(theta/2) << "," << 0 << "," << cos(theta/2) << "],\n";
 
 		//send Oculus Position
 		ovrVector3f &p = OcuInf->trackingState.HeadPose.ThePose.Position;
@@ -233,10 +247,10 @@ namespace ozo
 		tempString << "\n}";
 		tempString << "\n}";
 		
-		std::ofstream myfile;
+/* 		std::ofstream myfile;
 		myfile.open ("update.txt", std::fstream::out | std::fstream::trunc);
 		myfile << tempString.str();
-		myfile.close();
+		myfile.close(); */
 		
 		return tempString.str();
 	}

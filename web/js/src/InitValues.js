@@ -45,7 +45,10 @@ PANA.InitValues = (function () {
 		OcuInf: {
 			OculusInit: {
 				processed: {
-					aspect: false,
+					aspect: {
+						left: false,
+						right: false
+					},
 					resolution: false,
 					FOV: {
 						left: false,
@@ -64,7 +67,10 @@ PANA.InitValues = (function () {
 						right: false
 					}
 				},
-				aspect: 1920/(2*1080),
+				aspect: {
+					left: 1.0*1182/1461,
+					right: 1.0*1182/1461
+				},
 				resolution: [1920, 1080],
 				FOV: {
 					left: [1.32929,1.32929,1.05866,1.09237],

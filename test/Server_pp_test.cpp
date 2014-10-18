@@ -32,7 +32,7 @@ void threadQRdecoder(SourceCamera *camera, DecoderQR *decoder) { //DecoderQR has
 			done2 = done;
 		}
 		if (done2) break;
-		boost::this_thread::sleep_for(boost::chrono::milliseconds(50000));
+		boost::this_thread::sleep_for(boost::chrono::milliseconds(10000));
 	}
 }
 
@@ -69,7 +69,7 @@ int main()
 			done = true;
 		}
 		if (done) break;      //If you hit ESC key loop will break.
-		boost::this_thread::sleep_for(boost::chrono::milliseconds(3000));
+		boost::this_thread::sleep_for(boost::chrono::milliseconds(100));
 	}
 	
 	std::cout << "\nMain event loop terminated." << std::endl;	
