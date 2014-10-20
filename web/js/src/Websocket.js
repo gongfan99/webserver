@@ -1,7 +1,7 @@
 /** 
 * @author fangong
 * input: 
-* output: HMD mesh quaternion picture
+* output: OcuInf
 */ 
 
 PANA.Websocket = (function () {
@@ -34,20 +34,24 @@ PANA.Websocket = (function () {
 		}
 
 		this.OcuInf = PANA.InitValues.OcuInf;
-		this.test = {socketTime: [], startTime: 0, costTime: 0};
-		socket.onmessage = (function(OcuInf, test) {
+		this.internalUse = {rcvArray: [], socketTime: [], startTime: 0, costTime: 0, sendNumber: 0};
+		socket.onmessage = (function(OcuInf, internalUse) {
 			return function(msg) {
 				var data = JSON.parse( msg.data );
 				for ( key in data ) {
-					OcuInf[key] = data[key];
-					if (key == "OculusUpdate") {
-						var endTime = performance.now();
-						test.costTime = endTime - test.startTime;
-						//test.socketTime.push(costTime);
+					if ( key !== "OculusUpdate" ) {
+						OcuInf[key] = data[key];
+					} else  {
+						internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
+						if (key == "OculusUpdate") {
+							var endTime = performance.now();
+							internalUse.costTime = endTime - internalUse.startTime;
+							//test.socketTime.push(costTime);
+						}
 					}
 				}
 			}
-		})(this.OcuInf, this.test);
+		})(this.OcuInf, this.internalUse);
 
 		this.mouse = {x : 0, y : 0};
 		document.addEventListener('mousemove', (function(mouse){
@@ -66,8 +70,9 @@ PANA.Websocket.prototype = {
 		var sendTimes = 0;
 		return function () {
 			if (this.socket.readyState === 1) {
-				this.socket.send("OculusUpdate");
-				this.test.startTime = performance.now();
+				this.internalUse.rcvArray[this.internalUse.sendNumber] = undefined;
+				this.socket.send(this.internalUse.sendNumber.toString());
+				this.internalUse.startTime = performance.now();
 				//sendTimes++;
 			}
 /* 			if (sendTimes === 20) {
@@ -89,5 +94,16 @@ PANA.Websocket.prototype = {
 		var q = this.quaternion;
 		q.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'YXZ')); //intrinsic Euler angles; 'theta2' is for X
 		this.OcuInf["OculusUpdate"]["Orientation"] = [q.x, q.y, q.z, q.w]; */
+		for (var i = 0; i < 20; i++) {
+			if (this.internalUse.rcvArray[this.internalUse.sendNumber - i] !== undefined) {
+				this.OcuInf["OculusUpdate"] = this.internalUse.rcvArray[(this.internalUse.sendNumber-i+20)%20];
+				if ( i !== 0 ) {
+					console.log("No. " + this.internalUse.sendNumber.toString() + " is needed but we only have No." + ((this.internalUse.sendNumber-i+20)%20).toString() + ".");
+				}
+				break;
+			}
+		}
+		this.internalUse.sendNumber++;
+		this.internalUse.sendNumber %= 20;
 	}
 };

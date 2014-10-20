@@ -100,13 +100,15 @@ require([
 			callback();
 		},
 		
-		function(callback){		
+		function(callback){
+			var array2 = [];
+			var startTime2 = 0;
 			requestAnimationFrame(function animate(){
 				// keep looping
 				requestAnimationFrame( animate );
 
 				//name.textContent = 'xy: '+websocket.mouse.x.toString()+" "+websocket.mouse.y.toString();
-				name.textContent = "cost Time: "+websocket.test.costTime.toString()+" ms";
+				name.textContent = "cost Time: "+websocket.internalUse.costTime.toString()+" ms";
 				
 				quatValue = websocket.quaternion;
 				orientation.textContent = 'wxyz: '+quatValue.w.toString()+" "+quatValue.x.toString()+" "+quatValue.y.toString()+" "+quatValue.z.toString();
@@ -115,14 +117,16 @@ require([
 				vec.applyQuaternion(quatValue);
 				qrcode.textContent = 'xyz: '+vec.x.toString()+" "+vec.y.toString()+" "+vec.z.toString();
 
+				array2.push(performance.now() - startTime2);
+				if (array2.length === 20){
+					console.log(array2);
+				}
+	
 				websocket.process();
 				imagesource.process();
 				scene1.process();
 				rightcamera.process();
 				leftcamera.process();
-
-
-
 				rightrenderer1.process();
 				leftrenderer1.process();
 				rightplanegeometry.process();
@@ -133,6 +137,7 @@ require([
 				renderer2.process();
 				stats.update();
 				websocket.send();
+				startTime2 = performance.now();
 			});
 			callback();
 		}

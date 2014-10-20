@@ -63,10 +63,10 @@ void Server_pp::on_close(websocketpp::connection_hdl hdl) {
 //void Server_pp::on_fail(websocketpp::connection_hdl hdl) {}
 void Server_pp::on_message(websocketpp::connection_hdl hdl, 
 							websocketpp::server<websocketpp::config::asio>::message_ptr msg) {
-    if( msg->get_payload() == "OculusUpdate"){
+    if( (msg->get_payload()).length() < 3){
         //server.send(mHandle, "{ \"Test\" : {\"processed\" : false, \"path\" : \" loop back\" } }", websocketpp::frame::opcode::TEXT);;
 		OcuInf->trackingState = ovrHmd_GetTrackingState(OcuInf->hmd, ovr_GetTimeInSeconds()); //moved from OculusDK2.hpp to here to ensure (a)the latest trackingState reading (b)no unnecessary trackingState reading by OculusDK2.process().
-		server.send(mHandle, OculusUpdateString(OcuInf), websocketpp::frame::opcode::TEXT);
+		server.send(mHandle, OculusUpdateString(OcuInf, msg->get_payload()), websocketpp::frame::opcode::TEXT);
     }
 }
 

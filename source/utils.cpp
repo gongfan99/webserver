@@ -192,7 +192,7 @@ namespace ozo
 		return tempString.str();
 	}
 
-	std::string OculusUpdateString(OculusInterface* OcuInf) {
+	std::string OculusUpdateString(OculusInterface* OcuInf, std::string sendNumber) {
 		int i, j, k, eyeNum;
 		std::ostringstream tempString;
 		const static boost::chrono::system_clock::time_point start = boost::chrono::system_clock::now();
@@ -242,8 +242,11 @@ namespace ozo
 
 		//send Oculus Position
 		ovrVector3f &p = OcuInf->trackingState.HeadPose.ThePose.Position;
-		tempString << "\"Position\" : [" << p.x << "," << p.y << "," << p.z << "]\n";
+		tempString << "\"Position\" : [" << p.x << "," << p.y << "," << p.z << "],\n";
 
+		//send send number
+		tempString << "\"sendNumber\" : " << sendNumber << "\n";
+		
 		tempString << "\n}";
 		tempString << "\n}";
 		

@@ -22,7 +22,7 @@ namespace ozo
     void sleep( unsigned int millisecs );
 
 	std::string OculusInitString(OculusInterface* OcuInf);
-	std::string OculusUpdateString(OculusInterface* OcuInf);
+	std::string OculusUpdateString(OculusInterface* OcuInf, std::string sendNumber);
 
 	template < typename T >
 	std::string to_string( const T& n )	{
