@@ -26,7 +26,7 @@ Server_pp::~Server_pp() {
 
 void Server_pp::process() {
     if( mSocketConnected ) {
-        server.send(mHandle, OculusUpdateString(OcuInf), websocketpp::frame::opcode::TEXT);
+        //server.send(mHandle, OculusUpdateString(OcuInf), websocketpp::frame::opcode::TEXT);
 		
 		{
 			boost::unique_lock<boost::mutex> lock1(*mutex, boost::try_to_lock);
@@ -63,7 +63,11 @@ void Server_pp::on_close(websocketpp::connection_hdl hdl) {
 //void Server_pp::on_fail(websocketpp::connection_hdl hdl) {}
 void Server_pp::on_message(websocketpp::connection_hdl hdl, 
 							websocketpp::server<websocketpp::config::asio>::message_ptr msg) {
-	std::cout << msg->get_payload() << std::endl;
+    if( msg->get_payload() == "OculusUpdate"){
+        //server.send(mHandle, "{ \"Test\" : {\"processed\" : false, \"path\" : \" loop back\" } }", websocketpp::frame::opcode::TEXT);;
+		OcuInf->trackingState = ovrHmd_GetTrackingState(OcuInf->hmd, ovr_GetTimeInSeconds()); //moved from OculusDK2.hpp to here to ensure (a)the latest trackingState reading (b)no unnecessary trackingState reading by OculusDK2.process().
+		server.send(mHandle, OculusUpdateString(OcuInf), websocketpp::frame::opcode::TEXT);
+    }
 }
 
 } //namespace ozo

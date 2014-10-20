@@ -5,18 +5,19 @@
 */ 
 
 PANA.Websocket = (function () {
-	var socket;
+	var socket = {};
 	return function() {
 		var socketURL = "ws://localhost:9002/";
 
 		console.log("PANA.Websocket: attempting to connect " + socketURL);
 		// attempt to open the socket connection
 		socket = new WebSocket(socketURL);
+		this.socket = socket;
 
 		// hook up websocket events //
 		socket.onopen = function(){
 			console.log("PANA.Websocket: connected!")
-			socket.send("Here's some text that the server is urgently awaiting!");
+			socket.send("Hello from Javascript Websocket!");
 		}
 
 		socket.onclose = function() {
@@ -33,14 +34,20 @@ PANA.Websocket = (function () {
 		}
 
 		this.OcuInf = PANA.InitValues.OcuInf;
-		socket.onmessage = (function(OcuInf) {
+		this.test = {socketTime: [], startTime: 0, costTime: 0};
+		socket.onmessage = (function(OcuInf, test) {
 			return function(msg) {
 				var data = JSON.parse( msg.data );
 				for ( key in data ) {
 					OcuInf[key] = data[key];
+					if (key == "OculusUpdate") {
+						var endTime = performance.now();
+						test.costTime = endTime - test.startTime;
+						//test.socketTime.push(costTime);
+					}
 				}
 			}
-		})(this.OcuInf);
+		})(this.OcuInf, this.test);
 
 		this.mouse = {x : 0, y : 0};
 		document.addEventListener('mousemove', (function(mouse){
@@ -55,8 +62,21 @@ PANA.Websocket = (function () {
 
 PANA.Websocket.prototype = {
 	contructor: PANA.Websocket,
+	send: (function () {
+		var sendTimes = 0;
+		return function () {
+			if (this.socket.readyState === 1) {
+				this.socket.send("OculusUpdate");
+				this.test.startTime = performance.now();
+				//sendTimes++;
+			}
+/* 			if (sendTimes === 20) {
+				console.log(this.test.socketTime);
+			} */
+		};
+	})(),
 	process: function () {
-		var x = this.mouse.x;
+/* 		var x = this.mouse.x;
 		var y = this.mouse.y;
 		var t = Math.sqrt( x * x + y * y );
 		if ( t > 0.99 ) { //scale x, y below unit circle
@@ -68,6 +88,6 @@ PANA.Websocket.prototype = {
 		var theta2 = Math.asin(y);
 		var q = this.quaternion;
 		q.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'YXZ')); //intrinsic Euler angles; 'theta2' is for X
-		this.OcuInf["OculusUpdate"]["Orientation"] = [q.x, q.y, q.z, q.w];
+		this.OcuInf["OculusUpdate"]["Orientation"] = [q.x, q.y, q.z, q.w]; */
 	}
 };

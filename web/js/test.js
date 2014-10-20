@@ -37,7 +37,7 @@ require([
 	var rightmaterial, leftmaterial, rightscene, leftscene, renderer2, leftrenderer2;
 	var renderer;
 	var vec = new THREE.Vector3( 0, 0, -1 );
-	var quatValue;
+	var quatValue, startTime;
 
 	async.series([
 		function(callback){
@@ -105,7 +105,8 @@ require([
 				// keep looping
 				requestAnimationFrame( animate );
 
-				name.textContent = 'xy: '+websocket.mouse.x.toString()+" "+websocket.mouse.y.toString();
+				//name.textContent = 'xy: '+websocket.mouse.x.toString()+" "+websocket.mouse.y.toString();
+				name.textContent = "cost Time: "+websocket.test.costTime.toString()+" ms";
 				
 				quatValue = websocket.quaternion;
 				orientation.textContent = 'wxyz: '+quatValue.w.toString()+" "+quatValue.x.toString()+" "+quatValue.y.toString()+" "+quatValue.z.toString();
@@ -119,6 +120,9 @@ require([
 				scene1.process();
 				rightcamera.process();
 				leftcamera.process();
+
+
+
 				rightrenderer1.process();
 				leftrenderer1.process();
 				rightplanegeometry.process();
@@ -128,6 +132,7 @@ require([
 				oCamera.process(); //empty process
 				renderer2.process();
 				stats.update();
+				websocket.send();
 			});
 			callback();
 		}

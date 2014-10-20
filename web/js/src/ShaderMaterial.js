@@ -41,7 +41,8 @@ PANA.ShaderMaterial = function (side) {
 			"vec2 timeWarpTexCoord(in vec2 texCoord, in mat4 rotMat) {",
 				"vec3 transformed = (rotMat * vec4(texCoord.xy, 1.0, 1.0)).xyz;",
 				"vec2 flattened = transformed.xy / transformed.z;",
-				"return eyeToSourceUVscale * flattened + eyeToSourceUVoffset;",
+				"vec2 result = eyeToSourceUVscale * flattened + eyeToSourceUVoffset;",
+				"return vec2(result.x, 1.0-result.y);", //"1-y" is to convert DirectX coordinates to WebGL coordinates. The data from Oculus SDK is for DirectX.
 			"}",
 			"",
 			"void main() {",

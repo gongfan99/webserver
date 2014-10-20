@@ -38,12 +38,12 @@ PANA.PlaneGeometry.prototype = {
 				this.TimeWarpFactor[v] = mesh.TimeWarpFactor[ mesh.pIndexData[ v ] ];
 				this.VignetteFactor[v] = mesh.VignetteFactor[ mesh.pIndexData[ v ] ];
 
-				this.texCoord0[ v * 2 + 0 ] = mesh.TanEyeAnglesR[ mesh.pIndexData[ v ] * 2 + 0 ] / 2 + 0.5;
-				this.texCoord0[ v * 2 + 1 ] = 1 - ( mesh.TanEyeAnglesR[ mesh.pIndexData[ v ] * 2 + 1 ] / 2 + 0.5 ); //"1-y" is to convert DirectX coordinates to WebGL coordinates. The data from Oculus SDK is for DirectX.
-				this.texCoord1[ v * 2 + 0 ] = mesh.TanEyeAnglesG[ mesh.pIndexData[ v ] * 2 + 0 ] / 2 + 0.5;
-				this.texCoord1[ v * 2 + 1 ] = 1 - ( mesh.TanEyeAnglesG[ mesh.pIndexData[ v ] * 2 + 1 ] / 2 + 0.5 );
-				this.texCoord2[ v * 2 + 0 ] = mesh.TanEyeAnglesB[ mesh.pIndexData[ v ] * 2 + 0 ] / 2 + 0.5;
-				this.texCoord2[ v * 2 + 1 ] = 1 - ( mesh.TanEyeAnglesB[ mesh.pIndexData[ v ] * 2 + 1 ] / 2 + 0.5 );
+				this.texCoord0[ v * 2 + 0 ] = mesh.TanEyeAnglesR[ mesh.pIndexData[ v ] * 2 + 0 ];
+				this.texCoord0[ v * 2 + 1 ] = mesh.TanEyeAnglesR[ mesh.pIndexData[ v ] * 2 + 1 ];
+				this.texCoord1[ v * 2 + 0 ] = mesh.TanEyeAnglesG[ mesh.pIndexData[ v ] * 2 + 0 ];
+				this.texCoord1[ v * 2 + 1 ] = mesh.TanEyeAnglesG[ mesh.pIndexData[ v ] * 2 + 1 ];
+				this.texCoord2[ v * 2 + 0 ] = mesh.TanEyeAnglesB[ mesh.pIndexData[ v ] * 2 + 0 ];
+				this.texCoord2[ v * 2 + 1 ] = mesh.TanEyeAnglesB[ mesh.pIndexData[ v ] * 2 + 1 ];
 			}
 
 			for ( var key in this.geometry.attributes ) {

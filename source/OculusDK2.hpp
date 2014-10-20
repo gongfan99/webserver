@@ -14,7 +14,7 @@ public:
 	OculusDK2();
 	~OculusDK2();
 	inline void process(){
-		OcuInf.trackingState = ovrHmd_GetTrackingState(OcuInf.hmd, ovr_GetTimeInSeconds());
+		//OcuInf.trackingState = ovrHmd_GetTrackingState(OcuInf.hmd, ovr_GetTimeInSeconds());
 /* 		//time warp is not used; so timeWarpMatrices are all identity matrix.
 		int eyeNum;
 		ovrPosef eyeRenderPose[2];

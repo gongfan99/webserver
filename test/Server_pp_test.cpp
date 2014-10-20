@@ -69,7 +69,7 @@ int main()
 			done = true;
 		}
 		if (done) break;      //If you hit ESC key loop will break.
-		boost::this_thread::sleep_for(boost::chrono::milliseconds(100));
+		boost::this_thread::sleep_for(boost::chrono::milliseconds(5));
 	}
 	
 	std::cout << "\nMain event loop terminated." << std::endl;	
