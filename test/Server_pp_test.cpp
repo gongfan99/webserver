@@ -39,7 +39,6 @@ void threadQRdecoder(SourceCamera *camera, DecoderQR *decoder) { //DecoderQR has
 int main()
 {
 	char key;
-	int i, j;
 
 	//create components
 	SourceCamera camera;

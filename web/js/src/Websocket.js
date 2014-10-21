@@ -4,80 +4,61 @@
 * output: OcuInf
 */ 
 
-PANA.Websocket = (function () {
-	var socket = {};
-	return function() {
-		var socketURL = "ws://localhost:9002/";
+PANA.Websocket = function() {
+	var socketURL = "ws://localhost:9002/";
 
-		console.log("PANA.Websocket: attempting to connect " + socketURL);
-		// attempt to open the socket connection
-		socket = new WebSocket(socketURL);
-		this.socket = socket;
+	console.log("PANA.Websocket: attempting to connect " + socketURL);
+	// attempt to open the socket connection
+	var socket = new WebSocket(socketURL);
+	this.socket = socket;
 
-		// hook up websocket events //
-		socket.onopen = function(){
-			console.log("PANA.Websocket: connected!")
-			socket.send("Hello from Javascript Websocket!");
-		}
+	// hook up websocket events //
+	socket.onopen = function(){
+		console.log("PANA.Websocket: connected!")
+	}
 
-		socket.onclose = function() {
-			//socket.close();
-			console.log("PANA.Websocket: close.");
-/* 			window.setTimeout( function(){
-				socket = new WebSocket(socketURL);
-				console.log("PANA.Websocket: attempting to connect " + socketURL);
-			}, 2000 ); */
-		}
+	socket.onclose = function() {
+		console.log("PANA.Websocket: disconnected.");
+	}
 
-		socket.onerror = function(e){
-			console.log("PANA.Websocket: socket error.");
-		}
+	socket.onerror = function(e){
+		console.log("PANA.Websocket: socket error.");
+	}
 
-		this.OcuInf = PANA.InitValues.OcuInf;
-		this.internalUse = {rcvArray: [], socketTime: [], startTime: 0, costTime: 0, sendNumber: 0};
-		socket.onmessage = (function(OcuInf, internalUse) {
-			return function(msg) {
-				var data = JSON.parse( msg.data );
-				for ( key in data ) {
-					if ( key !== "OculusUpdate" ) {
-						OcuInf[key] = data[key];
-					} else  {
-						internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
-						if (key == "OculusUpdate") {
-							var endTime = performance.now();
-							internalUse.costTime = endTime - internalUse.startTime;
-							//test.socketTime.push(costTime);
-						}
-					}
+	this.OcuInf = PANA.InitValues.OcuInf;
+	this.internalUse = {rcvArray: [], socketTime: [], startTime: 0, costTime: 0, sendNumber: 0};
+	socket.onmessage = (function(OcuInf, internalUse) {
+		return function(msg) {
+			var data = JSON.parse( msg.data );
+			for ( key in data ) {
+				if ( key !== "OculusUpdate" ) {
+					OcuInf[key] = data[key];
+				} else  {
+					internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
 				}
 			}
-		})(this.OcuInf, this.internalUse);
+		}
+	})(this.OcuInf, this.internalUse);
 
-		this.mouse = {x : 0, y : 0};
-		document.addEventListener('mousemove', (function(mouse){
-			return function(event){
-				mouse.x	= ((event.clientX / window.innerWidth ) - 0.5 ) * 2;
-				mouse.y	= - ((event.clientY / window.innerHeight) - 0.5) * 2;
-			}
-		})(this.mouse),	false);
-		this.quaternion = new THREE.Quaternion();
-	}
-})();
+/* 		this.mouse = {x : 0, y : 0};
+	document.addEventListener('mousemove', (function(mouse){
+		return function(event){
+			mouse.x	= ((event.clientX / window.innerWidth ) - 0.5 ) * 2;
+			mouse.y	= - ((event.clientY / window.innerHeight) - 0.5) * 2;
+		}
+	})(this.mouse),	false);
+	this.quaternion = new THREE.Quaternion(); */
+};
 
 PANA.Websocket.prototype = {
 	contructor: PANA.Websocket,
-	send: (function () {
-		var sendTimes = 0;
+	send: (function () { //send request to websocket server to get Oculus orientation
+		//var sendTimes = 0;
 		return function () {
 			if (this.socket.readyState === 1) {
 				this.internalUse.rcvArray[this.internalUse.sendNumber] = undefined;
 				this.socket.send(this.internalUse.sendNumber.toString());
-				this.internalUse.startTime = performance.now();
-				//sendTimes++;
 			}
-/* 			if (sendTimes === 20) {
-				console.log(this.test.socketTime);
-			} */
 		};
 	})(),
 	process: function () {
@@ -94,11 +75,11 @@ PANA.Websocket.prototype = {
 		var q = this.quaternion;
 		q.setFromEuler(new THREE.Euler(theta2, theta1, 0, 'YXZ')); //intrinsic Euler angles; 'theta2' is for X
 		this.OcuInf["OculusUpdate"]["Orientation"] = [q.x, q.y, q.z, q.w]; */
-		for (var i = 0; i < 20; i++) {
+		for (var i = 0; i < 20; i++) { //check if the Oculus orientation is received
 			if (this.internalUse.rcvArray[this.internalUse.sendNumber - i] !== undefined) {
 				this.OcuInf["OculusUpdate"] = this.internalUse.rcvArray[(this.internalUse.sendNumber-i+20)%20];
 				if ( i !== 0 ) {
-					console.log("No. " + this.internalUse.sendNumber.toString() + " is needed but we only have No." + ((this.internalUse.sendNumber-i+20)%20).toString() + ".");
+					console.log("No. " + this.internalUse.sendNumber.toString() + " is needed but we only received up to No." + ((this.internalUse.sendNumber-i+20)%20).toString() + ".");
 				}
 				break;
 			}

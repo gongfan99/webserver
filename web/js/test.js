@@ -16,12 +16,12 @@ require([
 "js/src/PlaneGeometry.js",
 "js/src/ShaderMaterial.js",
 "js/src/OrthoCamera.js"], function(){
-	var name = document.getElementById("name");
+/* 	var name = document.getElementById("name");
 	var orientation = document.getElementById("orientation");
 	var qrcode = document.getElementById("qrcode");
 	name.textContent = "I am here";
 	orientation.textContent = "I am here";
-	qrcode.textContent = "reserved for QR code";
+	qrcode.textContent = "reserved for QR code"; */
 
 /* 	window.onbeforeunload = function () {
 		return "Do you really want to close?";
@@ -35,9 +35,6 @@ require([
 
 	var websocket, imagesource, scene1, quaternion, rightcamera, rightrenderer1, leftrenderer1;
 	var rightmaterial, leftmaterial, rightscene, leftscene, renderer2, leftrenderer2;
-	var renderer;
-	var vec = new THREE.Vector3( 0, 0, -1 );
-	var quatValue, startTime;
 
 	async.series([
 		function(callback){
@@ -48,7 +45,7 @@ require([
 			rightcamera = new PANA.PerspCamera("right");
 			leftcamera = new PANA.PerspCamera("left");
 			
-			rightrenderer1 = new PANA.Renderer(false, "right"); //false means not to render to screen
+			rightrenderer1 = new PANA.Renderer(false, "right"); //not to render to screen
 			leftrenderer1 = new PANA.Renderer(false, "left");
 
 			rightplanegeometry = new PANA.PlaneGeometry("right");
@@ -57,7 +54,7 @@ require([
 			rightmaterial = new PANA.ShaderMaterial("right");
 			leftmaterial = new PANA.ShaderMaterial("left");
 			
-			scene2 = new THREE.Scene(); //very simple so unnecessary to write a wrapper object
+			scene2 = new THREE.Scene(); //simple so unnecessary to write a wrapper object
 			
 			oCamera = new PANA.OrthoCamera();
 			
@@ -101,14 +98,15 @@ require([
 		},
 		
 		function(callback){
-			var array2 = [];
+/* 			var array2 = [];
 			var startTime2 = 0;
+			var vec = new THREE.Vector3( 0, 0, -1 );
+			var quatValue; */
 			requestAnimationFrame(function animate(){
 				// keep looping
 				requestAnimationFrame( animate );
 
-				//name.textContent = 'xy: '+websocket.mouse.x.toString()+" "+websocket.mouse.y.toString();
-				name.textContent = "cost Time: "+websocket.internalUse.costTime.toString()+" ms";
+/* 				name.textContent = "cost Time: "+websocket.internalUse.costTime.toString()+" ms";
 				
 				quatValue = websocket.quaternion;
 				orientation.textContent = 'wxyz: '+quatValue.w.toString()+" "+quatValue.x.toString()+" "+quatValue.y.toString()+" "+quatValue.z.toString();
@@ -120,11 +118,11 @@ require([
 				array2.push(performance.now() - startTime2);
 				if (array2.length === 20){
 					console.log(array2);
-				}
+				} */
 	
-				websocket.process();
 				imagesource.process();
 				scene1.process();
+				websocket.process(); //Update Oculus orientation
 				rightcamera.process();
 				leftcamera.process();
 				rightrenderer1.process();
@@ -136,8 +134,8 @@ require([
 				oCamera.process(); //empty process
 				renderer2.process();
 				stats.update();
-				websocket.send();
-				startTime2 = performance.now();
+				websocket.send(); //send request to websocket server to get Oculus orientation
+/* 				startTime2 = performance.now(); */
 			});
 			callback();
 		}
