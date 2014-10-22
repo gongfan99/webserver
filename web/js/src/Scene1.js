@@ -12,7 +12,7 @@ PANA.Scene1 = function () {
 PANA.Scene1.prototype = {
 	contructor: PANA.Scene1,
 	process: function () {
-		if ( !this.status.processed ) {
+		if ( this.status && !this.status.processed ) {
 			//empty the scene
 			for (var i = this.scene.children.length-1; i >= 0; i--) {
 				this.scene.remove(this.scene.children[i]);
@@ -36,7 +36,10 @@ PANA.Scene1.prototype = {
 						},
 						function(newImage) {
 							// newImage is the new canvas/image element
-							var geometry  = new THREE.SphereGeometry(100, 64, 48, i*Math.PI*2/iNumberPhi, Math.PI*2/iNumberPhi, j*Math.PI/iNumberThe, Math.PI/iNumberThe);
+							var radius = 5;
+							var widthSegments = 64;
+							var heightSegments = 48;
+							var geometry  = new THREE.SphereGeometry(radius, widthSegments, heightSegments, i*Math.PI*2/iNumberPhi, Math.PI*2/iNumberPhi, j*Math.PI/iNumberThe, Math.PI/iNumberThe);
 							var material  = new THREE.MeshBasicMaterial({
 								side: THREE.FrontSide,
 								map: THREE.ImageUtils.loadTexture(newImage.toDataURL(), new THREE.UVMapping(), function(){})

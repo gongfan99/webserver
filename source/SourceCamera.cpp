@@ -7,8 +7,8 @@ namespace ozo {
 SourceCamera::SourceCamera() {
 	cap.open(1);
 	if (!cap.isOpened()) {
-		std::cout << "cannot open camera! \nuse " << OZO_PROJ_SRC"/qrcode.avi" << std::endl;
-		cap.open("C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/qrcode.avi");
+		std::cout << "cannot open camera! \nuse " << OZO_PROJ_SRC"/MyMovie.wmv" << std::endl;
+		cap.open("C:/Users/Sam/Documents/User/Embeded/ServerApp/webserver/source/MyMovie.wmv");
 	}
  /* 	cap.set(CV_CAP_PROP_FRAME_WIDTH, 320); 
 	cap.set(CV_CAP_PROP_FRAME_HEIGHT, 240);  */

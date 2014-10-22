@@ -40,21 +40,21 @@ PANA.Renderer.prototype = {
 	process: function () {
 		var r;
 
-		if ( this.toScreen && !this.OcuInf["OculusInit"]["processed"]["resolution"] ) {
+		if ( this.toScreen && this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["resolution"] ) {
 			r = this.OcuInf["OculusInit"]["resolution"];
-			this.renderer.setSize( r[0]/10, r[1]/10 ); //set canvas size
+			this.renderer.setSize( r[0]/20, r[1]/20 ); //set canvas size
 			this.OcuInf["OculusInit"]["processed"]["resolution"] = true;
 		}
 
-		if ( !this.toScreen && !this.OcuInf["OculusInit"]["processed"]["RenderTargetSize"][this.side] ) {
+		if ( !this.toScreen && this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["RenderTargetSize"][this.side] ) {
 			r = this.OcuInf["OculusInit"]["RenderTargetSize"][this.side];
 			this.renderTarget.setSize( r[0], r[1] ); //set render target size
 			this.OcuInf["OculusInit"]["processed"]["RenderTargetSize"][this.side] = true;
 		}
 
-		if (this.toScreen) {
+		if ( this.toScreen && this.OcuInf["OculusInit"] ) {
 			this.renderer.render( this.scene, this.camera );
-		} else {
+		} else if ( this.OcuInf["OculusInit"] ) {
 			this.renderer.render( this.scene, this.camera, this.renderTarget, true );
 		};
 	}

@@ -36,6 +36,7 @@ private:
 	void on_open(websocketpp::connection_hdl hdl);
 	void on_close(websocketpp::connection_hdl hdl);
 	void on_message(websocketpp::connection_hdl hdl, websocketpp::server<websocketpp::config::asio>::message_ptr msg);
+	void on_fail(websocketpp::connection_hdl hdl);
 };
 
 } //namespace ozo

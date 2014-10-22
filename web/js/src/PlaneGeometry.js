@@ -28,7 +28,7 @@ PANA.PlaneGeometry = function (side) {
 PANA.PlaneGeometry.prototype = {
 	contructor: PANA.PlaneGeometry,
 	process: function () {
-		if ( !this.OcuInf["OculusInit"]["processed"]["meshData"][this.side] ) {
+		if ( this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["meshData"][this.side] ) {
 			var mesh = this.OcuInf["OculusInit"]["meshData"][this.side];
 			for( var v = 0; v < mesh.IndexCount; v++ ) {
 				this.positions[ v * 3 + 0 ] = mesh.ScreenPosNDC[ mesh.pIndexData[ v ] * 2 + 0 ];

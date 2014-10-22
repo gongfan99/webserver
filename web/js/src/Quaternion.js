@@ -6,13 +6,14 @@
 
 PANA.Quaternion = function () {
 	this.quaternion = new THREE.Quaternion();
-	
-	var mouse	= {x : 0, y : 0}; //closure variable
-	document.addEventListener('mousemove', function(event){
-		mouse.x	= ((event.clientX / window.innerWidth ) - 0.5 ) * 2;
-		mouse.y	= - ((event.clientY / window.innerHeight) - 0.5) * 2;
-	}, false);
-	this.mouse = mouse;
+
+	this.mouse = {x : 0, y : 0};
+	document.addEventListener('mousemove', (function(mouse){
+		return function(event){
+			mouse.x	= ((event.clientX / window.innerWidth ) - 0.5 ) * 2;
+			mouse.y	= - ((event.clientY / window.innerHeight) - 0.5) * 2;
+		}
+	})(this.mouse),	false);
 };
 
 PANA.Quaternion.prototype = {

@@ -20,19 +20,21 @@ PANA.PerspCamera = function (side) {
 PANA.PerspCamera.prototype = {
 	contructor: PANA.PerspCamera,
 	process: function () {
-		if ( !this.OcuInf["OculusInit"]["processed"]["aspect"][this.side] ) {
+		if ( this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["aspect"][this.side] ) {
 			this.camera.aspect = this.OcuInf["OculusInit"]["aspect"][this.side];
 			this.camera.updateProjectionMatrix();
 			this.OcuInf["OculusInit"]["processed"]["aspect"][this.side] = true;
 		}
-		if ( !this.OcuInf["OculusInit"]["processed"]["FOV"][this.side] ) {
+		if ( this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["FOV"][this.side] ) {
 			var LeftTan = this.OcuInf["OculusInit"]["FOV"][this.side][2];
 			var RightTan = this.OcuInf["OculusInit"]["FOV"][this.side][3];
 			this.camera.fov = (Math.atan(LeftTan)+Math.atan(RightTan))*180/Math.PI;
 			this.camera.updateProjectionMatrix();
 			this.OcuInf["OculusInit"]["processed"]["FOV"][this.side] = true;
 		}
-		var q = this.OcuInf["OculusUpdate"]["Orientation"];
-		this.camera.quaternion.set( q[0], q[1], q[2], q[3] ); //camera.quaternion is not writable so 'copy' has to be used.
+		if ( this.OcuInf["OculusUpdate"] ) {
+			var q = this.OcuInf["OculusUpdate"]["Orientation"];
+			this.camera.quaternion.set( q[0], q[1], q[2], q[3] ); //camera.quaternion is not writable so 'copy' has to be used.
+		}
 	}
 };

@@ -80,13 +80,13 @@ PANA.ShaderMaterial.prototype = {
 		var m;
 		this.material.uniforms['texture0'].value = this.renderTarget;
 
-		if ( !this.OcuInf["OculusInit"]["processed"]["UVScaleOffset"][this.side] ) {
+		if ( this.OcuInf["OculusInit"] && !this.OcuInf["OculusInit"]["processed"]["UVScaleOffset"][this.side] ) {
 			this.material.uniforms['eyeToSourceUVscale'].value.fromArray( this.OcuInf["OculusInit"]["UVScaleOffset"][this.side]["Scale"] );
 			this.material.uniforms['eyeToSourceUVoffset'].value.fromArray( this.OcuInf["OculusInit"]["UVScaleOffset"][this.side]["Offset"] );
 			this.OcuInf["OculusInit"]["processed"]["UVScaleOffset"][this.side] = true;
 		}
 
-		if ( !this.OcuInf["OculusUpdate"]["processed"]["timeWarpMatrices"][this.side] ) {
+		if ( this.OcuInf["OculusUpdate"] && !this.OcuInf["OculusUpdate"]["processed"]["timeWarpMatrices"][this.side] ) {
 			m = this.OcuInf["OculusUpdate"]["timeWarpMatrices"][this.side]["Start"];
 			this.material.uniforms['eyeRotationStart'].value.set(m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7],m[8],m[9],m[10],m[11],m[12],m[13],m[14],m[15]);
 			m = this.OcuInf["OculusUpdate"]["timeWarpMatrices"][this.side]["End"];
