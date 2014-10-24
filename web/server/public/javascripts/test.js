@@ -1,21 +1,20 @@
 //http://learningthreejs.com/blog/2013/09/16/how-to-make-the-earth-in-webgl/
 //http://blog.thematicmapping.org/2014/01/photo-spheres-with-threejs.html
 require([
-"js/async.js",
-"js/Detector.js",
-"js/three.js",
-"js/pixastic.custom.js",
-"js/stats.min.js",
-"js/src/PANA.js",
-"js/src/InitValues.js",
-"js/src/Websocket.js",
-"js/src/ImageSource.js",
-"js/src/PerspCamera.js",
-"js/src/Scene1.js",
-"js/src/Renderer.js",
-"js/src/PlaneGeometry.js",
-"js/src/ShaderMaterial.js",
-"js/src/OrthoCamera.js"], function(){
+"javascripts/src/PANA.js",
+"javascripts/async.js",
+"javascripts/Detector.js",
+"javascripts/three.min.js",
+"javascripts/pixastic.custom.js",
+"javascripts/stats.min.js",
+"javascripts/src/Websocket.js",
+"javascripts/src/ImageSource.js",
+"javascripts/src/PerspCamera.js",
+"javascripts/src/Scene1.js",
+"javascripts/src/Renderer.js",
+"javascripts/src/PlaneGeometry.js",
+"javascripts/src/ShaderMaterial.js",
+"javascripts/src/OrthoCamera.js"], function(){
 /* 	var name = document.getElementById("name");
 	var orientation = document.getElementById("orientation");
 	var qrcode = document.getElementById("qrcode");

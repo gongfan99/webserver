@@ -22,7 +22,7 @@ PANA.Renderer = (function () {
 
 		if (renderer == undefined) {
 			renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
-			renderer.setSize( ResWidth, ResHeight ); //set canvas size
+			renderer.setSize( ResWidth/20, ResHeight/20 ); //set canvas size
 			renderer.autoClear = false;
 			document.body.appendChild( renderer.domElement ); //add canvas only once
 		}
