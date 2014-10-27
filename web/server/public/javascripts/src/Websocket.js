@@ -34,11 +34,11 @@ PANA.Websocket = function() {
 
 	this.internalUse = {rcvArray: [], socketTime: [], startTime: 0, costTime: 0, sendNumber: 0};
 	socket.onmessage = (function(OcuInf, internalUse) {
-		var http = new XMLHttpRequest(); //to get the image path from the nodejs server and database
+		var http = new XMLHttpRequest(); //to get the image url from the nodejs server and database
 		http.onreadystatechange = (function (OcuInf) {
 			return	function () {
 				if ( http.readyState === 4 && http.status === 200 ) {
-					OcuInf["Image"]["path"] = http.responseText;
+					OcuInf["Image"]["url"] = http.responseText;
 				}
 			}
 		})(OcuInf);
@@ -48,8 +48,8 @@ PANA.Websocket = function() {
 				if ( key === "OculusUpdate" ) {					
 					internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
 				} else if ( key === "Image" ) {
-					OcuInf[key] = data[key];
-					http.open("GET", "./image/" + this.OcuInf["Image"]["id"], false);
+					OcuInf[key] = data[key]; //OcuInf["Image"]["url"] becomes undefined
+					http.open("GET", "./image/" + OcuInf["Image"]["id"], false);
 					http.send();
 				} else if ( key === "OculusInit" ) {
 					OcuInf[key] = data[key];
@@ -79,7 +79,7 @@ PANA.Websocket.prototype = {
 			if (this.internalUse.rcvArray[this.internalUse.sendNumber - i] !== undefined) {
 				this.OcuInf["OculusUpdate"] = this.internalUse.rcvArray[(this.internalUse.sendNumber-i+20)%20];
 				if ( i !== 0 ) {
-					console.log("No. " + this.internalUse.sendNumber.toString() + " is needed but we only received up to No." + ((this.internalUse.sendNumber-i+20)%20).toString() + ".");
+					console.log("PANA.Websocket: No. " + this.internalUse.sendNumber.toString() + " is needed but we only received up to No." + ((this.internalUse.sendNumber-i+20)%20).toString() + ".");
 				}
 				break;
 			}

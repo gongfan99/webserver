@@ -4,12 +4,13 @@ var router = express.Router();
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
 	host     : 'localhost',
-	user     : 'me',
-	password : 'secret'
+	port	 : '3306',
+	user     : 'sanf',
+	password : '123456',
+	database: 'PANA'
 });
 
 connection.connect();
-
 
 
 /* GET home page. */
@@ -19,10 +20,17 @@ router.get('/', function(req, res) {
 });
 
 router.get('/image/:imageId', function(req, res) {
-	connection.query('SELECT path FROM image', function(err, rows, fields) {
-		if (err) throw err;
-		console.log('The image path is: ', rows[0].path);
-		res.send(rows[0].path);
+	connection.query('SELECT url FROM image WHERE ' + 'id=' + req.params.imageId.toString(), function(err, rows, fields) {
+		if (err) {
+			res.send();
+			throw err;
+		} else if (rows.length !== 0) {
+			res.send(rows[0].url);
+			console.log('The image url is: ', rows[0].url);
+		} else if (rows.length === 0) {
+			res.send();
+			console.log('Image is not found in database.');
+		}
 	});
 });
 

@@ -10,4 +10,4 @@ CREATE TABLE `image` (
 
 INSERT INTO image VALUES (1,'images/Big_ben_equirectangular.jpg');
 INSERT INTO image VALUES (2,'images/Earthmap720x360_grid.jpg');
-INSERT INTO image VALUES (3,'Land_shallow_topo_2048.jpg');
+INSERT INTO image VALUES (3,'images/Land_shallow_topo_2048.jpg');

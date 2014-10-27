@@ -20,11 +20,11 @@ PANA.ImageSource.prototype = {
 	process: (function () {
 		var previouspath = null;
 		return function () {
-			if ( this.OcuInf["Image"] && this.OcuInf["Image"]["path"] && !this.OcuInf["Image"]["processed"] && (previouspath != this.OcuInf["Image"]["path"]) ) {
-				previouspath = this.OcuInf["Image"]["path"];
-				this.image.src = self.OcuInf["Image"]["path"];
-				console.log('PANA.ImageSource: loading...'+self.OcuInf["Image"]["path"]);
-				self.OcuInf["Image"]["processed"] = true;
+			if ( this.OcuInf["Image"] && this.OcuInf["Image"]["url"] && !this.OcuInf["Image"]["processed"] && (previouspath != this.OcuInf["Image"]["url"]) ) {
+				previouspath = this.OcuInf["Image"]["url"];
+				this.image.src = this.OcuInf["Image"]["url"];
+				console.log('PANA.ImageSource: loading...'+this.OcuInf["Image"]["url"]);
+				this.OcuInf["Image"]["processed"] = true;
 			}
 		};
 	})()
