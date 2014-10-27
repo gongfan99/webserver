@@ -34,17 +34,27 @@ PANA.Websocket = function() {
 
 	this.internalUse = {rcvArray: [], socketTime: [], startTime: 0, costTime: 0, sendNumber: 0};
 	socket.onmessage = (function(OcuInf, internalUse) {
+		var http = new XMLHttpRequest(); //to get the image path from the nodejs server and database
+		http.onreadystatechange = (function (OcuInf) {
+			return	function () {
+				if ( http.readyState === 4 && http.status === 200 ) {
+					OcuInf["Image"]["path"] = http.responseText;
+				}
+			}
+		})(OcuInf);
 		return function(msg) {
 			var data = JSON.parse( msg.data );
 			for ( key in data ) {
-				if ( key === "OculusInit" ) {
+				if ( key === "OculusUpdate" ) {					
+					internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
+				} else if ( key === "Image" ) {
+					OcuInf[key] = data[key];
+					http.open("GET", "./image/" + this.OcuInf["Image"]["id"], false);
+					http.send();
+				} else if ( key === "OculusInit" ) {
 					OcuInf[key] = data[key];
 					sessionStorage.setItem("PANAOculusInit", JSON.stringify(data[key]));
 					console.log("PANA.Websocket: PANAOculusInit saved to Local Storage.");
-				} else if ( key === "OculusUpdate" ) {					
-					internalUse.rcvArray[data[key]["sendNumber"]] = data[key];
-				} else {
-					OcuInf[key] = data[key];
 				}
 			}
 		}

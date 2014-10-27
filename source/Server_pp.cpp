@@ -32,7 +32,7 @@ void Server_pp::process() {
 		}
 		if (currentPage != incomingPage){
 			currentPage = incomingPage;
-			server.send(mHandle, "{ \"Image\" : {\"processed\" : false, \"path\" : \"" + currentPage + "\" } }", websocketpp::frame::opcode::TEXT);
+			server.send(mHandle, "{ \"Image\" : {\"processed\" : false, \"id\" : \"" + currentPage + "\" } }", websocketpp::frame::opcode::TEXT);
 		}
 	}
 	server.poll();
