@@ -5,7 +5,7 @@
 */ 
 
 PANA.Websocket = function() {
-	this.OcuInf = {};
+	this.OcuInf = PANA.InitValues.OcuInf || {};
 	if ( "PANAOculusInit" in sessionStorage ) {
 		this.OcuInf["OculusInit"] = JSON.parse(sessionStorage.getItem("PANAOculusInit"));
 		console.log("PANA.Websocket: PANAOculusInit found in Local Storage.");

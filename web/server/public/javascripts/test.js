@@ -1,10 +1,22 @@
 //http://learningthreejs.com/blog/2013/09/16/how-to-make-the-earth-in-webgl/
 //http://blog.thematicmapping.org/2014/01/photo-spheres-with-threejs.html
+requirejs.config({
+	paths: {
+        "InitValues": "src/InitValues",
+        "three": "three.min"
+    },
+    shim: {
+        'InitValues': {
+            deps: ['three']
+        }
+	}
+});
+
 require([
 "javascripts/src/PANA.js",
+"three",
 "javascripts/async.js",
 "javascripts/Detector.js",
-"javascripts/three.min.js",
 "javascripts/pixastic.custom.js",
 "javascripts/stats.min.js",
 "javascripts/src/Websocket.js",
@@ -14,7 +26,8 @@ require([
 "javascripts/src/Renderer.js",
 "javascripts/src/PlaneGeometry.js",
 "javascripts/src/ShaderMaterial.js",
-"javascripts/src/OrthoCamera.js"], function(){
+"javascripts/src/OrthoCamera.js",
+"InitValues"], function(){
 /* 	var name = document.getElementById("name");
 	var orientation = document.getElementById("orientation");
 	var qrcode = document.getElementById("qrcode");
